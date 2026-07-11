@@ -1,0 +1,21 @@
+{
+  "name": "এসো আরবি শিখি — ইন্টারেক্টিভ গেম",
+  "short_name": "আরবি শিখি",
+  "description": "খেলার ছলে আরবি শব্দভাণ্ডার ও বাক্য গঠন অনুশীলন করুন — Vocabulary Quest, Association ও Flashcard Challenge মোডে।",
+  "id": "/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#007964",
+  "theme_color": "#007964",
+  "lang": "bn",
+  "dir": "ltr",
+  "categories": ["education", "games"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

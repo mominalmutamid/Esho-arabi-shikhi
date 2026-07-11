@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>এসো আরবি শিখি — ইন্টারেক্টিভ গেম</title>
+<meta name="description" content="খেলার ছলে আরবি শব্দভাণ্ডার ও বাক্য গঠন অনুশীলন করুন — Vocabulary Quest, Association ও Flashcard Challenge মোডে।">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#007964">
+<meta name="background-color" content="#007964">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="আরবি শিখি">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Baloo+Da+2:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#F1F3EC; --bg-soft:#E9ECE2; --surface:#FFFFFF; --surface-2:#FAFAF4;
+  --text:#1B2420; --text-muted:#5C6B62; --border:#DEE2D5;
+  --gold:#A9821B; --gold-ink:#C9A227; --teal:#0E7C6B; --lapis:#2F4EA8; --ruby:#A23B4E;
+  --teal-soft:#E4F3EF; --lapis-soft:#E7ECFA; --gold-soft:#F8EFD8; --ruby-soft:#F7E7EA;
+  --shadow:0 1px 2px rgba(20,30,25,.06), 0 8px 24px rgba(20,30,25,.08);
+  --shadow-lg:0 20px 50px rgba(20,30,25,.16);
+  --radius:20px; --pattern-opacity:.05;
+}
+html.dark{
+  --bg:#0C1614; --bg-soft:#101C19; --surface:#152220; --surface-2:#1A2825;
+  --text:#EDEFEA; --text-muted:#93A69D; --border:#28352F;
+  --gold:#D8B34A; --gold-ink:#E6C568; --teal:#33C0A2; --lapis:#7C97E6; --ruby:#E58197;
+  --teal-soft:#12312B; --lapis-soft:#1A2440; --gold-soft:#2E2612; --ruby-soft:#341B22;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  --shadow-lg:0 24px 60px rgba(0,0,0,.55);
+  --pattern-opacity:.07;
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+button{font-family:inherit; color:inherit; background:none; border:none; cursor:pointer; margin:0;}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:'Hind Siliguri',sans-serif;
+  min-height:100vh; display:flex; flex-direction:column;
+  transition:background .35s ease, color .35s ease;
+  user-select:none; -webkit-user-select:none;
+  overscroll-behavior-y:contain;
+  position:relative;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  opacity:var(--pattern-opacity);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23000000' stroke-width='1.1'%3E%3Cpath d='M60 6 L114 60 L60 114 L6 60 Z'/%3E%3Cpath d='M60 6 L114 60 L60 114 L6 60 Z' transform='rotate(45 60 60) scale(0.6)'/%3E%3Ccircle cx='60' cy='60' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:120px 120px;
+}
+html.dark body::before{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.1'%3E%3Cpath d='M60 6 L114 60 L60 114 L6 60 Z'/%3E%3Cpath d='M60 6 L114 60 L60 114 L6 60 Z' transform='rotate(45 60 60) scale(0.6)'/%3E%3Ccircle cx='60' cy='60' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+h1,h2,h3,.display{font-family:'Baloo Da 2',sans-serif;}
+.num,.chip,button,.badge{font-family:'Inter','Hind Siliguri',sans-serif;}
+.arabic{font-family:'Amiri',serif; direction:rtl; line-height:1.9;}
+::selection{background:transparent;}
+
+/* ============ LAYOUT ============ */
+header{
+  position:sticky; top:0; z-index:40;
+  background:color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{max-width:960px; margin:0 auto; padding:12px 18px; display:flex; align-items:center; justify-content:space-between; gap:12px;}
+.brand{display:flex; align-items:center; gap:10px; cursor:pointer; background:none; border:none; padding:0;}
+.brand-mark{width:34px; height:34px; flex-shrink:0;}
+.brand-title{font-size:1.05rem; font-weight:700; color:var(--text); letter-spacing:.2px;}
+.brand-title span{color:var(--gold);}
+.header-right{display:flex; align-items:center; gap:10px;}
+.score-chip{
+  display:flex; align-items:center; gap:6px;
+  background:var(--gold-soft); color:var(--gold); border:1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  font-weight:700; font-size:.82rem; padding:6px 12px; border-radius:999px;
+}
+.icon-btn{
+  width:38px; height:38px; border-radius:12px; border:1px solid var(--border);
+  background:var(--surface-2); color:var(--text); display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:transform .15s ease, background .2s ease;
+}
+.icon-btn:active{transform:scale(.9);}
+.icon-btn svg{width:18px; height:18px;}
+
+main{flex:1; width:100%; max-width:960px; margin:0 auto; padding:22px 18px 60px; position:relative; z-index:1;}
+footer{text-align:center; padding:18px; font-size:.75rem; color:var(--text-muted); border-top:1px solid var(--border); position:relative; z-index:1;}
+
+.screen{display:none;}
+.screen.active{display:block; animation:rise .45s cubic-bezier(.2,.8,.2,1);}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);}}
+@media (prefers-reduced-motion:reduce){ *{animation-duration:.01ms !important; transition-duration:.01ms !important;} }
+
+/* ============ MENU ============ */
+.hero{text-align:center; padding:18px 6px 30px;}
+.hero-eyebrow{
+  display:inline-flex; align-items:center; gap:8px; font-size:.72rem; font-weight:700; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--teal); background:var(--teal-soft); padding:6px 14px; border-radius:999px; margin-bottom:14px;
+}
+.hero h2{font-size:clamp(1.6rem,4vw,2.3rem); margin:0 0 10px; font-weight:700; line-height:1.25;}
+.hero p{color:var(--text-muted); max-width:520px; margin:0 auto; font-size:.95rem; line-height:1.7;}
+
+.mode-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:28px;}
+.mode-card{
+  position:relative; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:26px 22px 22px; box-shadow:var(--shadow); cursor:pointer; overflow:hidden;
+  transition:transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s ease, border-color .25s ease;
+  display:flex; flex-direction:column; text-align:left;
+}
+.mode-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-lg);}
+.mode-card:active{transform:translateY(-2px) scale(.99);}
+.mode-card::after{
+  content:""; position:absolute; top:-40px; right:-40px; width:120px; height:120px; border-radius:50%;
+  background:var(--accent-soft, var(--teal-soft)); opacity:.6; z-index:0;
+}
+.mode-card > *{position:relative; z-index:1;}
+.mode-icon{
+  width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+  background:var(--accent-soft, var(--teal-soft)); color:var(--accent, var(--teal)); margin-bottom:16px;
+}
+.mode-icon svg{width:26px; height:26px;}
+.mode-card h3{margin:0 0 8px; font-size:1.15rem; color:var(--accent, var(--teal));}
+.mode-card p{margin:0; font-size:.86rem; color:var(--text-muted); line-height:1.65; flex-grow:1;}
+.mode-cta{
+  margin-top:18px; width:100%; border:none; padding:11px; border-radius:12px; font-weight:700; font-size:.92rem;
+  color:#fff; background:var(--accent, var(--teal)); cursor:pointer; transition:filter .2s ease, transform .15s ease;
+}
+.mode-cta:active{transform:scale(.97);}
+.card-vocab{--accent:var(--teal); --accent-soft:var(--teal-soft);}
+.card-assoc{--accent:var(--lapis); --accent-soft:var(--lapis-soft);}
+.card-flash{--accent:var(--gold); --accent-soft:var(--gold-soft);}
+
+/* ============ SHARED GAME BAR ============ */
+.game-bar{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:12px 16px; box-shadow:var(--shadow);
+}
+.back-btn{
+  border:none; background:none; color:var(--text-muted); font-weight:600; font-size:.85rem; cursor:pointer;
+  display:flex; align-items:center; gap:6px; padding:6px 4px; transition:color .2s ease;
+}
+.back-btn svg{width:16px; height:16px;}
+.game-bar .mid{text-align:center;}
+.game-bar .mid .title{font-weight:700; font-size:.95rem;}
+.game-bar .mid .sub{font-size:.72rem; color:var(--text-muted);}
+.badge{font-size:.7rem; font-weight:700; padding:5px 11px; border-radius:999px;}
+.badge-main{background:var(--teal-soft); color:var(--teal);}
+.badge-review{background:var(--gold-soft); color:var(--gold);}
+.score-pill{font-size:.85rem; font-weight:700;}
+
+.card-panel{
+  margin-top:18px; background:var(--surface); border:1px solid var(--border); border-radius:24px;
+  padding:36px 24px; text-align:center; box-shadow:var(--shadow); position:relative; overflow:hidden;
+}
+.arabic-display{
+  font-size:clamp(2.6rem,10vw,4.2rem); color:var(--text); margin-bottom:8px; word-break:break-word;
+}
+.arabic-sub{font-size:.8rem; color:var(--text-muted); margin-bottom:22px;}
+
+.options-grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:6px;}
+@media(min-width:520px){ .options-grid{grid-template-columns:1fr 1fr;} }
+.opt-btn{
+  background:var(--surface-2); border:1.5px solid var(--border); border-radius:14px; padding:15px 16px;
+  font-size:1rem; font-weight:600; color:var(--text); cursor:pointer; text-align:center;
+  transition:transform .12s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  touch-action:manipulation;
+}
+.opt-btn:hover:not(:disabled){border-color:var(--teal); background:var(--teal-soft);}
+.opt-btn:active:not(:disabled){transform:scale(.96);}
+.opt-btn:disabled{cursor:default;}
+.opt-correct{background:var(--teal) !important; border-color:var(--teal) !important; color:#fff !important; box-shadow:0 8px 20px color-mix(in srgb, var(--teal) 40%, transparent);}
+.opt-wrong{background:var(--ruby) !important; border-color:var(--ruby) !important; color:#fff !important;}
+.opt-correct-pulse{animation:pulseGood 1s ease infinite;}
+@keyframes pulseGood{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb, var(--teal) 45%, transparent);} 50%{box-shadow:0 0 0 10px transparent;}}
+
+/* ============ ASSOCIATION ============ */
+.assoc-hint{text-align:center; font-size:.85rem; color:var(--text-muted); margin:14px 0 18px;}
+.assoc-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px;}
+@media(max-width:560px){ .assoc-grid{gap:6px;} }
+.assoc-col{display:flex; flex-direction:column; gap:10px;}
+.assoc-btn{
+  background:var(--surface); border:1.5px solid var(--border); border-radius:14px; padding:14px 8px;
+  font-weight:700; font-size:.88rem; color:var(--text); cursor:pointer; text-align:center; box-shadow:var(--shadow);
+  transition:transform .15s ease, background .2s ease, border-color .2s ease, visibility 0s;
+  touch-action:manipulation;
+}
+@media(min-width:520px){ .assoc-btn{font-size:.95rem; padding:16px 10px;} }
+.assoc-btn.arabic{font-size:1.35rem; padding:14px 6px;}
+.assoc-btn:active:not(:disabled){transform:scale(.95);}
+.assoc-selected{background:var(--lapis) !important; border-color:var(--lapis) !important; color:#fff !important;}
+.assoc-correct{background:var(--teal) !important; border-color:var(--teal) !important; color:#fff !important;}
+.assoc-wrong{background:var(--ruby) !important; border-color:var(--ruby) !important; color:#fff !important;}
+.assoc-gone{visibility:hidden; pointer-events:none;}
+
+/* ============ FLASHCARD ============ */
+.timer-track{width:100%; height:10px; border-radius:999px; background:var(--bg-soft); overflow:hidden; margin-top:16px; box-shadow:inset 0 1px 3px rgba(0,0,0,.15);}
+.timer-fill{height:100%; width:100%; border-radius:999px; background:linear-gradient(90deg,var(--gold),var(--ruby)); transition:width .1s linear;}
+.streak-row{display:flex; align-items:center; justify-content:center; gap:6px; margin-top:10px; font-size:.78rem; color:var(--text-muted); font-weight:600;}
+.streak-flame{color:var(--gold);}
+
+/* ============ MODAL ============ */
+.modal-backdrop{
+  position:fixed; inset:0; background:rgba(10,14,12,.55); backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center; z-index:100; padding:20px;
+  opacity:0; pointer-events:none; transition:opacity .25s ease;
+}
+.modal-backdrop.open{opacity:1; pointer-events:auto;}
+.modal-card{
+  background:var(--surface); border:1px solid var(--border); border-radius:22px; padding:32px 26px;
+  max-width:380px; width:100%; text-align:center; box-shadow:var(--shadow-lg);
+  transform:translateY(16px) scale(.96); transition:transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.modal-backdrop.open .modal-card{transform:translateY(0) scale(1);}
+.modal-icon{font-size:2.6rem; margin-bottom:6px;}
+.modal-card h3{margin:6px 0 8px; font-size:1.3rem;}
+.modal-card p{margin:0 0 22px; color:var(--text-muted); font-size:.9rem; line-height:1.6;}
+.modal-actions{display:flex; gap:10px; flex-direction:column;}
+.btn-primary{
+  border:none; padding:12px; border-radius:12px; font-weight:700; font-size:.92rem; color:#fff;
+  background:var(--teal); cursor:pointer; transition:transform .15s ease;
+}
+.btn-primary:active{transform:scale(.96);}
+.btn-secondary{
+  border:1px solid var(--border); background:none; padding:12px; border-radius:12px; font-weight:700;
+  font-size:.9rem; color:var(--text-muted); cursor:pointer;
+}
+
+.sr-only{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap;}
+button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2.5px solid var(--lapis); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <button class="brand" onclick="navigateTo('main-menu')" aria-label="মূল মেনু">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3 L34 20 L20 37 L6 20 Z" stroke="var(--gold)" stroke-width="2"/>
+        <path d="M20 11 L28 20 L20 29 L12 20 Z" stroke="var(--teal)" stroke-width="2"/>
+      </svg>
+      <span class="brand-title">এসো আরবি <span>শিখি</span></span>
+    </button>
+    <div class="header-right">
+      <div class="score-chip"><span>★</span><span id="global-score">০</span></div>
+      <button class="icon-btn" onclick="toggleDarkMode()" aria-label="থিম পরিবর্তন">
+        <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.3 3a9 9 0 1 0 8.7 13.4A7.5 7.5 0 0 1 12.3 3z"/></svg>
+        <svg id="theme-icon-sun" style="display:none" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4.5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- MAIN MENU -->
+  <section id="main-menu" class="screen active">
+    <div class="hero">
+      <span class="hero-eyebrow">এসো আরবি শিখি · ইন্টারেক্টিভ প্র্যাকটিস</span>
+      <h2>খেলার ছলে আরবি শব্দ ও বাক্য আয়ত্ত করুন</h2>
+      <p>বইয়ের শব্দভাণ্ডার ও ইশারাসূচক সর্বনাম নিয়ে তিনটি ভিন্ন ধাঁচের গেম — প্রতিটি ধাপে ধাপে আপনার দক্ষতা যাচাই করবে।</p>
+    </div>
+
+    <div class="mode-grid">
+      <div class="mode-card card-vocab" onclick="startVocabularyQuest()">
+        <div class="mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5V4.5Z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg></div>
+        <h3>Vocabulary Quest</h3>
+        <p>লেভেলভিত্তিক শব্দার্থ চ্যালেঞ্জ। প্রতি লেভেলে ১০টি শব্দ — ভুল হওয়া শব্দ লেভেলের শেষে রিভিউ রাউন্ডে ফিরে আসবে, যতক্ষণ না সঠিক হয়।</p>
+        <button class="mode-cta">শুরু করুন</button>
+      </div>
+
+      <div class="mode-card card-assoc" onclick="startAssociationGame()">
+        <div class="mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.5 10.6 15.5 7.4M8.5 13.4 15.5 16.6"/></svg></div>
+        <h3>Association <span class="arabic" style="font-size:.9em">(هٰذَا كِتَابٌ)</span></h3>
+        <p>ইশারাসূচক সর্বনাম, বিশেষ্য ও বাংলা অনুবাদ — তিন কলাম থেকে সঠিক মিল খুঁজে বাক্য গঠন করুন।</p>
+        <button class="mode-cta">শুরু করুন</button>
+      </div>
+
+      <div class="mode-card card-flash" onclick="startFlashcardChallenge()">
+        <div class="mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke-linejoin="round"/></svg></div>
+        <h3>Flashcard Challenge</h3>
+        <p>টাইম-অ্যাটাক মোড। হরকতসহ আরবি শব্দ দেখে সময় শেষ হওয়ার আগেই সঠিক বাংলা অর্থ বেছে নিন।</p>
+        <button class="mode-cta">শুরু করুন</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOCAB QUEST -->
+  <section id="vocab-screen" class="screen">
+    <div class="game-bar">
+      <button class="back-btn" onclick="navigateTo('main-menu')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>মেনু</button>
+      <div class="mid">
+        <div class="title" id="vocab-level-title" style="color:var(--teal)">লেভেল ১</div>
+        <div class="sub" id="vocab-progress-text">শব্দ: ১/১০</div>
+      </div>
+      <div id="vocab-status-badge" class="badge badge-main">মূল রাউন্ড</div>
+    </div>
+
+    <div class="card-panel">
+      <div id="vocab-arabic-display" class="arabic-display arabic">كِتَابٌ</div>
+      <div class="arabic-sub">শব্দটির সঠিক বাংলা অর্থ নির্বাচন করুন</div>
+      <div class="options-grid" id="vocab-options-container"></div>
+    </div>
+  </section>
+
+  <!-- ASSOCIATION -->
+  <section id="association-screen" class="screen">
+    <div class="game-bar">
+      <button class="back-btn" onclick="navigateTo('main-menu')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>মেনু</button>
+      <div class="mid">
+        <div class="title" style="color:var(--lapis)">সঠিক বাক্য মেলাও</div>
+      </div>
+      <div class="badge" style="background:var(--lapis-soft); color:var(--lapis)">স্কোর <span id="assoc-score">0</span>/৪</div>
+    </div>
+    <p class="assoc-hint">প্রতিটি কলাম থেকে একটি করে বেছে সঠিক বাক্য তৈরি করুন — ইশারা, বিশেষ্য ও অনুবাদ মিলিয়ে নিন</p>
+    <div class="assoc-grid" id="association-grid"></div>
+  </section>
+
+  <!-- FLASHCARD -->
+  <section id="flashcard-screen" class="screen">
+    <div class="game-bar">
+      <button class="back-btn" onclick="navigateTo('main-menu')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>মেনু</button>
+      <div class="mid">
+        <div class="title" style="color:var(--gold)">টাইম চ্যালেঞ্জ</div>
+      </div>
+      <div class="badge" style="background:var(--gold-soft); color:var(--gold)">স্কোর <span id="flash-score">0</span></div>
+    </div>
+
+    <div class="timer-track"><div id="flash-timer-bar" class="timer-fill"></div></div>
+    <div class="streak-row"><span class="streak-flame">🔥</span><span id="flash-streak">স্ট্রিক: ０</span></div>
+
+    <div class="card-panel">
+      <div id="flash-arabic-display" class="arabic-display arabic">قَلَمٌ</div>
+      <div class="arabic-sub">সঠিক অর্থে দ্রুত ট্যাপ করুন</div>
+      <div class="options-grid" id="flash-options-container"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>&copy; ২০২৬ · 'এসো আরবি শিখি' গেম প্ল্যাটফর্ম</footer>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal-card" id="modal-card"></div>
+</div>
+
+<script>
+/* =========================================================
+   DATA
+========================================================= */
+const vocabDataset = [
+  // Level 1 — masculine household / school nouns
+  { arabic:"كِتَابٌ", bangla:"বই", level:1 },
+  { arabic:"قَلَمٌ", bangla:"কলম", level:1 },
+  { arabic:"مَسْجِدٌ", bangla:"মসজিদ", level:1 },
+  { arabic:"بَابٌ", bangla:"দরজা", level:1 },
+  { arabic:"بَيْتٌ", bangla:"বাড়ি", level:1 },
+  { arabic:"مِصْبَاحٌ", bangla:"বাতি", level:1 },
+  { arabic:"جِدَارٌ", bangla:"দেয়াল", level:1 },
+  { arabic:"كُرْسِيٌّ", bangla:"চেয়ার", level:1 },
+  { arabic:"سَرِيرٌ", bangla:"খাট", level:1 },
+  { arabic:"مَكْتَبٌ", bangla:"ডেস্ক", level:1 },
+
+  // Level 2 — feminine household / school nouns
+  { arabic:"مَدْرَسَةٌ", bangla:"মাদ্রাসা", level:2 },
+  { arabic:"حَقِيبَةٌ", bangla:"ব্যাগ", level:2 },
+  { arabic:"سَبُّورَةٌ", bangla:"ব্ল্যাকবোর্ড", level:2 },
+  { arabic:"نَافِذَةٌ", bangla:"জানালা", level:2 },
+  { arabic:"حُجْرَةٌ", bangla:"কামরা", level:2 },
+  { arabic:"سَاعَةٌ", bangla:"ঘড়ি", level:2 },
+  { arabic:"مِسْطَرَةٌ", bangla:"রুলার", level:2 },
+  { arabic:"مِرْوَحَةٌ", bangla:"পাখা", level:2 },
+  { arabic:"حَدِيقَةٌ", bangla:"বাগান", level:2 },
+  { arabic:"طَاوِلَةٌ", bangla:"টেবিল", level:2 },
+
+  // Level 3 — family members
+  { arabic:"أَبٌ", bangla:"পিতা", level:3 },
+  { arabic:"أُمٌّ", bangla:"মাতা", level:3 },
+  { arabic:"أَخٌ", bangla:"ভাই", level:3 },
+  { arabic:"أُخْتٌ", bangla:"বোন", level:3 },
+  { arabic:"اِبْنٌ", bangla:"পুত্র", level:3 },
+  { arabic:"اِبْنَةٌ", bangla:"কন্যা", level:3 },
+  { arabic:"جَدٌّ", bangla:"দাদা / নানা", level:3 },
+  { arabic:"جَدَّةٌ", bangla:"দাদী / নানী", level:3 },
+  { arabic:"عَمٌّ", bangla:"চাচা", level:3 },
+  { arabic:"خَالٌ", bangla:"মামা", level:3 },
+
+  // Level 4 — nature & environment
+  { arabic:"شَمْسٌ", bangla:"সূর্য", level:4 },
+  { arabic:"قَمَرٌ", bangla:"চাঁদ", level:4 },
+  { arabic:"نَجْمٌ", bangla:"তারকা", level:4 },
+  { arabic:"سَمَاءٌ", bangla:"আকাশ", level:4 },
+  { arabic:"أَرْضٌ", bangla:"পৃথিবী", level:4 },
+  { arabic:"بَحْرٌ", bangla:"সাগর", level:4 },
+  { arabic:"نَهْرٌ", bangla:"নদী", level:4 },
+  { arabic:"جَبَلٌ", bangla:"পাহাড়", level:4 },
+  { arabic:"شَجَرٌ", bangla:"গাছ", level:4 },
+  { arabic:"زَهْرَةٌ", bangla:"ফুল", level:4 },
+  { arabic:"سَحَابٌ", bangla:"মেঘ", level:4 },
+  { arabic:"مَطَرٌ", bangla:"বৃষ্টি", level:4 },
+  { arabic:"حَجَرٌ", bangla:"পাথর", level:4 },
+  { arabic:"تُرَابٌ", bangla:"মাটি", level:4 },
+  { arabic:"هَوَاءٌ", bangla:"বাতাস", level:4 },
+  { arabic:"غَابَةٌ", bangla:"বন/জঙ্গল", level:4 },
+
+  // Level 5 — animals & birds
+  { arabic:"أَسَدٌ", bangla:"সিংহ", level:5 },
+  { arabic:"جَمَلٌ", bangla:"উট", level:5 },
+  { arabic:"فَرَسٌ", bangla:"ঘোড়া", level:5 },
+  { arabic:"قِطٌّ", bangla:"বিড়াল", level:5 },
+  { arabic:"كَلْبٌ", bangla:"কুকুর", level:5 },
+  { arabic:"طَائِرٌ", bangla:"পাখি", level:5 },
+  { arabic:"سَمَكٌ", bangla:"মাছ", level:5 },
+  { arabic:"فِيلٌ", bangla:"হাতি", level:5 },
+  { arabic:"قِرْدٌ", bangla:"বানর", level:5 },
+  { arabic:"غَنَمٌ", bangla:"ছাগল/ভেড়া", level:5 },
+  { arabic:"بَقَرَةٌ", bangla:"গাভী", level:5 },
+  { arabic:"حِمَارٌ", bangla:"গাধা", level:5 },
+  { arabic:"دَجَاجَةٌ", bangla:"মুরগি", level:5 },
+  { arabic:"عُصْفُورٌ", bangla:"চড়ুই পাখি", level:5 },
+  { arabic:"فَأْرٌ", bangla:"ইঁদুর", level:5 },
+  { arabic:"ثُعْبَانٌ", bangla:"সাপ", level:5 },
+
+  // Level 6 — food & drinks
+  { arabic:"خُبْزٌ", bangla:"রুটি", level:6 },
+  { arabic:"أُرْزٌ", bangla:"ভাত", level:6 },
+  { arabic:"مَاءٌ", bangla:"পানি", level:6 },
+  { arabic:"لَبَنٌ", bangla:"দুধ", level:6 },
+  { arabic:"لَحْمٌ", bangla:"মাংস", level:6 },
+  { arabic:"تَمْرٌ", bangla:"খেজুর", level:6 },
+  { arabic:"تُفَّاحٌ", bangla:"আপেল", level:6 },
+  { arabic:"عَسَلٌ", bangla:"মধু", level:6 },
+  { arabic:"بَيْضٌ", bangla:"ডিম", level:6 },
+  { arabic:"طَعَامٌ", bangla:"খাবার", level:6 },
+  { arabic:"شَايٌ", bangla:"চা", level:6 },
+  { arabic:"قَهْوَةٌ", bangla:"কফি", level:6 },
+  { arabic:"فَاكِهَةٌ", bangla:"ফল", level:6 },
+  { arabic:"مِلْحٌ", bangla:"লবণ", level:6 },
+  { arabic:"زَيْتٌ", bangla:"তেল", level:6 },
+  { arabic:"خَضْرَاوَاتٌ", bangla:"সবজি", level:6 },
+
+  // Level 7 — body & clothes
+  { arabic:"رَأْسٌ", bangla:"মাথা", level:7 },
+  { arabic:"عَيْنٌ", bangla:"চোখ", level:7 },
+  { arabic:"يَدٌ", bangla:"হাত", level:7 },
+  { arabic:"رِجْلٌ", bangla:"পা", level:7 },
+  { arabic:"قَلْبٌ", bangla:"হৃদয়/মন", level:7 },
+  { arabic:"ثَوْبٌ", bangla:"জামা/পোশাক", level:7 },
+  { arabic:"قَلَنْسُوَةٌ", bangla:"টুপি", level:7 },
+  { arabic:"حِذَاءٌ", bangla:"জুতো", level:7 },
+  { arabic:"مِنْدِيلٌ", bangla:"রুমাল", level:7 },
+  { arabic:"وَجْهٌ", bangla:"মুখমণ্ডল", level:7 },
+  { arabic:"شَعْرٌ", bangla:"চুল", level:7 },
+  { arabic:"أُذُنٌ", bangla:"কান", level:7 },
+  { arabic:"لِسَانٌ", bangla:"জিহ্বা", level:7 },
+  { arabic:"سِنٌّ", bangla:"দাঁত", level:7 },
+  { arabic:"قَمِيصٌ", bangla:"শার্ট", level:7 },
+  { arabic:"نَظَّارَةٌ", bangla:"চশমা", level:7 },
+
+  // Level 8 — places & locations
+  { arabic:"سُوقٌ", bangla:"বাজার", level:8 },
+  { arabic:"دُكَّانٌ", bangla:"দোকান", level:8 },
+  { arabic:"مَدِينَةٌ", bangla:"শহর", level:8 },
+  { arabic:"قَرْيَةٌ", bangla:"গ্রাম", level:8 },
+  { arabic:"طَرِيقٌ", bangla:"রাস্তা", level:8 },
+  { arabic:"مَحَطَّةٌ", bangla:"স্টেশন", level:8 },
+  { arabic:"مَطَارٌ", bangla:"বিমানবন্দর", level:8 },
+  { arabic:"مَكْتَبَةٌ", bangla:"লাইব্রেরি", level:8 },
+  { arabic:"مَسْبَحٌ", bangla:"সুইমিং পুল", level:8 },
+  { arabic:"مُسْتَشْفَى", bangla:"হাসপাতাল", level:8 },
+  { arabic:"فُنْدُقٌ", bangla:"হোটেল", level:8 },
+  { arabic:"مَكْتَبٌ", bangla:"অফিস", level:8 },
+  { arabic:"مَلْعَبٌ", bangla:"খেলার মাঠ", level:8 },
+  { arabic:"مَطْعَمٌ", bangla:"রেস্টুরেন্ট", level:8 },
+  { arabic:"قَصْرٌ", bangla:"প্রাসাদ", level:8 },
+  { arabic:"مَعْمَلٌ", bangla:"ল্যাবরেটরি", level:8 },
+
+  // Level 9 — time & periods
+  { arabic:"يَوْمٌ", bangla:"দিন", level:9 },
+  { arabic:"لَيْلٌ", bangla:"রাত", level:9 },
+  { arabic:"صَبَاحٌ", bangla:"সকাল", level:9 },
+  { arabic:"مَسَاءٌ", bangla:"সন্ধ্যা", level:9 },
+  { arabic:"وَقْتٌ", bangla:"সময়", level:9 },
+  { arabic:"سَاعَةٌ", bangla:"ঘণ্টা/ঘড়ি", level:9 },
+  { arabic:"شَهْرٌ", bangla:"মাস", level:9 },
+  { arabic:"سَنَةٌ", bangla:"বছর", level:9 },
+  { arabic:"فَجْرٌ", bangla:"ভোর", level:9 },
+  { arabic:"ظُهْرٌ", bangla:"দুপুর", level:9 },
+  { arabic:"عَصْرٌ", bangla:"বিকাল", level:9 },
+  { arabic:"مَغْرِبٌ", bangla:"সন্ধ্যা/সূর্যাস্ত", level:9 },
+  { arabic:"أُسْبُوعٌ", bangla:"সপ্তাহ", level:9 },
+  { arabic:"غَدًا", bangla:"আগামীকাল", level:9 },
+  { arabic:"أَمْسِ", bangla:"গতকাল", level:9 },
+  { arabic:"الْآنَ", bangla:"এখন", level:9 },
+];
+const MAX_LEVEL = Math.max(...vocabDataset.map(w => w.level));
+
+const assocPhrasesPool = [
+  { demo:"هٰذَا", noun:"كِتَابٌ", bangla:"ইহা একটি বই" },
+  { demo:"ذٰلِكَ", noun:"قَلَمٌ", bangla:"উহা একটি কলম" },
+  { demo:"هٰذِهِ", noun:"مَدْرَسَةٌ", bangla:"ইহা একটি মাদ্রাসা" },
+  { demo:"تِلْكَ", noun:"حَقِيبَةٌ", bangla:"উহা একটি ব্যাগ" },
+  { demo:"هٰذَا", noun:"مَسْجِدٌ", bangla:"ইহা একটি মসজিদ" },
+  { demo:"ذٰلِكَ", noun:"بَيْتٌ", bangla:"উহা একটি বাড়ি" },
+  { demo:"هٰذِهِ", noun:"سَاعَةٌ", bangla:"ইহা একটি ঘড়ি" },
+  { demo:"تِلْكَ", noun:"نَافِذَةٌ", bangla:"উহা একটি জানালা" },
+  { demo:"هٰذَا", noun:"أَبٌ", bangla:"ইনি একজন পিতা" },
+  { demo:"هٰذِهِ", noun:"أُمٌّ", bangla:"ইনি একজন মাতা" },
+  { demo:"ذٰلِكَ", noun:"أَخٌ", bangla:"উনি একজন ভাই" },
+  { demo:"تِلْكَ", noun:"أُخْتٌ", bangla:"উনি একজন বোন" },
+
+  // هٰذَا (ইহা — পুংলিঙ্গ)
+  { demo:"هٰذَا", noun:"بَيْتٌ", bangla:"ইহা একটি বাড়ি" },
+  { demo:"هٰذَا", noun:"قَلَمٌ", bangla:"ইহা একটি কলম" },
+  { demo:"هٰذَا", noun:"مَسْجِدٌ", bangla:"ইহা একটি মসজিদ" },
+  { demo:"هٰذَا", noun:"كِتَابٌ", bangla:"ইহা একটি বই" },
+  { demo:"هٰذَا", noun:"طَبِيبٌ", bangla:"ইহা একজন ডাক্তার" },
+  { demo:"هٰذَا", noun:"وَلَدٌ", bangla:"ইহা একটি ছেলে" },
+
+  // هٰذِهِ (ইহা — স্ত্রীলিঙ্গ)
+  { demo:"هٰذِهِ", noun:"مَدْرَسَةٌ", bangla:"ইহা একটি মাদ্রাসা" },
+  { demo:"هٰذِهِ", noun:"سَاعَةٌ", bangla:"ইহা একটি ঘড়ি" },
+  { demo:"هٰذِهِ", noun:"حَدِيقَةٌ", bangla:"ইহা একটি বাগান" },
+  { demo:"هٰذِهِ", noun:"بِنْتٌ", bangla:"ইহা একটি মেয়ে" },
+  { demo:"هٰذِهِ", noun:"سَيَّارَةٌ", bangla:"ইহা একটি গাড়ি" },
+  { demo:"هٰذِهِ", noun:"غُرْفَةٌ", bangla:"ইহা একটি কামরা" },
+
+  // ذٰلِكَ (উহা — পুংলিঙ্গ)
+  { demo:"ذٰلِكَ", noun:"نَجْمٌ", bangla:"উহা একটি তারকা" },
+  { demo:"ذٰلِكَ", noun:"جَبَلٌ", bangla:"উহা একটি পাহাড়" },
+  { demo:"ذٰلِكَ", noun:"قَمَرٌ", bangla:"উহা একটি চাঁদ" },
+  { demo:"ذٰلِكَ", noun:"بَابٌ", bangla:"উহা একটি দরজা" },
+  { demo:"ذٰلِكَ", noun:"مَطَارٌ", bangla:"উহা একটি বিমানবন্দর" },
+  { demo:"ذٰلِكَ", noun:"رَجُلٌ", bangla:"উহা একজন লোক" },
+
+  // تِلْكَ (উহা — স্ত্রীলিঙ্গ)
+  { demo:"تِلْكَ", noun:"شَمْسٌ", bangla:"উহা একটি সূর্য" },
+  { demo:"تِلْكَ", noun:"زَهْرَةٌ", bangla:"উহা একটি ফুল" },
+  { demo:"تِلْكَ", noun:"قَرْيَةٌ", bangla:"উহা একটি গ্রাম" },
+  { demo:"تِلْكَ", noun:"طَائِرَةٌ", bangla:"উহা একটি উড়োজাহাজ" },
+  { demo:"تِلْكَ", noun:"مَكْتَبَةٌ", bangla:"উহা একটি লাইব্রেরি" },
+  { demo:"تِلْكَ", noun:"دَجَاجَةٌ", bangla:"উহা একটি মুরগি" },
+
+  // أَنَا (আমি)
+  { demo:"أَنَا", noun:"طَالِبٌ", bangla:"আমি একজন ছাত্র" },
+  { demo:"أَنَا", noun:"مُعَلِّمٌ", bangla:"আমি একজন শিক্ষক" },
+  { demo:"أَنَا", noun:"طَبِيبٌ", bangla:"আমি একজন ডাক্তার" },
+  { demo:"أَنَا", noun:"مُسْلِمٌ", bangla:"আমি একজন মুসলিম" },
+  { demo:"أَنَا", noun:"صَغِيرٌ", bangla:"আমি ছোট" },
+  { demo:"أَنَا", noun:"كَبِيرٌ", bangla:"আমি বড়" },
+
+  // أَنْتَ / أَنْتِ (তুমি — পুং/স্ত্রী)
+  { demo:"أَنْتَ", noun:"صَدِيقِي", bangla:"তুমি আমার বন্ধু" },
+  { demo:"أَنْتَ", noun:"مُجْتَهِدٌ", bangla:"তুমি পরিশ্রমী" },
+  { demo:"أَنْتَ", noun:"طَالِبٌ", bangla:"তুমি একজন ছাত্র" },
+  { demo:"أَنْتِ", noun:"طَالِبَةٌ", bangla:"তুমি একজন ছাত্রী" },
+  { demo:"أَنْتِ", noun:"طَبِيبَةٌ", bangla:"তুমি একজন ডাক্তার (নারী)" },
+  { demo:"أَنْتِ", noun:"جَمِيلَةٌ", bangla:"তুমি সুন্দরী" },
+
+  // هُوَ / هِيَ (সে — পুং/স্ত্রী)
+  { demo:"هُوَ", noun:"تَاجِرٌ", bangla:"সে একজন ব্যবসায়ী" },
+  { demo:"هُوَ", noun:"مُهَنْدِسٌ", bangla:"সে একজন ইঞ্জিনিয়ার" },
+  { demo:"هُوَ", noun:"وَلَدٌ صَالِحٌ", bangla:"সে একটি সৎ ছেলে" },
+  { demo:"هُوَ", noun:"غَنِيٌّ", bangla:"সে ধনী" },
+  { demo:"هِيَ", noun:"بِنْتٌ صَالِحَةٌ", bangla:"সে একটি সৎ মেয়ে" },
+  { demo:"هِيَ", noun:"مُعَلِّمَةٌ", bangla:"সে একজন শিক্ষিকা" },
+  { demo:"هِيَ", noun:"مَرِيضَةٌ", bangla:"সে অসুস্থ (নারী)" },
+  { demo:"هِيَ", noun:"فَقِيرَةٌ", bangla:"সে দরিদ্র (নারী)" },
+
+  // বিশেষণযুক্ত বাক্য (Adjective combos)
+  { demo:"هٰذَا", noun:"كِتَابٌ جَدِيدٌ", bangla:"ইহা একটি নতুন বই" },
+  { demo:"ذٰلِكَ", noun:"قَلَمٌ مَكْسُورٌ", bangla:"উহা একটি ভাঙা কলম" },
+  { demo:"هٰذِهِ", noun:"سَاعَةٌ ثَمِينَةٌ", bangla:"ইহা একটি মূল্যবান ঘড়ি" },
+  { demo:"تِلْكَ", noun:"مَدْرَسَةٌ كَبِيرَةٌ", bangla:"উহা একটি বড় মাদ্রাসা" },
+];
+
+/* =========================================================
+   GLOBAL STATE + NAVIGATION (centralised so no leaks/loops)
+========================================================= */
+const state = {
+  screen: 'main-menu',
+  score: 0,
+  vocab: { level:1, mainQueue:[], reviewQueue:[], current:null, total:0, isReview:false, locked:false, timeoutId:null },
+  assoc: { chosen:{demo:null,noun:null,trans:null}, completed:0, locked:false, timeoutId:null },
+  flash: { score:0, streak:0, timerInterval:null, timeLeft:100, timeoutId:null, locked:false, current:null },
+};
+
+function clearAllPendingTimers(){
+  clearInterval(state.flash.timerInterval); state.flash.timerInterval = null;
+  clearTimeout(state.flash.timeoutId); state.flash.timeoutId = null;
+  clearTimeout(state.vocab.timeoutId); state.vocab.timeoutId = null;
+  clearTimeout(state.assoc.timeoutId); state.assoc.timeoutId = null;
+}
+
+function navigateTo(screenId){
+  clearAllPendingTimers();
+  state.vocab.locked = false;
+  state.assoc.locked = false;
+  state.flash.locked = false;
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(screenId).classList.add('active');
+  state.screen = screenId;
+  closeModal();
+}
+
+function toggleDarkMode(){
+  const isDark = document.documentElement.classList.toggle('dark');
+  document.getElementById('theme-icon-moon').style.display = isDark ? 'none' : 'inline';
+  document.getElementById('theme-icon-sun').style.display = isDark ? 'inline' : 'none';
+}
+(function initTheme(){
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+    document.documentElement.classList.add('dark');
+    document.getElementById('theme-icon-moon').style.display = 'none';
+    document.getElementById('theme-icon-sun').style.display = 'inline';
+  }
+})();
+
+function updateGlobalScore(points){
+  state.score += points;
+  document.getElementById('global-score').innerText = toBanglaDigits(state.score);
+}
+const banglaDigitsMap = {0:'০',1:'১',2:'২',3:'৩',4:'৪',5:'৫',6:'৬',7:'৭',8:'৮',9:'৯'};
+function toBanglaDigits(n){ return String(n).split('').map(c => banglaDigitsMap[c] ?? c).join(''); }
+function shuffleArray(arr){
+  const a = [...arr];
+  for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+
+/* Modal */
+function openModal({icon='🎉', title, message, primaryLabel='চালিয়ে যান', onPrimary, secondaryLabel=null, onSecondary}){
+  const card = document.getElementById('modal-card');
+  card.innerHTML = `
+    <div class="modal-icon">${icon}</div>
+    <h3>${title}</h3>
+    <p>${message}</p>
+    <div class="modal-actions">
+      <button class="btn-primary" id="modal-primary-btn">${primaryLabel}</button>
+      ${secondaryLabel ? `<button class="btn-secondary" id="modal-secondary-btn">${secondaryLabel}</button>` : ''}
+    </div>`;
+  document.getElementById('modal-backdrop').classList.add('open');
+  document.getElementById('modal-primary-btn').onclick = () => { closeModal(); if (onPrimary) onPrimary(); };
+  if (secondaryLabel){
+    document.getElementById('modal-secondary-btn').onclick = () => { closeModal(); if (onSecondary) onSecondary(); };
+  }
+}
+function closeModal(){ document.getElementById('modal-backdrop').classList.remove('open'); }
+
+/* =========================================================
+   MODE 1 — VOCABULARY QUEST
+========================================================= */
+function startVocabularyQuest(){
+  state.vocab.level = 1;
+  navigateTo('vocab-screen');
+  loadLevel(1);
+}
+
+function loadLevel(lvl){
+  const v = state.vocab;
+  v.isReview = false;
+  v.locked = false;
+  document.getElementById('vocab-status-badge').className = 'badge badge-main';
+  document.getElementById('vocab-status-badge').innerText = 'মূল রাউন্ড';
+  document.getElementById('vocab-level-title').innerText = `লেভেল ${toBanglaDigits(lvl)}`;
+
+  v.mainQueue = shuffleArray(vocabDataset.filter(w => w.level === lvl));
+  v.reviewQueue = [];
+  v.total = v.mainQueue.length;
+  nextVocabQuestion();
+}
+
+function buildOptionsFor(item, pool){
+  const distractors = shuffleArray(pool.filter(w => w.bangla !== item.bangla).map(w => w.bangla));
+  const uniqueDistractors = [...new Set(distractors)].slice(0,3);
+  return shuffleArray([item.bangla, ...uniqueDistractors]);
+}
+
+function nextVocabQuestion(){
+  const v = state.vocab;
+  v.locked = false;
+  if (state.screen !== 'vocab-screen') return;
+
+  if (v.mainQueue.length === 0){
+    if (v.reviewQueue.length > 0){
+      v.isReview = true;
+      document.getElementById('vocab-status-badge').className = 'badge badge-review';
+      document.getElementById('vocab-status-badge').innerText = 'রিভিউ রাউন্ড';
+      v.mainQueue = shuffleArray([...v.reviewQueue]);
+      v.reviewQueue = [];
+    } else {
+      const isLast = v.level >= MAX_LEVEL;
+      openModal({
+        icon:'🏆',
+        title:`অভিনন্দন! লেভেল ${toBanglaDigits(v.level)} সম্পন্ন হয়েছে`,
+        message: isLast ? 'আপনি সবগুলো লেভেল সম্পন্ন করেছেন। আবার খেলে আরও দক্ষ হয়ে উঠুন!' : 'পরবর্তী লেভেলে আরও নতুন শব্দ অপেক্ষা করছে।',
+        primaryLabel: isLast ? 'মেনুতে ফিরুন' : 'পরবর্তী লেভেল',
+        onPrimary: () => {
+          if (isLast){ navigateTo('main-menu'); }
+          else { v.level++; loadLevel(v.level); }
+        }
+      });
+      return;
+    }
+  }
+
+  const pool = vocabDataset.filter(w => w.level === v.level);
+  v.current = v.mainQueue.shift();
+
+  const processedCount = v.total - v.mainQueue.length;
+  document.getElementById('vocab-progress-text').innerText = v.isReview
+    ? 'রিভিউ আইটেম'
+    : `শব্দ: ${toBanglaDigits(processedCount)}/${toBanglaDigits(v.total)}`;
+
+  document.getElementById('vocab-arabic-display').innerText = v.current.arabic;
+
+  const options = buildOptionsFor(v.current, pool);
+  const container = document.getElementById('vocab-options-container');
+  container.innerHTML = '';
+  options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.innerText = opt;
+    btn.onclick = () => handleVocabAnswer(btn, opt);
+    container.appendChild(btn);
+  });
+}
+
+function handleVocabAnswer(selectedBtn, selectedOpt){
+  const v = state.vocab;
+  if (v.locked) return;
+  v.locked = true;
+
+  const container = document.getElementById('vocab-options-container');
+  Array.from(container.children).forEach(btn => btn.disabled = true);
+
+  if (selectedOpt === v.current.bangla){
+    selectedBtn.classList.add('opt-correct');
+    updateGlobalScore(10);
+  } else {
+    selectedBtn.classList.add('opt-wrong');
+    Array.from(container.children).forEach(btn => {
+      if (btn.innerText === v.current.bangla) btn.classList.add('opt-correct');
+    });
+    if (!v.reviewQueue.some(item => item.arabic === v.current.arabic)){
+      v.reviewQueue.push(v.current);
+    }
+  }
+
+  v.timeoutId = setTimeout(nextVocabQuestion, 1100);
+}
+
+/* =========================================================
+   MODE 2 — ASSOCIATION GAME
+========================================================= */
+function startAssociationGame(){
+  state.assoc.completed = 0;
+  document.getElementById('assoc-score').innerText = '0';
+  navigateTo('association-screen');
+  generateAssociationGrid();
+}
+
+function generateAssociationGrid(){
+  const a = state.assoc;
+  a.chosen = { demo:null, noun:null, trans:null };
+  a.locked = false;
+
+  const currentSet = shuffleArray(assocPhrasesPool).slice(0,4);
+  const demos = shuffleArray(currentSet.map(p => p.demo));
+  const nouns = shuffleArray(currentSet.map(p => p.noun));
+  const translations = shuffleArray(currentSet.map(p => p.bangla));
+
+  const grid = document.getElementById('association-grid');
+  grid.innerHTML = '';
+  grid.appendChild(createColumn(demos, 'demo', true));
+  grid.appendChild(createColumn(nouns, 'noun', true));
+  grid.appendChild(createColumn(translations, 'trans', false));
+}
+
+function createColumn(items, type, isArabic){
+  const col = document.createElement('div');
+  col.className = 'assoc-col';
+  items.forEach(text => {
+    const btn = document.createElement('button');
+    btn.className = `assoc-btn${isArabic ? ' arabic' : ''}`;
+    btn.innerText = text;
+    btn.dataset.raw = text;
+    btn.onclick = () => handleAssociationClick(btn, type);
+    col.appendChild(btn);
+  });
+  return col;
+}
+
+function handleAssociationClick(btn, type){
+  const a = state.assoc;
+  if (a.locked) return;                       // ignore taps while a match is resolving
+  if (btn.classList.contains('assoc-gone')) return;
+
+  // Un-highlight siblings within the same column type only
+  document.querySelectorAll(`.assoc-col button`).forEach(b => {
+    if (b.dataset.type === type) b.classList.remove('assoc-selected');
+  });
+  btn.dataset.type = type;
+  btn.classList.add('assoc-selected');
+  a.chosen[type] = btn;
+
+  if (a.chosen.demo && a.chosen.noun && a.chosen.trans){
+    a.locked = true;
+    verifyAssociationMatch();
+  }
+}
+
+function verifyAssociationMatch(){
+  const a = state.assoc;
+  const { demo, noun, trans } = a.chosen;
+  const demoTxt = demo.dataset.raw, nounTxt = noun.dataset.raw, transTxt = trans.dataset.raw;
+  const valid = assocPhrasesPool.some(p => p.demo === demoTxt && p.noun === nounTxt && p.bangla === transTxt);
+
+  if (valid){
+    [demo, noun, trans].forEach(b => { b.classList.remove('assoc-selected'); b.classList.add('assoc-correct'); });
+    a.completed++;
+    document.getElementById('assoc-score').innerText = toBanglaDigits(a.completed);
+    updateGlobalScore(15);
+
+    a.timeoutId = setTimeout(() => {
+      [demo, noun, trans].forEach(b => b.classList.add('assoc-gone'));
+      a.chosen = { demo:null, noun:null, trans:null };
+      a.locked = false;
+
+      if (a.completed >= 4){
+        setTimeout(() => {
+          openModal({
+            icon:'✨',
+            title:'চমৎকার!',
+            message:'সবগুলো বাক্য সঠিকভাবে মেলানো হয়েছে। আরও একটি নতুন সেট নিয়ে চালিয়ে যান।',
+            primaryLabel:'নতুন সেট খেলুন',
+            onPrimary: startAssociationGame,
+            secondaryLabel:'মেনুতে ফিরুন',
+            onSecondary: () => navigateTo('main-menu')
+          });
+        }, 250);
+      }
+    }, 500);
+  } else {
+    [demo, noun, trans].forEach(b => { b.classList.remove('assoc-selected'); b.classList.add('assoc-wrong'); });
+    a.timeoutId = setTimeout(() => {
+      [demo, noun, trans].forEach(b => b.classList.remove('assoc-wrong'));
+      a.chosen = { demo:null, noun:null, trans:null };
+      a.locked = false;
+    }, 550);
+  }
+}
+
+/* =========================================================
+   MODE 3 — FLASHCARD CHALLENGE
+========================================================= */
+function startFlashcardChallenge(){
+  state.flash.score = 0;
+  state.flash.streak = 0;
+  document.getElementById('flash-score').innerText = '0';
+  document.getElementById('flash-streak').innerText = `স্ট্রিক: ${toBanglaDigits(0)}`;
+  navigateTo('flashcard-screen');
+  nextFlashcard();
+}
+
+function nextFlashcard(){
+  const f = state.flash;
+  clearInterval(f.timerInterval); f.timerInterval = null;
+  if (state.screen !== 'flashcard-screen') return;
+  f.locked = false;
+
+  f.timeLeft = 100;
+  const bar = document.getElementById('flash-timer-bar');
+  bar.style.width = '100%';
+  bar.style.background = 'linear-gradient(90deg,var(--gold),var(--ruby))';
+
+  f.current = vocabDataset[Math.floor(Math.random() * vocabDataset.length)];
+  document.getElementById('flash-arabic-display').innerText = f.current.arabic;
+
+  const options = buildOptionsFor(f.current, vocabDataset);
+  const container = document.getElementById('flash-options-container');
+  container.innerHTML = '';
+  options.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.innerText = opt;
+    btn.onclick = () => handleFlashcardAnswer(btn, opt);
+    container.appendChild(btn);
+  });
+
+  f.timerInterval = setInterval(() => {
+    f.timeLeft -= 1.6;
+    if (f.timeLeft <= 0){
+      clearInterval(f.timerInterval); f.timerInterval = null;
+      handleFlashcardTimeout();
+    } else {
+      bar.style.width = `${f.timeLeft}%`;
+    }
+  }, 100);
+}
+
+function handleFlashcardAnswer(selectedBtn, selectedOpt){
+  const f = state.flash;
+  if (f.locked) return;
+  f.locked = true;
+  clearInterval(f.timerInterval); f.timerInterval = null;
+
+  const container = document.getElementById('flash-options-container');
+  Array.from(container.children).forEach(btn => btn.disabled = true);
+
+  if (selectedOpt === f.current.bangla){
+    selectedBtn.classList.add('opt-correct');
+    f.score++; f.streak++;
+    document.getElementById('flash-score').innerText = toBanglaDigits(f.score);
+    document.getElementById('flash-streak').innerText = `স্ট্রিক: ${toBanglaDigits(f.streak)}`;
+    updateGlobalScore(5);
+  } else {
+    selectedBtn.classList.add('opt-wrong');
+    f.streak = 0;
+    document.getElementById('flash-streak').innerText = `স্ট্রিক: ${toBanglaDigits(0)}`;
+    highlightCorrectFlashcard();
+  }
+
+  f.timeoutId = setTimeout(nextFlashcard, 900);
+}
+
+function handleFlashcardTimeout(){
+  const f = state.flash;
+  if (f.locked) return;
+  f.locked = true;
+  const container = document.getElementById('flash-options-container');
+  Array.from(container.children).forEach(btn => btn.disabled = true);
+  f.streak = 0;
+  document.getElementById('flash-streak').innerText = `স্ট্রিক: ${toBanglaDigits(0)}`;
+  highlightCorrectFlashcard();
+  f.timeoutId = setTimeout(nextFlashcard, 1300);
+}
+
+function highlightCorrectFlashcard(){
+  const container = document.getElementById('flash-options-container');
+  Array.from(container.children).forEach(btn => {
+    if (btn.innerText === state.flash.current.bangla) btn.classList.add('opt-correct-pulse','opt-correct');
+  });
+}
+
+/* =========================================================
+   PWA — SERVICE WORKER REGISTRATION
+========================================================= */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(err => {
+      console.warn('Service worker registration failed:', err);
+    });
+  });
+}
+</script>
+</body>
+</html>
