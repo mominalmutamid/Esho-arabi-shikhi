@@ -12,6 +12,60 @@
   "lang": "bn",
   "dir": "ltr",
   "categories": ["education", "games"],
+  "launch_handler": { "client_mode": "auto" },
+  "shortcuts": [
+    {
+      "name": "Vocabulary Quest",
+      "short_name": "Vocabulary",
+      "description": "সরাসরি শব্দভাণ্ডার কুইজ খেলা শুরু করুন",
+      "url": "./index.html?mode=vocab",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Association Game",
+      "short_name": "Association",
+      "description": "সরাসরি বাক্য গঠন খেলা শুরু করুন",
+      "url": "./index.html?mode=assoc",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Flashcard Challenge",
+      "short_name": "Flashcard",
+      "description": "সরাসরি ফ্ল্যাশকার্ড চ্যালেঞ্জ শুরু করুন",
+      "url": "./index.html?mode=flash",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "960x1708",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "মোড নির্বাচন স্ক্রিন"
+    },
+    {
+      "src": "screenshots/vocab.png",
+      "sizes": "960x1708",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vocabulary Quest"
+    },
+    {
+      "src": "screenshots/assoc.png",
+      "sizes": "960x1708",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Association Game"
+    },
+    {
+      "src": "screenshots/flash.png",
+      "sizes": "960x1708",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Flashcard Challenge"
+    }
+  ],
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },

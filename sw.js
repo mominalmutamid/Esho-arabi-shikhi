@@ -4,7 +4,7 @@
    বাড়িয়ে দিন (যেমন v1 -> v2), তাহলে ইউজারদের ডিভাইসে পুরনো
    ক্যাশ মুছে নতুন ফাইল লোড হবে।
 ========================================================= */
-const CACHE_NAME = 'esho-arabi-shikhi-v3';
+const CACHE_NAME = 'esho-arabi-shikhi-v4';
 
 const ASSETS_TO_CACHE = [
   './',
@@ -16,7 +16,11 @@ const ASSETS_TO_CACHE = [
   './icon-maskable-512.png',
   './apple-touch-icon.png',
   './favicon-32.png',
-  './favicon-16.png'
+  './favicon-16.png',
+  './screenshots/home.png',
+  './screenshots/vocab.png',
+  './screenshots/assoc.png',
+  './screenshots/flash.png'
 ];
 
 /* ---- INSTALL: pre-cache the app shell ---- */

@@ -106,3 +106,20 @@ bubblewrap build
 আইকনের ব্যাকগ্রাউন্ড রঙ থেকে নেওয়া: `#176941` — এটি `manifest.json`
 ও `index.html` এর theme-color মেটা ট্যাগে ব্যবহার করা হয়েছে, যাতে
 স্ট্যাটাস বার ও ব্রাউজার UI আপনার আইকনের সাথে মিলে যায়।
+
+## নতুন যোগ করা হয়েছে (PWABuilder স্কোর বাড়ানোর জন্য)
+
+- **Shortcuts:** হোম স্ক্রিনে আইকন লং-প্রেস করলে এখন সরাসরি ৩টি মোডে
+  (Vocabulary Quest / Association / Flashcard) ঢোকা যাবে।
+- **Screenshots:** গেমের ৪টি আসল স্ক্রিনশট (`screenshots/` ফোল্ডারে)
+  manifest-এ যোগ করা হয়েছে — এটি PWABuilder-এর "Add screenshots"
+  action item সমাধান করে এবং স্টোর লিস্টিং-এ ভালো দেখাবে।
+- **launch_handler:** একই সাথে একাধিকবার খুললে নতুন উইন্ডো না খুলে
+  পুরনোটাই ব্যবহার হবে (ডেস্কটপে সহায়ক)।
+
+**ইচ্ছাকৃতভাবে বাদ দেওয়া হয়েছে** (এই সাধারণ, সার্ভার-বিহীন গেমের জন্য
+অপ্রাসঙ্গিক বা অতিরিক্ত জটিলতা মনে হওয়ায়): Push Notifications,
+Background/Periodic Sync (এদের জন্য একটি ব্যাকএন্ড সার্ভার লাগে),
+Share Target, File/Protocol Handlers, Widgets, Window Controls Overlay,
+Tabbed Display, Note Taking। এগুলোর কোনোটাই এই অ্যাপের বাস্তব ব্যবহারে
+মূল্য যোগ করবে না, শুধু জটিলতা বাড়াবে।

@@ -953,6 +953,18 @@ function highlightCorrectFlashcard(){
 }
 
 /* =========================================================
+   PWA — HOME SCREEN SHORTCUTS
+   Lets manifest.json "shortcuts" jump straight into a mode,
+   e.g. index.html?mode=vocab
+========================================================= */
+(function handleShortcutLaunch(){
+  const mode = new URLSearchParams(window.location.search).get('mode');
+  if (mode === 'vocab') startVocabularyQuest();
+  else if (mode === 'assoc') startAssociationGame();
+  else if (mode === 'flash') startFlashcardChallenge();
+})();
+
+/* =========================================================
    PWA — SERVICE WORKER REGISTRATION
 ========================================================= */
 if ('serviceWorker' in navigator) {
