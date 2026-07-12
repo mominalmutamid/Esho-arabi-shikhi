@@ -4,7 +4,7 @@
    বাড়িয়ে দিন (যেমন v1 -> v2), তাহলে ইউজারদের ডিভাইসে পুরনো
    ক্যাশ মুছে নতুন ফাইল লোড হবে।
 ========================================================= */
-const CACHE_NAME = 'esho-arabi-shikhi-v4';
+const CACHE_NAME = 'esho-arabi-shikhi-v6';
 
 const ASSETS_TO_CACHE = [
   './',

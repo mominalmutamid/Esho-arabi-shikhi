@@ -139,6 +139,7 @@ footer{text-align:center; padding:18px; font-size:.75rem; color:var(--text-muted
 .card-vocab{--accent:var(--teal); --accent-soft:var(--teal-soft);}
 .card-assoc{--accent:var(--lapis); --accent-soft:var(--lapis-soft);}
 .card-flash{--accent:var(--gold); --accent-soft:var(--gold-soft);}
+.card-study{--accent:var(--ruby); --accent-soft:var(--ruby-soft);}
 
 /* ============ SHARED GAME BAR ============ */
 .game-bar{
@@ -207,6 +208,47 @@ footer{text-align:center; padding:18px; font-size:.75rem; color:var(--text-muted
 .timer-fill{height:100%; width:100%; border-radius:999px; background:linear-gradient(90deg,var(--gold),var(--ruby)); transition:width .1s linear;}
 .streak-row{display:flex; align-items:center; justify-content:center; gap:6px; margin-top:10px; font-size:.78rem; color:var(--text-muted); font-weight:600;}
 .streak-flame{color:var(--gold);}
+
+/* ============ STUDY MODE ============ */
+.study-vs-wrap{
+  position:relative; margin-top:18px; display:grid; grid-template-columns:1fr 1fr; gap:16px;
+}
+.study-vs-wrap::before{
+  content:""; position:absolute; top:8%; bottom:8%; left:50%; width:2px;
+  background:var(--ruby); opacity:.4; transform:translateX(-50%); z-index:0;
+}
+.study-card{
+  position:relative; background:var(--surface); border:1px solid var(--border); border-radius:20px;
+  padding:30px 12px 22px; text-align:center; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:230px;
+}
+.study-left{border-top:4px solid var(--teal);}
+.study-right{border-top:4px solid var(--gold);}
+.study-arabic{font-size:clamp(1.7rem,7.5vw,2.9rem); margin-bottom:10px; line-height:1.35; word-break:break-word;}
+.study-pron{font-size:.8rem; color:var(--text-muted); font-style:italic; margin-bottom:10px;}
+.study-meaning{font-size:.95rem; font-weight:700; line-height:1.4;}
+.study-left .study-meaning{color:var(--teal);}
+.study-right .study-meaning{color:var(--gold);}
+.study-vs-badge{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:2;
+  width:44px; height:44px; border-radius:50%; background:var(--ruby); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.8rem;
+  box-shadow:0 6px 16px color-mix(in srgb, var(--ruby) 45%, transparent); border:3px solid var(--bg);
+}
+.study-nav{display:flex; gap:12px; margin-top:22px;}
+.study-nav button{flex:1;}
+@media(max-width:420px){ .study-card{padding:24px 8px 18px; min-height:200px;} }
+
+.study-tabs{display:flex; gap:8px; margin-top:18px;}
+.study-tab{
+  flex:1; text-align:center; white-space:nowrap; padding:10px 8px; border-radius:12px; font-weight:700; font-size:.82rem;
+  background:var(--surface-2); border:1.5px solid var(--border); color:var(--text-muted); cursor:pointer; transition:all .2s ease;
+}
+.study-tab:active{transform:scale(.97);}
+.study-tab.active{background:var(--ruby); border-color:var(--ruby); color:#fff;}
+.study-section{display:none; margin-top:4px;}
+.study-section.active{display:block; animation:rise .35s cubic-bezier(.2,.8,.2,1);}
+.study-plain-meaning{font-size:1.15rem; font-weight:700; color:var(--text); margin-top:4px;}
 
 /* ============ MODAL ============ */
 .modal-backdrop{
@@ -291,6 +333,13 @@ button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2
         <p>টাইম-অ্যাটাক মোড। হরকতসহ আরবি শব্দ দেখে সময় শেষ হওয়ার আগেই সঠিক বাংলা অর্থ বেছে নিন।</p>
         <button class="mode-cta">শুরু করুন</button>
       </div>
+
+      <div class="mode-card card-study" onclick="startStudyMode()">
+        <div class="mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c-1.8-1.4-4.2-2-6.5-1.5v13c2.3-.5 4.7.1 6.5 1.5 1.8-1.4 4.2-2 6.5-1.5v-13c-2.3-.5-4.7.1-6.5 1.5Z"/><path d="M12 6.5v13"/></svg></div>
+        <h3>Study Mode <span class="arabic" style="font-size:.85em">(سَهْل ↔ صَعْب)</span></h3>
+        <p>পড়াশোনা মোড — বিপরীত শব্দ, শব্দভাণ্ডার ও বাক্য — তিনটি ট্যাবে সব কনটেন্ট গুছিয়ে দেখুন, কুইজে যাওয়ার আগে।</p>
+        <button class="mode-cta">শুরু করুন</button>
+      </div>
     </div>
   </section>
 
@@ -342,6 +391,63 @@ button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2
       <div id="flash-arabic-display" class="arabic-display arabic">قَلَمٌ</div>
       <div class="arabic-sub">সঠিক অর্থে দ্রুত ট্যাপ করুন</div>
       <div class="options-grid" id="flash-options-container"></div>
+    </div>
+  </section>
+
+  <!-- STUDY MODE -->
+  <section id="study-screen" class="screen">
+    <div class="game-bar">
+      <button class="back-btn" onclick="navigateTo('main-menu')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>মেনু</button>
+      <div class="mid">
+        <div class="title" style="color:var(--ruby)">পড়াশোনা মোড</div>
+        <div class="sub" id="study-progress-text">১ / ২০</div>
+      </div>
+      <div class="badge" id="study-mode-badge" style="background:var(--ruby-soft); color:var(--ruby)">বিপরীত শব্দ</div>
+    </div>
+
+    <div class="study-tabs">
+      <button class="study-tab active" id="study-tab-antonym" onclick="switchStudySection('antonym')">বিপরীত শব্দ</button>
+      <button class="study-tab" id="study-tab-vocab" onclick="switchStudySection('vocab')">শব্দভাণ্ডার</button>
+      <button class="study-tab" id="study-tab-sentence" onclick="switchStudySection('sentence')">বাক্য</button>
+    </div>
+
+    <!-- Antonym VS-card view -->
+    <div class="study-section active" id="study-antonym-view">
+      <div class="study-vs-wrap">
+        <div class="study-card study-left">
+          <div class="study-arabic arabic" id="study-word"></div>
+          <div class="study-pron" id="study-pron"></div>
+          <div class="study-meaning" id="study-meaning"></div>
+        </div>
+        <div class="study-vs-badge">VS</div>
+        <div class="study-card study-right">
+          <div class="study-arabic arabic" id="study-opposite"></div>
+          <div class="study-pron" id="study-opposite-pron"></div>
+          <div class="study-meaning" id="study-opposite-meaning"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Word bank single-card view -->
+    <div class="study-section" id="study-vocab-view">
+      <div class="card-panel">
+        <div class="badge badge-main" id="study-vocab-level" style="margin-bottom:16px; display:inline-block;">লেভেল ১</div>
+        <div class="arabic-display arabic" id="study-vocab-arabic"></div>
+        <div class="study-plain-meaning" id="study-vocab-bangla"></div>
+      </div>
+    </div>
+
+    <!-- Sentence bank single-card view -->
+    <div class="study-section" id="study-sentence-view">
+      <div class="card-panel">
+        <div class="arabic-display arabic" id="study-sentence-arabic" style="font-size:clamp(1.6rem,7vw,2.6rem);"></div>
+        <div class="study-plain-meaning" id="study-sentence-bangla"></div>
+      </div>
+    </div>
+
+    <div class="study-nav">
+      <button class="btn-secondary" onclick="studyPrev()">← আগের</button>
+      <button class="btn-primary" onclick="studyNext()">পরের →</button>
     </div>
   </section>
 
@@ -501,6 +607,48 @@ const vocabDataset = [
   { arabic:"غَدًا", bangla:"আগামীকাল", level:9 },
   { arabic:"أَمْسِ", bangla:"গতকাল", level:9 },
   { arabic:"الْآنَ", bangla:"এখন", level:9 },
+
+  // Level 10 — antonym pairs (from Study Mode's synonym/antonym set)
+  { arabic:"سَهْل", bangla:"সহজ (Easy)", level:10 },
+  { arabic:"صَعْب", bangla:"কঠিন (Difficult)", level:10 },
+  { arabic:"كَبِير", bangla:"বড় (Big)", level:10 },
+  { arabic:"صَغِير", bangla:"ছোট (Small)", level:10 },
+  { arabic:"جَدِيد", bangla:"নতুন (New)", level:10 },
+  { arabic:"قَدِيم", bangla:"পুরানো (Old)", level:10 },
+  { arabic:"جَمِيل", bangla:"সুন্দর (Beautiful)", level:10 },
+  { arabic:"قَبِيح", bangla:"কুৎসিত (Ugly)", level:10 },
+  { arabic:"قَرِيب", bangla:"কাছে (Near)", level:10 },
+  { arabic:"بَعِيد", bangla:"দূরে (Far)", level:10 },
+  { arabic:"طَوِيل", bangla:"লম্বা (Tall/Long)", level:10 },
+  { arabic:"قَصِير", bangla:"খাটো (Short)", level:10 },
+  { arabic:"كَثِير", bangla:"অনেক (Many/Much)", level:10 },
+  { arabic:"قَلِيل", bangla:"অল্প (Few/Little)", level:10 },
+  { arabic:"حَار", bangla:"গরম (Hot)", level:10 },
+  { arabic:"بَارِد", bangla:"ঠান্ডা (Cold)", level:10 },
+  { arabic:"نَظِيف", bangla:"পরিষ্কার (Clean)", level:10 },
+  { arabic:"وَسِخ", bangla:"নোংরা (Dirty)", level:10 },
+  { arabic:"سَعِيد", bangla:"সুখী (Happy)", level:10 },
+  { arabic:"حَزِين", bangla:"দুঃখী (Sad)", level:10 },
+  { arabic:"مَفْتُوح", bangla:"খোলা (Open)", level:10 },
+  { arabic:"مُغْلَق", bangla:"বন্ধ (Closed)", level:10 },
+  { arabic:"غَنِيّ", bangla:"ধনী (Rich)", level:10 },
+  { arabic:"فَقِير", bangla:"গরিব (Poor)", level:10 },
+  { arabic:"قَوِيّ", bangla:"শক্তিশালী (Strong)", level:10 },
+  { arabic:"ضَعِيف", bangla:"দুর্বল (Weak)", level:10 },
+  { arabic:"سَرِيع", bangla:"দ্রুত (Fast)", level:10 },
+  { arabic:"بَطِيء", bangla:"ধীর (Slow)", level:10 },
+  { arabic:"أَمَام", bangla:"সামনে (In front)", level:10 },
+  { arabic:"خَلْف", bangla:"পেছনে (Behind)", level:10 },
+  { arabic:"فَوْق", bangla:"উপরে (Above)", level:10 },
+  { arabic:"تَحْت", bangla:"নিচে (Below)", level:10 },
+  { arabic:"يَمِين", bangla:"ডান (Right)", level:10 },
+  { arabic:"يَسَار", bangla:"বাম (Left)", level:10 },
+  { arabic:"نَهَار", bangla:"দিন (Day)", level:10 },
+  { arabic:"لَيْل", bangla:"রাত (Night)", level:10 },
+  { arabic:"صَحِيح", bangla:"সঠিক (Correct)", level:10 },
+  { arabic:"خَاطِئ", bangla:"ভুল (Wrong)", level:10 },
+  { arabic:"ثَقِيل", bangla:"ভারী (Heavy)", level:10 },
+  { arabic:"خَفِيف", bangla:"হালকা (Light)", level:10 },
 ];
 const MAX_LEVEL = Math.max(...vocabDataset.map(w => w.level));
 
@@ -584,6 +732,32 @@ const assocPhrasesPool = [
 ];
 
 /* =========================================================
+   STUDY MODE DATA — antonym (বিপরীত শব্দ) pairs
+========================================================= */
+const arabicVocabulary = [
+  { word:"سَهْل", meaning:"সহজ (Easy)", pronunciation:"sahl", opposite:"صَعْب", opposite_meaning:"কঠিন (Difficult)", opposite_pronunciation:"sa'b" },
+  { word:"كَبِير", meaning:"বড় (Big)", pronunciation:"kabir", opposite:"صَغِير", opposite_meaning:"ছোট (Small)", opposite_pronunciation:"saghir" },
+  { word:"جَدِيد", meaning:"নতুন (New)", pronunciation:"jadid", opposite:"قَدِيم", opposite_meaning:"পুরানো (Old)", opposite_pronunciation:"qadim" },
+  { word:"جَمِيل", meaning:"সুন্দর (Beautiful)", pronunciation:"jamil", opposite:"قَبِيح", opposite_meaning:"কুৎসিত (Ugly)", opposite_pronunciation:"qabih" },
+  { word:"قَرِيب", meaning:"কাছে (Near)", pronunciation:"qarib", opposite:"بَعِيد", opposite_meaning:"দূরে (Far)", opposite_pronunciation:"ba'id" },
+  { word:"طَوِيل", meaning:"লম্বা (Tall/Long)", pronunciation:"tawil", opposite:"قَصِير", opposite_meaning:"খাটো (Short)", opposite_pronunciation:"qasir" },
+  { word:"كَثِير", meaning:"অনেক (Many/Much)", pronunciation:"kathir", opposite:"قَلِيل", opposite_meaning:"অল্প (Few/Little)", opposite_pronunciation:"qalil" },
+  { word:"حَار", meaning:"গরম (Hot)", pronunciation:"haar", opposite:"بَارِد", opposite_meaning:"ঠান্ডা (Cold)", opposite_pronunciation:"barid" },
+  { word:"نَظِيف", meaning:"পরিষ্কার (Clean)", pronunciation:"nazif", opposite:"وَسِخ", opposite_meaning:"নোংরা (Dirty)", opposite_pronunciation:"wasikh" },
+  { word:"سَعِيد", meaning:"সুখী (Happy)", pronunciation:"sa'id", opposite:"حَزِين", opposite_meaning:"দুঃখী (Sad)", opposite_pronunciation:"hazin" },
+  { word:"مَفْتُوح", meaning:"খোলা (Open)", pronunciation:"maftuh", opposite:"مُغْلَق", opposite_meaning:"বন্ধ (Closed)", opposite_pronunciation:"mughlaq" },
+  { word:"غَنِيّ", meaning:"ধনী (Rich)", pronunciation:"ghaniy", opposite:"فَقِير", opposite_meaning:"গরিব (Poor)", opposite_pronunciation:"faqir" },
+  { word:"قَوِيّ", meaning:"শক্তিশালী (Strong)", pronunciation:"qawiy", opposite:"ضَعِيف", opposite_meaning:"দুর্বল (Weak)", opposite_pronunciation:"da'if" },
+  { word:"سَرِيع", meaning:"দ্রুত (Fast)", pronunciation:"sari'", opposite:"بَطِيء", opposite_meaning:"ধীর (Slow)", opposite_pronunciation:"bati'" },
+  { word:"أَمَام", meaning:"সামনে (In front)", pronunciation:"amam", opposite:"خَلْف", opposite_meaning:"পেছনে (Behind)", opposite_pronunciation:"khalf" },
+  { word:"فَوْق", meaning:"উপরে (Above)", pronunciation:"fawq", opposite:"تَحْت", opposite_meaning:"নিচে (Below)", opposite_pronunciation:"taht" },
+  { word:"يَمِين", meaning:"ডান (Right)", pronunciation:"yamin", opposite:"يَسَار", opposite_meaning:"বাম (Left)", opposite_pronunciation:"yasar" },
+  { word:"نَهَار", meaning:"দিন (Day)", pronunciation:"nahar", opposite:"لَيْل", opposite_meaning:"রাত (Night)", opposite_pronunciation:"layl" },
+  { word:"صَحِيح", meaning:"সঠিক (Correct)", pronunciation:"sahih", opposite:"خَاطِئ", opposite_meaning:"ভুল (Wrong)", opposite_pronunciation:"khati'" },
+  { word:"ثَقِيل", meaning:"ভারী (Heavy)", pronunciation:"thaqil", opposite:"خَفِيف", opposite_meaning:"হালকা (Light)", opposite_pronunciation:"khafif" },
+];
+
+/* =========================================================
    GLOBAL STATE + NAVIGATION (centralised so no leaks/loops)
 ========================================================= */
 const state = {
@@ -592,6 +766,7 @@ const state = {
   vocab: { level:1, mainQueue:[], reviewQueue:[], current:null, total:0, isReview:false, locked:false, timeoutId:null },
   assoc: { chosen:{demo:null,noun:null,trans:null}, completed:0, locked:false, timeoutId:null },
   flash: { score:0, streak:0, timerInterval:null, timeLeft:100, timeoutId:null, locked:false, current:null },
+  study: { section:'antonym', antonymIndex:0, vocabIndex:0, sentenceIndex:0 },
 };
 
 function clearAllPendingTimers(){
@@ -950,6 +1125,97 @@ function highlightCorrectFlashcard(){
   Array.from(container.children).forEach(btn => {
     if (btn.innerText === state.flash.current.bangla) btn.classList.add('opt-correct-pulse','opt-correct');
   });
+}
+
+/* =========================================================
+   STUDY MODE (পড়াশোনা মোড) — antonyms, word bank, sentence bank
+========================================================= */
+function startStudyMode(){
+  state.study.section = 'antonym';
+  state.study.antonymIndex = 0;
+  state.study.vocabIndex = 0;
+  state.study.sentenceIndex = 0;
+  navigateTo('study-screen');
+  switchStudySection('antonym');
+}
+
+function switchStudySection(section){
+  state.study.section = section;
+  document.querySelectorAll('.study-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(`study-tab-${section}`).classList.add('active');
+  document.querySelectorAll('.study-section').forEach(s => s.classList.remove('active'));
+
+  const badge = document.getElementById('study-mode-badge');
+  if (section === 'antonym'){
+    document.getElementById('study-antonym-view').classList.add('active');
+    badge.innerText = 'বিপরীত শব্দ';
+    renderStudyAntonymCard();
+  } else if (section === 'vocab'){
+    document.getElementById('study-vocab-view').classList.add('active');
+    badge.innerText = 'শব্দভাণ্ডার';
+    renderStudyVocabCard();
+  } else if (section === 'sentence'){
+    document.getElementById('study-sentence-view').classList.add('active');
+    badge.innerText = 'বাক্য';
+    renderStudySentenceCard();
+  }
+}
+
+function renderStudyAntonymCard(){
+  const pair = arabicVocabulary[state.study.antonymIndex];
+  document.getElementById('study-word').innerText = pair.word;
+  document.getElementById('study-pron').innerText = pair.pronunciation;
+  document.getElementById('study-meaning').innerText = pair.meaning;
+  document.getElementById('study-opposite').innerText = pair.opposite;
+  document.getElementById('study-opposite-pron').innerText = pair.opposite_pronunciation;
+  document.getElementById('study-opposite-meaning').innerText = pair.opposite_meaning;
+  document.getElementById('study-progress-text').innerText =
+    `${toBanglaDigits(state.study.antonymIndex + 1)} / ${toBanglaDigits(arabicVocabulary.length)}`;
+}
+
+function renderStudyVocabCard(){
+  const item = vocabDataset[state.study.vocabIndex];
+  document.getElementById('study-vocab-arabic').innerText = item.arabic;
+  document.getElementById('study-vocab-bangla').innerText = item.bangla;
+  document.getElementById('study-vocab-level').innerText = `লেভেল ${toBanglaDigits(item.level)}`;
+  document.getElementById('study-progress-text').innerText =
+    `${toBanglaDigits(state.study.vocabIndex + 1)} / ${toBanglaDigits(vocabDataset.length)}`;
+}
+
+function renderStudySentenceCard(){
+  const item = assocPhrasesPool[state.study.sentenceIndex];
+  document.getElementById('study-sentence-arabic').innerText = `${item.demo} ${item.noun}`;
+  document.getElementById('study-sentence-bangla').innerText = item.bangla;
+  document.getElementById('study-progress-text').innerText =
+    `${toBanglaDigits(state.study.sentenceIndex + 1)} / ${toBanglaDigits(assocPhrasesPool.length)}`;
+}
+
+function studyNext(){
+  const s = state.study;
+  if (s.section === 'antonym'){
+    s.antonymIndex = (s.antonymIndex + 1) % arabicVocabulary.length;
+    renderStudyAntonymCard();
+  } else if (s.section === 'vocab'){
+    s.vocabIndex = (s.vocabIndex + 1) % vocabDataset.length;
+    renderStudyVocabCard();
+  } else if (s.section === 'sentence'){
+    s.sentenceIndex = (s.sentenceIndex + 1) % assocPhrasesPool.length;
+    renderStudySentenceCard();
+  }
+}
+
+function studyPrev(){
+  const s = state.study;
+  if (s.section === 'antonym'){
+    s.antonymIndex = (s.antonymIndex - 1 + arabicVocabulary.length) % arabicVocabulary.length;
+    renderStudyAntonymCard();
+  } else if (s.section === 'vocab'){
+    s.vocabIndex = (s.vocabIndex - 1 + vocabDataset.length) % vocabDataset.length;
+    renderStudyVocabCard();
+  } else if (s.section === 'sentence'){
+    s.sentenceIndex = (s.sentenceIndex - 1 + assocPhrasesPool.length) % assocPhrasesPool.length;
+    renderStudySentenceCard();
+  }
 }
 
 /* =========================================================
