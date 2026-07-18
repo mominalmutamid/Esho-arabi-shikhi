@@ -323,7 +323,7 @@ button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2
       <div class="mode-card card-assoc" onclick="startAssociationGame()">
         <div class="mode-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.5 10.6 15.5 7.4M8.5 13.4 15.5 16.6"/></svg></div>
         <h3>Association <span class="arabic" style="font-size:.9em">(هٰذَا كِتَابٌ)</span></h3>
-        <p>ইশারাসূচক সর্বনাম, বিশেষ্য ও বাংলা অনুবাদ — তিন কলাম থেকে সঠিক মিল খুঁজে বাক্য গঠন করুন।</p>
+        <p>বাক্যাংশ, শব্দ ও বাংলা অনুবাদ — তিন কলাম থেকে সঠিক মিল খুঁজে বাক্য গঠন করুন। ইশারা, অব্যয়, সর্বনাম ও ইজাফাত ধাপে ধাপে।</p>
         <button class="mode-cta">শুরু করুন</button>
       </div>
 
@@ -370,7 +370,7 @@ button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2
       </div>
       <div class="badge" style="background:var(--lapis-soft); color:var(--lapis)">স্কোর <span id="assoc-score">0</span>/৪</div>
     </div>
-    <p class="assoc-hint">প্রতিটি কলাম থেকে একটি করে বেছে সঠিক বাক্য তৈরি করুন — ইশারা, বিশেষ্য ও অনুবাদ মিলিয়ে নিন</p>
+    <p class="assoc-hint">প্রতিটি কলাম থেকে একটি করে বেছে সঠিক বাক্য তৈরি করুন — বাক্যাংশ, শব্দ ও অনুবাদ মিলিয়ে নিন</p>
     <div class="assoc-grid" id="association-grid"></div>
   </section>
 
@@ -441,6 +441,7 @@ button:focus-visible, .assoc-btn:focus-visible, .opt-btn:focus-visible{outline:2
     <div class="study-section" id="study-sentence-view">
       <div class="card-panel">
         <div class="arabic-display arabic" id="study-sentence-arabic" style="font-size:clamp(1.6rem,7vw,2.6rem);"></div>
+        <div class="study-pron" id="study-sentence-pron"></div>
         <div class="study-plain-meaning" id="study-sentence-bangla"></div>
       </div>
     </div>
@@ -649,6 +650,120 @@ const vocabDataset = [
   { arabic:"خَاطِئ", bangla:"ভুল (Wrong)", level:10 },
   { arabic:"ثَقِيل", bangla:"ভারী (Heavy)", level:10 },
   { arabic:"خَفِيف", bangla:"হালকা (Light)", level:10 },
+
+  // Level 11 — প্রকৃতি ও পরিবেশ
+  { arabic:"سَمَاء", bangla:"আকাশ", level:11 },
+  { arabic:"أَرْض", bangla:"পৃথিবী / জমি", level:11 },
+  { arabic:"قَمَر", bangla:"চাঁদ", level:11 },
+  { arabic:"نَجْم", bangla:"তারা", level:11 },
+  { arabic:"مَاء", bangla:"পানি", level:11 },
+  { arabic:"نَار", bangla:"আগুন", level:11 },
+  { arabic:"هَوَاء", bangla:"বাতাস", level:11 },
+  { arabic:"جَبَل", bangla:"পাহাড়", level:11 },
+  { arabic:"نَهْر", bangla:"নদী", level:11 },
+  { arabic:"بَحْر", bangla:"সমুদ্র", level:11 },
+  { arabic:"شَجَرَة", bangla:"গাছ", level:11 },
+  { arabic:"زَهْرَة", bangla:"ফুল", level:11 },
+  { arabic:"عُشْب", bangla:"ঘাস", level:11 },
+  { arabic:"طَائِر", bangla:"পাখি", level:11 },
+  { arabic:"حَيَوَان", bangla:"পশু", level:11 },
+
+  // Level 12 — সময় ও দিন
+  { arabic:"يَوْم", bangla:"দিন", level:12 },
+  { arabic:"لَيْل", bangla:"রাত", level:12 },
+  { arabic:"صَبَاح", bangla:"সকাল", level:12 },
+  { arabic:"مَسَاء", bangla:"সন্ধ্যা", level:12 },
+  { arabic:"سَاعَة", bangla:"ঘণ্টা / ঘড়ি", level:12 },
+  { arabic:"دَقِيقَة", bangla:"মিনিট", level:12 },
+  { arabic:"أُسْبُوع", bangla:"সপ্তাহ", level:12 },
+  { arabic:"شَهْر", bangla:"মাস", level:12 },
+  { arabic:"سَنَة", bangla:"বছর", level:12 },
+  { arabic:"وَقْت", bangla:"সময়", level:12 },
+  { arabic:"أَمْس", bangla:"গতকাল", level:12 },
+  { arabic:"الْيَوْم", bangla:"আজ", level:12 },
+  { arabic:"غَدًا", bangla:"আগামীকাল", level:12 },
+  { arabic:"جَدِيد", bangla:"নতুন", level:12 },
+  { arabic:"قَدِيم", bangla:"পুরোনো", level:12 },
+
+  // Level 13 — ঘর ও আসবাবপত্র
+  { arabic:"بَيْت", bangla:"বাড়ি", level:13 },
+  { arabic:"بَاب", bangla:"দরজা", level:13 },
+  { arabic:"نَافِذَة", bangla:"জানালা", level:13 },
+  { arabic:"جِدَار", bangla:"দেয়াল", level:13 },
+  { arabic:"سَقْف", bangla:"ছাদ", level:13 },
+  { arabic:"كُرْسِيّ", bangla:"চেয়ার", level:13 },
+  { arabic:"مَكْتَب", bangla:"টেবিল / অফিস", level:13 },
+  { arabic:"سَرِير", bangla:"বিছানা", level:13 },
+  { arabic:"مِصْبَاح", bangla:"আলো / প্রদীপ", level:13 },
+  { arabic:"مِفْتَاح", bangla:"চাবি", level:13 },
+  { arabic:"قُفْل", bangla:"তালা", level:13 },
+  { arabic:"غُرْفَة", bangla:"ঘর / কক্ষ", level:13 },
+  { arabic:"مَطْبَخ", bangla:"রান্নাঘর", level:13 },
+  { arabic:"حَمَّام", bangla:"বাথরুম", level:13 },
+  { arabic:"سِتَارَة", bangla:"পর্দা", level:13 },
+
+  // Level 14 — মানবদেহ ও সম্পর্ক
+  { arabic:"رَأْس", bangla:"মাথা", level:14 },
+  { arabic:"عَيْن", bangla:"চোখ", level:14 },
+  { arabic:"أُذُن", bangla:"কান", level:14 },
+  { arabic:"أَنْف", bangla:"নাক", level:14 },
+  { arabic:"فَم", bangla:"মুখ", level:14 },
+  { arabic:"يَد", bangla:"হাত", level:14 },
+  { arabic:"رِجْل", bangla:"পা", level:14 },
+  { arabic:"قَلْب", bangla:"মন / হৃদয়", level:14 },
+  { arabic:"دَم", bangla:"রক্ত", level:14 },
+  { arabic:"رَجُل", bangla:"পুরুষ", level:14 },
+  { arabic:"اِمْرَأَة", bangla:"নারী", level:14 },
+  { arabic:"طِفْل", bangla:"শিশু", level:14 },
+  { arabic:"صَدِيق", bangla:"বন্ধু", level:14 },
+  { arabic:"أستاذ", bangla:"শিক্ষক", level:14 },
+  { arabic:"طَالِب", bangla:"ছাত্র", level:14 },
+
+  // Level 15 — আবেগ ও অনুভূতি
+  { arabic:"سَعِيد", bangla:"সুখী", level:15 },
+  { arabic:"حَزِين", bangla:"দুঃখিত", level:15 },
+  { arabic:"كَبِير", bangla:"বড়", level:15 },
+  { arabic:"صَغِير", bangla:"ছোট", level:15 },
+  { arabic:"طَوِيل", bangla:"লম্বা", level:15 },
+  { arabic:"قَصِير", bangla:"খাটো", level:15 },
+  { arabic:"قَوِيّ", bangla:"শক্তিশালী", level:15 },
+  { arabic:"ضَعِيف", bangla:"দুর্বল", level:15 },
+  { arabic:"جَمِيل", bangla:"সুন্দর", level:15 },
+  { arabic:"قَبِيح", bangla:"কুৎসিত", level:15 },
+  { arabic:"سَرِيع", bangla:"দ্রুত", level:15 },
+  { arabic:"بَطِيء", bangla:"ধীর", level:15 },
+  { arabic:"كَثِير", bangla:"অনেক", level:15 },
+  { arabic:"قَلِيل", bangla:"অল্প", level:15 },
+  { arabic:"طَيِّب", bangla:"উত্তম / ভালো", level:15 },
+
+  // Level 16 — দৈনন্দিন জিনিস ও খাদ্য
+  { arabic:"طَعَام", bangla:"খাবার", level:16 },
+  { arabic:"خُبْز", bangla:"রুটি", level:16 },
+  { arabic:"لَحْم", bangla:"মাংস", level:16 },
+  { arabic:"حَلِيب", bangla:"দুধ", level:16 },
+  { arabic:"عَصِير", bangla:"জুস / রস", level:16 },
+  { arabic:"فَاكِهَة", bangla:"ফল", level:16 },
+  { arabic:"خُضَار", bangla:"সবজি", level:16 },
+  { arabic:"سَيَّارَة", bangla:"গাড়ি", level:16 },
+  { arabic:"دَرَّاجَة", bangla:"সাইকেল", level:16 },
+  { arabic:"طَائِرَة", bangla:"উড়োজাহাজ", level:16 },
+  { arabic:"مَدْرَسَة", bangla:"বিদ্যালয়", level:16 },
+  { arabic:"سُوق", bangla:"বাজার", level:16 },
+  { arabic:"مَال", bangla:"টাকা / সম্পদ", level:16 },
+  { arabic:"لِبَاس", bangla:"পোশাক", level:16 },
+  { arabic:"حِذَاء", bangla:"জুতো", level:16 },
+
+  // Level 17 — সাধারণ ক্রিয়াপদ
+  { arabic:"قَرَأَ", bangla:"সে পড়েছে", level:17 },
+  { arabic:"كَتَبَ", bangla:"সে লিখেছে", level:17 },
+  { arabic:"ذَهَبَ", bangla:"সে গিয়েছে", level:17 },
+  { arabic:"رَجَعَ", bangla:"সে ফিরেছে", level:17 },
+  { arabic:"أَكَلَ", bangla:"সে খেয়েছে", level:17 },
+  { arabic:"شَرِبَ", bangla:"সে পান করেছে", level:17 },
+  { arabic:"نَامَ", bangla:"সে ঘুমিয়েছে", level:17 },
+  { arabic:"جَلَسَ", bangla:"সে বসেছে", level:17 },
+  { arabic:"قَامَ", bangla:"সে দাঁড়িয়েছে", level:17 },
+  { arabic:"فَتَحَ", bangla:"সে খুলেছে", level:17 },
 ];
 const MAX_LEVEL = Math.max(...vocabDataset.map(w => w.level));
 
@@ -729,6 +844,58 @@ const assocPhrasesPool = [
   { demo:"ذٰلِكَ", noun:"قَلَمٌ مَكْسُورٌ", bangla:"উহা একটি ভাঙা কলম" },
   { demo:"هٰذِهِ", noun:"سَاعَةٌ ثَمِينَةٌ", bangla:"ইহা একটি মূল্যবান ঘড়ি" },
   { demo:"تِلْكَ", noun:"مَدْرَسَةٌ كَبِيرَةٌ", bangla:"উহা একটি বড় মাদ্রাসা" },
+
+  // ধাপ ১: নির্দিষ্ট শব্দের ইশারা (Definite Pointers)
+  { demo:"هٰذَا", noun:"الْكِتَابُ جَدِيدٌ", bangla:"এই বইটি নতুন।" },
+  { demo:"ذٰلِكَ", noun:"الْقَلَمُ قَدِيمٌ", bangla:"ওই কলমটি পুরোনো।" },
+  { demo:"هٰذِهِ", noun:"الْوَرْدَةُ جَمِيلَةٌ", bangla:"এই ফুলটি সুন্দর।" },
+  { demo:"تِلْكَ", noun:"السَّاعَةُ ثَمِينَةٌ", bangla:"ওই ঘড়িটি মূল্যবান।" },
+  { demo:"هٰذَا", noun:"الْبَيْتُ كَبِيرٌ", bangla:"এই বাড়িটি বড়।" },
+  { demo:"ذٰلِكَ", noun:"الرَّجُلُ طَيِّبٌ", bangla:"ওই লোকটি ভালো।" },
+  { demo:"هٰذِهِ", noun:"الْمَدْرَسَةُ صَغِيرَةٌ", bangla:"এই মাদ্রাসাটি ছোট।" },
+
+  // ধাপ ২: অব্যয়ের ব্যবহার (Prepositions)
+  { demo:"الْكِتَابُ", noun:"عَلَى الْمَكْتَبِ", bangla:"বইটি টেবিলের ওপরে।" },
+  { demo:"الْقَلَمُ", noun:"فِي الْحَقِيبَةِ", bangla:"কলমটি ব্যাগের ভেতরে।" },
+  { demo:"الْمِصْبَاحُ", noun:"فِي الْغُرْفَةِ", bangla:"বাতিটি ঘরের মধ্যে।" },
+  { demo:"الرَّجُلُ", noun:"فِي الْمَسْجِدِ", bangla:"লোকটি মসজিদের ভেতরে।" },
+  { demo:"الْوَلَدُ", noun:"عَلَى الْكُرْسِيِّ", bangla:"ছেলেটি চেয়ারের ওপরে।" },
+  { demo:"هَلِ الْقَلَمُ", noun:"فِي الْجَيْبِ؟", bangla:"কলমটি কি পকেটে?" },
+  { demo:"نَعَمْ، الْقَلَمُ", noun:"فِي الْجَيْبِ", bangla:"হ্যাঁ, কলমটি পকেটে।" },
+  { demo:"لَا، الْقَلَمُ", noun:"عَلَى الْمَكْتَبِ", bangla:"না, কলমটি টেবিলের ওপরে।" },
+
+  // ধাপ ৩: সর্বনামের ব্যবহার (Pronouns)
+  { demo:"أَنَا", noun:"طَالِبٌ مُجْتَهِدٌ", bangla:"আমি একজন পরিশ্রমী ছাত্র।" },
+  { demo:"أَنْتَ", noun:"مُعَلِّمٌ طَيِّبٌ", bangla:"তুমি একজন ভালো শিক্ষক।" },
+  { demo:"هُوَ", noun:"وَلَدٌ صَغِيرٌ", bangla:"সে একটি ছোট ছেলে।" },
+  { demo:"هِيَ", noun:"بِنْتٌ صَغِيرَةٌ", bangla:"সে একটি ছোট মেয়ে।" },
+  { demo:"أَنْتِ", noun:"بِنْتٌ عَاقِلَةٌ", bangla:"তুমি একটি বুদ্ধিমতী মেয়ে।" },
+  { demo:"هُوَ", noun:"تَاجِرٌ غَنِيٌّ", bangla:"সে একজন ধনী ব্যবসায়ী।" },
+  { demo:"أَنَا", noun:"فَلَّاحٌ فَقِيرٌ", bangla:"আমি একজন দরিদ্র কৃষক।" },
+
+  // ধাপ ৪: সম্বন্ধপদ বা ইজাফাত (Possessive / Izafat)
+  { demo:"هٰذَا", noun:"كِتَابُ الْوَلَدِ", bangla:"এটি ছেলেটির বই।" },
+  { demo:"ذٰلِكَ", noun:"قَلَمُ الْمُعَلِّمِ", bangla:"ওটি শিক্ষকের কলম।" },
+  { demo:"بَيْتُ الرَّجُلِ", noun:"كَبِيرٌ", bangla:"লোকটির বাড়ি বড়।" },
+  { demo:"مِفْتَاحُ الْقُفْلِ", noun:"صَغِيرٌ", bangla:"তালার চাবিটি ছোট।" },
+  { demo:"حَقِيبَةُ الطَّالِبِ", noun:"جَدِيدَةٌ", bangla:"ছাত্রটির ব্যাগ নতুন।" },
+  { demo:"نَافِذَةُ الْغُرْفَةِ", noun:"مَفْتُوحَةٌ", bangla:"ঘরের জানালাটি খোলা।" },
+  { demo:"بَابُ الْمَسْجِدِ", noun:"مَفْتُوحٌ", bangla:"মসজিদের দরজাটি খোলা।" },
+
+  // ধাপ ৫: যুক্ত সর্বনাম (Attached Pronouns)
+  { demo:"هٰذَا", noun:"كِتَابِي الْجَدِيدُ", bangla:"এটি আমার নতুন বই।" },
+  { demo:"أَيْن", noun:"قَلَمُكَ؟", bangla:"তোমার কলম কোথায়?" },
+  { demo:"قَلَمِي", noun:"فِي حَقِيبَتِي", bangla:"আমার কলম আমার ব্যাগে।" },
+  { demo:"هٰذِهِ", noun:"سَاعَتُكِ", bangla:"এটি তোমার ঘড়ি।" },
+  { demo:"بَيْتُهُ", noun:"قَرِيبٌ مِنَ الْمَسْجِدِ", bangla:"তার বাড়ি মসজিদের কাছে।" },
+  { demo:"اِسْمُهُ", noun:"مَحْمُودٌ", bangla:"তার নাম মাহমুদ।" },
+  { demo:"هٰذَا صَدِيقِي", noun:"هُوَ طَالِبٌ", bangla:"এটি আমার বন্ধু, সে একজন ছাত্র।" },
+
+  // ধাপ ৬: ছোট প্রশ্ন ও উত্তর (Simple Q&A)
+  { demo:"مَنْ", noun:"فِي الْغُرْفَةِ؟", bangla:"ঘরের মধ্যে কে?" },
+  { demo:"الرَّجُلُ الطَّيِّبُ", noun:"فِي الْغُرْفَةِ", bangla:"ভালো লোকটি ঘরের মধ্যে।" },
+  { demo:"مَاذَا", noun:"عَلَى الْمَكْتَبِ؟", bangla:"টেবিলের ওপরে কী?" },
+  { demo:"قَلَمٌ جَدِيدٌ", noun:"عَلَى الْمَكْتَبِ", bangla:"টেবিলের ওপরে একটি নতুন কলম।" },
 ];
 
 /* =========================================================
@@ -755,6 +922,53 @@ const arabicVocabulary = [
   { word:"نَهَار", meaning:"দিন (Day)", pronunciation:"nahar", opposite:"لَيْل", opposite_meaning:"রাত (Night)", opposite_pronunciation:"layl" },
   { word:"صَحِيح", meaning:"সঠিক (Correct)", pronunciation:"sahih", opposite:"خَاطِئ", opposite_meaning:"ভুল (Wrong)", opposite_pronunciation:"khati'" },
   { word:"ثَقِيل", meaning:"ভারী (Heavy)", pronunciation:"thaqil", opposite:"خَفِيف", opposite_meaning:"হালকা (Light)", opposite_pronunciation:"khafif" },
+];
+
+/* =========================================================
+   DAILY SENTENCES — দৈনন্দিন আরবি বাক্য (Study Mode এর জন্য)
+========================================================= */
+const dailySentencesPool = [
+  { arabic:"كَيْفَ حَالُكَ؟", pronunciation:"Kayfa haluka?", bangla:"তুমি কেমন আছো?" },
+  { arabic:"أَنَا بِخَيْرٍ، شُكْرًا.", pronunciation:"Ana bikhayr, shukran.", bangla:"আমি ভালো আছি, ধন্যবাদ।" },
+  { arabic:"مَا اسْمُكَ؟", pronunciation:"Mas muka?", bangla:"তোমার নাম কী?" },
+  { arabic:"اِسْمِي أَحْمَد.", pronunciation:"Ismi Ahmad.", bangla:"আমার নাম আহমদ।" },
+  { arabic:"مِنْ أَيْن أَنْتَ؟", pronunciation:"Min ayna anta?", bangla:"তুমি কোথা থেকে এসেছো?" },
+  { arabic:"أَنَا مِنْ بَنْغْلَادِيش.", pronunciation:"Ana min Bangladesh.", bangla:"আমি বাংলাদেশ থেকে এসেছি।" },
+  { arabic:"أَهْلًا وَسَهْلًا.", pronunciation:"Ahlan wa sahlan.", bangla:"স্বাগতম।" },
+  { arabic:"صَبَاحُ الْخَيْر.", pronunciation:"Sabahul khayr.", bangla:"শুভ সকাল।" },
+  { arabic:"صَبَاحُ النُّور.", pronunciation:"Saba-hun noor.", bangla:"শুভ সকাল (উত্তরে)।" },
+  { arabic:"مَعَ السَّلَامَة.", pronunciation:"Ma'as salamah.", bangla:"বিদায়।" },
+  { arabic:"هَذَا كِتَابٌ جَمِيلٌ.", pronunciation:"Hadha kitabun jamil.", bangla:"এটি একটি সুন্দর বই।" },
+  { arabic:"أَيْن الْمَدْرَسَةُ؟", pronunciation:"Aynal madrasah?", bangla:"স্কুলটি কোথায়?" },
+  { arabic:"الْمَدْرَسَةُ قَرِيبَةٌ.", pronunciation:"Al-madrasatu qaribah.", bangla:"স্কুলটি কাছেই।" },
+  { arabic:"أَنَا طَالِبٌ فِي الْجَامِعَةِ.", pronunciation:"Ana talibun fil jamiah.", bangla:"আমি বিশ্ববিদ্যালয়ের একজন ছাত্র।" },
+  { arabic:"هَلْ تَتَكَلَّمُ الْعَرَبِيَّةَ؟", pronunciation:"Hal tatakallamul arabiyyah?", bangla:"তুমি কি আরবি বলতে পারো?" },
+  { arabic:"نَعَمْ، قَلِيلًا.", pronunciation:"Na'am, qalilan.", bangla:"হ্যাঁ, অল্প অল্প।" },
+  { arabic:"لَا أَفْهَمُ.", pronunciation:"La afham.", bangla:"আমি বুঝতে পারছি না।" },
+  { arabic:"أَعِدْ مِنْ فَضْلِكَ.", pronunciation:"A'id min fadlik.", bangla:"দয়া করে আরেকবার বলো।" },
+  { arabic:"كَمْ ثَمَنُ هَذَا؟", pronunciation:"Kam thamanu hadha?", bangla:"এটার দাম কত?" },
+  { arabic:"هَذَا غَالِي جِدًّا.", pronunciation:"Hadha gali jiddan.", bangla:"এটি অনেক দামি।" },
+  { arabic:"أُرِيدُ أَنْ أَشْرَبَ الْمَاءَ.", pronunciation:"Uridu an ashraba al-maa'.", bangla:"আমি পানি পান করতে চাই।" },
+  { arabic:"الطَّعَامُ لَذِيذٌ جِدًّا.", pronunciation:"At-ta'amu ladhidhun jiddan.", bangla:"খাবারটি খুব সুস্বাদু।" },
+  { arabic:"أَيْن حَقِيبَتِي؟", pronunciation:"Ayna haqibati?", bangla:"আমার ব্যাগটি কোথায়?" },
+  { arabic:"حَقِيبَتُكَ عَلَى الْمَكْتَبِ.", pronunciation:"Haqibatuka 'alal maktab.", bangla:"তোমার ব্যাগটি টেবিলের ওপরে।" },
+  { arabic:"الْوَقْتُ ثَمِينٌ.", pronunciation:"Al-waqtu thamin.", bangla:"সময় মূল্যবান।" },
+  { arabic:"الْجَوْ حَارٌّ الْيَوْمَ.", pronunciation:"Al-jawwu harrun al-yawm.", bangla:"আজ আবহাওয়া খুব গরম।" },
+  { arabic:"أَنَا أُحِبُّ الْقِرَاءَةَ.", pronunciation:"Ana uhibbul qira'ah.", bangla:"আমি পড়তে পছন্দ করি।" },
+  { arabic:"هَذَا الْبَيْتُ كَبِيرٌ.", pronunciation:"Hadha al-baytu kabir.", bangla:"এই বাড়িটি বড়।" },
+  { arabic:"أُرِيدُ قَلَمًا وَدَفْتَرًا.", pronunciation:"Uridu qalaman wa daftaran.", bangla:"আমি একটি কলম ও খাতা চাই।" },
+  { arabic:"السَّمَاءُ زَرْقَاءُ نَقِيَّةٌ.", pronunciation:"As-sama'u zarqa'u naqiyyah.", bangla:"আকাশ নীল ও পরিষ্কার।" },
+  { arabic:"أَنَا مُتْعَبٌ الْيَوْمَ.", pronunciation:"Ana mut'ab al-yawm.", bangla:"আমি আজ ক্লান্ত।" },
+  { arabic:"هَلْ أَنْتَ مُسْتَعِدٌّ؟", pronunciation:"Hal anta musta'idd?", bangla:"তুমি কি প্রস্তুত?" },
+  { arabic:"نَعَمْ، أَنَا مُسْتَعِدٌّ.", pronunciation:"Na'am, ana musta'idd.", bangla:"হ্যাঁ, আমি প্রস্তুত।" },
+  { arabic:"التَّوْفِيقُ مِنَ اللَّهِ.", pronunciation:"At-tawfiqu minallah.", bangla:"সফলতা আল্লাহর পক্ষ থেকে আসে।" },
+  { arabic:"شُكْرًا جَزِيلًا لَكَ.", pronunciation:"Shukran jazilan lak.", bangla:"তোমাকে অনেক অনেক ধন্যবাদ।" },
+];
+
+// Combined pool for Study Mode's "বাক্য" tab — association phrases + daily sentences
+const studySentenceBank = [
+  ...assocPhrasesPool.map(p => ({ arabic:`${p.demo} ${p.noun}`, pronunciation:'', bangla:p.bangla })),
+  ...dailySentencesPool
 ];
 
 /* =========================================================
@@ -1183,11 +1397,12 @@ function renderStudyVocabCard(){
 }
 
 function renderStudySentenceCard(){
-  const item = assocPhrasesPool[state.study.sentenceIndex];
-  document.getElementById('study-sentence-arabic').innerText = `${item.demo} ${item.noun}`;
+  const item = studySentenceBank[state.study.sentenceIndex];
+  document.getElementById('study-sentence-arabic').innerText = item.arabic;
+  document.getElementById('study-sentence-pron').innerText = item.pronunciation || '';
   document.getElementById('study-sentence-bangla').innerText = item.bangla;
   document.getElementById('study-progress-text').innerText =
-    `${toBanglaDigits(state.study.sentenceIndex + 1)} / ${toBanglaDigits(assocPhrasesPool.length)}`;
+    `${toBanglaDigits(state.study.sentenceIndex + 1)} / ${toBanglaDigits(studySentenceBank.length)}`;
 }
 
 function studyNext(){
@@ -1199,7 +1414,7 @@ function studyNext(){
     s.vocabIndex = (s.vocabIndex + 1) % vocabDataset.length;
     renderStudyVocabCard();
   } else if (s.section === 'sentence'){
-    s.sentenceIndex = (s.sentenceIndex + 1) % assocPhrasesPool.length;
+    s.sentenceIndex = (s.sentenceIndex + 1) % studySentenceBank.length;
     renderStudySentenceCard();
   }
 }
@@ -1213,7 +1428,7 @@ function studyPrev(){
     s.vocabIndex = (s.vocabIndex - 1 + vocabDataset.length) % vocabDataset.length;
     renderStudyVocabCard();
   } else if (s.section === 'sentence'){
-    s.sentenceIndex = (s.sentenceIndex - 1 + assocPhrasesPool.length) % assocPhrasesPool.length;
+    s.sentenceIndex = (s.sentenceIndex - 1 + studySentenceBank.length) % studySentenceBank.length;
     renderStudySentenceCard();
   }
 }
