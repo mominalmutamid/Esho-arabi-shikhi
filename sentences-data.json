@@ -1,0 +1,177 @@
+[
+  {
+    "arabic": "كَيْفَ حَالُكَ؟",
+    "pronunciation": "Kayfa haluka?",
+    "bangla": "তুমি কেমন আছো?"
+  },
+  {
+    "arabic": "أَنَا بِخَيْرٍ، شُكْرًا.",
+    "pronunciation": "Ana bikhayr, shukran.",
+    "bangla": "আমি ভালো আছি, ধন্যবাদ।"
+  },
+  {
+    "arabic": "مَا اسْمُكَ؟",
+    "pronunciation": "Mas muka?",
+    "bangla": "তোমার নাম কী?"
+  },
+  {
+    "arabic": "اِسْمِي أَحْمَد.",
+    "pronunciation": "Ismi Ahmad.",
+    "bangla": "আমার নাম আহমদ।"
+  },
+  {
+    "arabic": "مِنْ أَيْن أَنْتَ؟",
+    "pronunciation": "Min ayna anta?",
+    "bangla": "তুমি কোথা থেকে এসেছো?"
+  },
+  {
+    "arabic": "أَنَا مِنْ بَنْغْلَادِيش.",
+    "pronunciation": "Ana min Bangladesh.",
+    "bangla": "আমি বাংলাদেশ থেকে এসেছি।"
+  },
+  {
+    "arabic": "أَهْلًا وَسَهْلًا.",
+    "pronunciation": "Ahlan wa sahlan.",
+    "bangla": "স্বাগতম।"
+  },
+  {
+    "arabic": "صَبَاحُ الْخَيْر.",
+    "pronunciation": "Sabahul khayr.",
+    "bangla": "শুভ সকাল।"
+  },
+  {
+    "arabic": "صَبَاحُ النُّور.",
+    "pronunciation": "Saba-hun noor.",
+    "bangla": "শুভ সকাল (উত্তরে)।"
+  },
+  {
+    "arabic": "مَعَ السَّلَامَة.",
+    "pronunciation": "Ma'as salamah.",
+    "bangla": "বিদায়।"
+  },
+  {
+    "arabic": "هَذَا كِتَابٌ جَمِيلٌ.",
+    "pronunciation": "Hadha kitabun jamil.",
+    "bangla": "এটি একটি সুন্দর বই।"
+  },
+  {
+    "arabic": "أَيْن الْمَدْرَسَةُ؟",
+    "pronunciation": "Aynal madrasah?",
+    "bangla": "স্কুলটি কোথায়?"
+  },
+  {
+    "arabic": "الْمَدْرَسَةُ قَرِيبَةٌ.",
+    "pronunciation": "Al-madrasatu qaribah.",
+    "bangla": "স্কুলটি কাছেই।"
+  },
+  {
+    "arabic": "أَنَا طَالِبٌ فِي الْجَامِعَةِ.",
+    "pronunciation": "Ana talibun fil jamiah.",
+    "bangla": "আমি বিশ্ববিদ্যালয়ের একজন ছাত্র।"
+  },
+  {
+    "arabic": "هَلْ تَتَكَلَّمُ الْعَرَبِيَّةَ؟",
+    "pronunciation": "Hal tatakallamul arabiyyah?",
+    "bangla": "তুমি কি আরবি বলতে পারো?"
+  },
+  {
+    "arabic": "نَعَمْ، قَلِيلًا.",
+    "pronunciation": "Na'am, qalilan.",
+    "bangla": "হ্যাঁ, অল্প অল্প।"
+  },
+  {
+    "arabic": "لَا أَفْهَمُ.",
+    "pronunciation": "La afham.",
+    "bangla": "আমি বুঝতে পারছি না।"
+  },
+  {
+    "arabic": "أَعِدْ مِنْ فَضْلِكَ.",
+    "pronunciation": "A'id min fadlik.",
+    "bangla": "দয়া করে আরেকবার বলো।"
+  },
+  {
+    "arabic": "كَمْ ثَمَنُ هَذَا؟",
+    "pronunciation": "Kam thamanu hadha?",
+    "bangla": "এটার দাম কত?"
+  },
+  {
+    "arabic": "هَذَا غَالِي جِدًّا.",
+    "pronunciation": "Hadha gali jiddan.",
+    "bangla": "এটি অনেক দামি।"
+  },
+  {
+    "arabic": "أُرِيدُ أَنْ أَشْرَبَ الْمَاءَ.",
+    "pronunciation": "Uridu an ashraba al-maa'.",
+    "bangla": "আমি পানি পান করতে চাই।"
+  },
+  {
+    "arabic": "الطَّعَامُ لَذِيذٌ جِدًّا.",
+    "pronunciation": "At-ta'amu ladhidhun jiddan.",
+    "bangla": "খাবারটি খুব সুস্বাদু।"
+  },
+  {
+    "arabic": "أَيْن حَقِيبَتِي؟",
+    "pronunciation": "Ayna haqibati?",
+    "bangla": "আমার ব্যাগটি কোথায়?"
+  },
+  {
+    "arabic": "حَقِيبَتُكَ عَلَى الْمَكْتَبِ.",
+    "pronunciation": "Haqibatuka 'alal maktab.",
+    "bangla": "তোমার ব্যাগটি টেবিলের ওপরে।"
+  },
+  {
+    "arabic": "الْوَقْتُ ثَمِينٌ.",
+    "pronunciation": "Al-waqtu thamin.",
+    "bangla": "সময় মূল্যবান।"
+  },
+  {
+    "arabic": "الْجَوْ حَارٌّ الْيَوْمَ.",
+    "pronunciation": "Al-jawwu harrun al-yawm.",
+    "bangla": "আজ আবহাওয়া খুব গরম।"
+  },
+  {
+    "arabic": "أَنَا أُحِبُّ الْقِرَاءَةَ.",
+    "pronunciation": "Ana uhibbul qira'ah.",
+    "bangla": "আমি পড়তে পছন্দ করি।"
+  },
+  {
+    "arabic": "هَذَا الْبَيْتُ كَبِيرٌ.",
+    "pronunciation": "Hadha al-baytu kabir.",
+    "bangla": "এই বাড়িটি বড়।"
+  },
+  {
+    "arabic": "أُرِيدُ قَلَمًا وَدَفْتَرًا.",
+    "pronunciation": "Uridu qalaman wa daftaran.",
+    "bangla": "আমি একটি কলম ও খাতা চাই।"
+  },
+  {
+    "arabic": "السَّمَاءُ زَرْقَاءُ نَقِيَّةٌ.",
+    "pronunciation": "As-sama'u zarqa'u naqiyyah.",
+    "bangla": "আকাশ নীল ও পরিষ্কার।"
+  },
+  {
+    "arabic": "أَنَا مُتْعَبٌ الْيَوْمَ.",
+    "pronunciation": "Ana mut'ab al-yawm.",
+    "bangla": "আমি আজ ক্লান্ত।"
+  },
+  {
+    "arabic": "هَلْ أَنْتَ مُسْتَعِدٌّ؟",
+    "pronunciation": "Hal anta musta'idd?",
+    "bangla": "তুমি কি প্রস্তুত?"
+  },
+  {
+    "arabic": "نَعَمْ، أَنَا مُسْتَعِدٌّ.",
+    "pronunciation": "Na'am, ana musta'idd.",
+    "bangla": "হ্যাঁ, আমি প্রস্তুত।"
+  },
+  {
+    "arabic": "التَّوْفِيقُ مِنَ اللَّهِ.",
+    "pronunciation": "At-tawfiqu minallah.",
+    "bangla": "সফলতা আল্লাহর পক্ষ থেকে আসে।"
+  },
+  {
+    "arabic": "شُكْرًا جَزِيلًا لَكَ.",
+    "pronunciation": "Shukran jazilan lak.",
+    "bangla": "তোমাকে অনেক অনেক ধন্যবাদ।"
+  }
+]

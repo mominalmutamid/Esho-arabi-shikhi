@@ -1,0 +1,162 @@
+[
+  {
+    "word": "سَهْل",
+    "meaning": "সহজ (Easy)",
+    "pronunciation": "sahl",
+    "opposite": "صَعْب",
+    "opposite_meaning": "কঠিন (Difficult)",
+    "opposite_pronunciation": "sa'b"
+  },
+  {
+    "word": "كَبِير",
+    "meaning": "বড় (Big)",
+    "pronunciation": "kabir",
+    "opposite": "صَغِير",
+    "opposite_meaning": "ছোট (Small)",
+    "opposite_pronunciation": "saghir"
+  },
+  {
+    "word": "جَدِيد",
+    "meaning": "নতুন (New)",
+    "pronunciation": "jadid",
+    "opposite": "قَدِيم",
+    "opposite_meaning": "পুরানো (Old)",
+    "opposite_pronunciation": "qadim"
+  },
+  {
+    "word": "جَمِيل",
+    "meaning": "সুন্দর (Beautiful)",
+    "pronunciation": "jamil",
+    "opposite": "قَبِيح",
+    "opposite_meaning": "কুৎসিত (Ugly)",
+    "opposite_pronunciation": "qabih"
+  },
+  {
+    "word": "قَرِيب",
+    "meaning": "কাছে (Near)",
+    "pronunciation": "qarib",
+    "opposite": "بَعِيد",
+    "opposite_meaning": "দূরে (Far)",
+    "opposite_pronunciation": "ba'id"
+  },
+  {
+    "word": "طَوِيل",
+    "meaning": "লম্বা (Tall/Long)",
+    "pronunciation": "tawil",
+    "opposite": "قَصِير",
+    "opposite_meaning": "খাটো (Short)",
+    "opposite_pronunciation": "qasir"
+  },
+  {
+    "word": "كَثِير",
+    "meaning": "অনেক (Many/Much)",
+    "pronunciation": "kathir",
+    "opposite": "قَلِيل",
+    "opposite_meaning": "অল্প (Few/Little)",
+    "opposite_pronunciation": "qalil"
+  },
+  {
+    "word": "حَار",
+    "meaning": "গরম (Hot)",
+    "pronunciation": "haar",
+    "opposite": "بَارِد",
+    "opposite_meaning": "ঠান্ডা (Cold)",
+    "opposite_pronunciation": "barid"
+  },
+  {
+    "word": "نَظِيف",
+    "meaning": "পরিষ্কার (Clean)",
+    "pronunciation": "nazif",
+    "opposite": "وَسِخ",
+    "opposite_meaning": "নোংরা (Dirty)",
+    "opposite_pronunciation": "wasikh"
+  },
+  {
+    "word": "سَعِيد",
+    "meaning": "সুখী (Happy)",
+    "pronunciation": "sa'id",
+    "opposite": "حَزِين",
+    "opposite_meaning": "দুঃখী (Sad)",
+    "opposite_pronunciation": "hazin"
+  },
+  {
+    "word": "مَفْتُوح",
+    "meaning": "খোলা (Open)",
+    "pronunciation": "maftuh",
+    "opposite": "مُغْلَق",
+    "opposite_meaning": "বন্ধ (Closed)",
+    "opposite_pronunciation": "mughlaq"
+  },
+  {
+    "word": "غَنِيّ",
+    "meaning": "ধনী (Rich)",
+    "pronunciation": "ghaniy",
+    "opposite": "فَقِير",
+    "opposite_meaning": "গরিব (Poor)",
+    "opposite_pronunciation": "faqir"
+  },
+  {
+    "word": "قَوِيّ",
+    "meaning": "শক্তিশালী (Strong)",
+    "pronunciation": "qawiy",
+    "opposite": "ضَعِيف",
+    "opposite_meaning": "দুর্বল (Weak)",
+    "opposite_pronunciation": "da'if"
+  },
+  {
+    "word": "سَرِيع",
+    "meaning": "দ্রুত (Fast)",
+    "pronunciation": "sari'",
+    "opposite": "بَطِيء",
+    "opposite_meaning": "ধীর (Slow)",
+    "opposite_pronunciation": "bati'"
+  },
+  {
+    "word": "أَمَام",
+    "meaning": "সামনে (In front)",
+    "pronunciation": "amam",
+    "opposite": "خَلْف",
+    "opposite_meaning": "পেছনে (Behind)",
+    "opposite_pronunciation": "khalf"
+  },
+  {
+    "word": "فَوْق",
+    "meaning": "উপরে (Above)",
+    "pronunciation": "fawq",
+    "opposite": "تَحْت",
+    "opposite_meaning": "নিচে (Below)",
+    "opposite_pronunciation": "taht"
+  },
+  {
+    "word": "يَمِين",
+    "meaning": "ডান (Right)",
+    "pronunciation": "yamin",
+    "opposite": "يَسَار",
+    "opposite_meaning": "বাম (Left)",
+    "opposite_pronunciation": "yasar"
+  },
+  {
+    "word": "نَهَار",
+    "meaning": "দিন (Day)",
+    "pronunciation": "nahar",
+    "opposite": "لَيْل",
+    "opposite_meaning": "রাত (Night)",
+    "opposite_pronunciation": "layl"
+  },
+  {
+    "word": "صَحِيح",
+    "meaning": "সঠিক (Correct)",
+    "pronunciation": "sahih",
+    "opposite": "خَاطِئ",
+    "opposite_meaning": "ভুল (Wrong)",
+    "opposite_pronunciation": "khati'"
+  },
+  {
+    "word": "ثَقِيل",
+    "meaning": "ভারী (Heavy)",
+    "pronunciation": "thaqil",
+    "opposite": "خَفِيف",
+    "opposite_meaning": "হালকা (Light)",
+    "opposite_pronunciation": "khafif"
+  }
+]

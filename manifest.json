@@ -38,28 +38,28 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/home.png",
+      "src": "screenshot-home.png",
       "sizes": "960x1708",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "মোড নির্বাচন স্ক্রিন"
     },
     {
-      "src": "screenshots/vocab.png",
+      "src": "screenshot-vocab.png",
       "sizes": "960x1708",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Vocabulary Quest"
     },
     {
-      "src": "screenshots/assoc.png",
+      "src": "screenshot-assoc.png",
       "sizes": "960x1708",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Association Game"
     },
     {
-      "src": "screenshots/flash.png",
+      "src": "screenshot-flash.png",
       "sizes": "960x1708",
       "type": "image/png",
       "form_factor": "narrow",

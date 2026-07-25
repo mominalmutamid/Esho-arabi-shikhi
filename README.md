@@ -15,16 +15,37 @@
 ├── index.html
 ├── manifest.json
 ├── sw.js
+├── vocab-data.json
+├── assoc-data.json
+├── antonym-data.json
+├── sentences-data.json
 ├── icon-192.png
 ├── icon-512.png
 ├── icon-maskable-192.png
 ├── icon-maskable-512.png
 ├── apple-touch-icon.png
 ├── favicon-32.png
-└── favicon-16.png
+├── favicon-16.png
+├── screenshot-home.png
+├── screenshot-vocab.png
+├── screenshot-assoc.png
+└── screenshot-flash.png
 ```
 
-সবগুলো ফাইল রিপোর **rootএ** থাকতে হবে — কোনো সাবফোল্ডারে না।
+সবগুলো ফাইল রিপোর **rootএ** থাকতে হবে — কোনো সাবফোল্ডারে না (screenshot-গুলোও আগের মতো আলাদা `screenshots/` ফোল্ডারে না রেখে flat করে দেওয়া হয়েছে, একই কারণে)।
+
+## শব্দ/বাক্য যোগ করা এখন থেকে আরও সহজ
+
+গেমের ডেটা এখন `index.html`-এর ভেতরে নয়, ৪টি আলাদা JSON ফাইলে থাকে:
+- `vocab-data.json` — Vocabulary Quest ও Flashcard-এর শব্দভাণ্ডার (level সহ)
+- `assoc-data.json` — Association গেমের বাক্য (demo/noun/bangla)
+- `antonym-data.json` — Study Mode-এর বিপরীত শব্দ জোড়া
+- `sentences-data.json` — Study Mode-এর দৈনন্দিন বাক্য
+
+নতুন শব্দ/বাক্য যোগ করতে শুধু সংশ্লিষ্ট JSON ফাইলটি এডিট করে GitHub-এ
+আপলোড করলেই হবে — `index.html` বা কোনো কোড ছোঁয়ার দরকার নেই। শুধু
+মনে রাখবেন: JSON এডিট করার পর `sw.js`-এর `CACHE_NAME` না বাড়ালে
+আগে থেকে ইনস্টল করা ইউজাররা পুরনো ডেটা দেখতে পারেন।
 
 ## GitHub Pages-এ আপলোড করে লাইভ করা
 
@@ -111,7 +132,7 @@ bubblewrap build
 
 - **Shortcuts:** হোম স্ক্রিনে আইকন লং-প্রেস করলে এখন সরাসরি ৩টি মোডে
   (Vocabulary Quest / Association / Flashcard) ঢোকা যাবে।
-- **Screenshots:** গেমের ৪টি আসল স্ক্রিনশট (`screenshots/` ফোল্ডারে)
+- **Screenshots:** গেমের ৪টি আসল স্ক্রিনশট (`screenshot-*.png` নামে root-এ)
   manifest-এ যোগ করা হয়েছে — এটি PWABuilder-এর "Add screenshots"
   action item সমাধান করে এবং স্টোর লিস্টিং-এ ভালো দেখাবে।
 - **launch_handler:** একই সাথে একাধিকবার খুললে নতুন উইন্ডো না খুলে
