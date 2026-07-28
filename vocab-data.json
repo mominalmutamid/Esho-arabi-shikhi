@@ -525,8 +525,8 @@
     "level": 8
   },
   {
-    "arabic": "مَكْتَبٌ",
-    "bangla": "অফিস",
+    "arabic": "مَقَرّ",
+    "bangla": "সদর দপ্তর",
     "level": 8
   },
   {
@@ -575,8 +575,8 @@
     "level": 9
   },
   {
-    "arabic": "سَاعَةٌ",
-    "bangla": "ঘণ্টা/ঘড়ি",
+    "arabic": "مَوْسِم",
+    "bangla": "ঋতু / মৌসুম",
     "level": 9
   },
   {
@@ -910,8 +910,8 @@
     "level": 12
   },
   {
-    "arabic": "لَيْل",
-    "bangla": "রাত",
+    "arabic": "بَعْدَ غَدٍ",
+    "bangla": "পরশু (আগামী)",
     "level": 12
   },
   {
@@ -965,18 +965,18 @@
     "level": 12
   },
   {
-    "arabic": "غَدًا",
-    "bangla": "আগামীকাল",
+    "arabic": "عَظِيم",
+    "bangla": "মহান",
     "level": 12
   },
   {
-    "arabic": "جَدِيد",
-    "bangla": "নতুন",
+    "arabic": "طَفِيف",
+    "bangla": "সামান্য",
     "level": 12
   },
   {
-    "arabic": "قَدِيم",
-    "bangla": "পুরোনো",
+    "arabic": "مُبَكِّر",
+    "bangla": "তাড়াতাড়ি (সময়ে)",
     "level": 12
   },
   {
@@ -1130,73 +1130,73 @@
     "level": 14
   },
   {
-    "arabic": "سَعِيد",
-    "bangla": "সুখী",
+    "arabic": "عَتِيق",
+    "bangla": "প্রাচীন",
     "level": 15
   },
   {
-    "arabic": "حَزِين",
-    "bangla": "দুঃখিত",
+    "arabic": "رَائِع",
+    "bangla": "চমৎকার",
     "level": 15
   },
   {
-    "arabic": "كَبِير",
-    "bangla": "বড়",
+    "arabic": "قَبِيح الْمَنْظَر",
+    "bangla": "দেখতে বাজে",
     "level": 15
   },
   {
-    "arabic": "صَغِير",
-    "bangla": "ছোট",
+    "arabic": "مُمْتَدّ",
+    "bangla": "বিস্তৃত",
     "level": 15
   },
   {
-    "arabic": "طَوِيل",
-    "bangla": "লম্বা",
+    "arabic": "مُوجَز",
+    "bangla": "সংক্ষিপ্ত",
     "level": 15
   },
   {
-    "arabic": "قَصِير",
-    "bangla": "খাটো",
+    "arabic": "وَافِر",
+    "bangla": "প্রচুর",
     "level": 15
   },
   {
-    "arabic": "قَوِيّ",
-    "bangla": "শক্তিশালী",
+    "arabic": "ضَئِيل",
+    "bangla": "নগণ্য",
     "level": 15
   },
   {
-    "arabic": "ضَعِيف",
-    "bangla": "দুর্বল",
+    "arabic": "مُبْتَهِج",
+    "bangla": "হৃষ্টচিত্ত",
     "level": 15
   },
   {
-    "arabic": "جَمِيل",
-    "bangla": "সুন্দর",
+    "arabic": "مَهْمُوم",
+    "bangla": "চিন্তাগ্রস্ত",
     "level": 15
   },
   {
-    "arabic": "قَبِيح",
-    "bangla": "কুৎসিত",
+    "arabic": "مَتِين",
+    "bangla": "সুদৃঢ় / মজবুত",
     "level": 15
   },
   {
-    "arabic": "سَرِيع",
-    "bangla": "দ্রুত",
+    "arabic": "وَاهِن",
+    "bangla": "ক্ষীণ",
     "level": 15
   },
   {
-    "arabic": "بَطِيء",
-    "bangla": "ধীর",
+    "arabic": "عَجُول",
+    "bangla": "তাড়াহুড়াকারী",
     "level": 15
   },
   {
-    "arabic": "كَثِير",
-    "bangla": "অনেক",
+    "arabic": "مُتَمَهِّل",
+    "bangla": "ধীরস্থির",
     "level": 15
   },
   {
-    "arabic": "قَلِيل",
-    "bangla": "অল্প",
+    "arabic": "غَسَق",
+    "bangla": "সন্ধ্যার আঁধার",
     "level": 15
   },
   {
@@ -1328,5 +1328,3675 @@
     "arabic": "فَتَحَ",
     "bangla": "সে খুলেছে",
     "level": 17
+  },
+  {
+    "arabic": "وَاحِد",
+    "bangla": "এক",
+    "level": 18
+  },
+  {
+    "arabic": "اِثْنَان",
+    "bangla": "দুই",
+    "level": 18
+  },
+  {
+    "arabic": "ثَلَاثَة",
+    "bangla": "তিন",
+    "level": 18
+  },
+  {
+    "arabic": "أَرْبَعَة",
+    "bangla": "চার",
+    "level": 18
+  },
+  {
+    "arabic": "خَمْسَة",
+    "bangla": "পাঁচ",
+    "level": 18
+  },
+  {
+    "arabic": "سِتَّة",
+    "bangla": "ছয়",
+    "level": 18
+  },
+  {
+    "arabic": "سَبْعَة",
+    "bangla": "সাত",
+    "level": 18
+  },
+  {
+    "arabic": "ثَمَانِيَة",
+    "bangla": "আট",
+    "level": 18
+  },
+  {
+    "arabic": "تِسْعَة",
+    "bangla": "নয়",
+    "level": 18
+  },
+  {
+    "arabic": "عَشَرَة",
+    "bangla": "দশ",
+    "level": 18
+  },
+  {
+    "arabic": "أَحْمَر",
+    "bangla": "লাল",
+    "level": 19
+  },
+  {
+    "arabic": "أَزْرَق",
+    "bangla": "নীল",
+    "level": 19
+  },
+  {
+    "arabic": "أَصْفَر",
+    "bangla": "হলুদ",
+    "level": 19
+  },
+  {
+    "arabic": "أَخْضَر",
+    "bangla": "সবুজ",
+    "level": 19
+  },
+  {
+    "arabic": "أَسْوَد",
+    "bangla": "কালো",
+    "level": 19
+  },
+  {
+    "arabic": "أَبْيَض",
+    "bangla": "সাদা",
+    "level": 19
+  },
+  {
+    "arabic": "بُرْتُقَالِيّ",
+    "bangla": "কমলা রঙের",
+    "level": 19
+  },
+  {
+    "arabic": "وَرْدِيّ",
+    "bangla": "গোলাপি",
+    "level": 19
+  },
+  {
+    "arabic": "بُنِّيّ",
+    "bangla": "বাদামি",
+    "level": 19
+  },
+  {
+    "arabic": "رَمَادِيّ",
+    "bangla": "ধূসর",
+    "level": 19
+  },
+  {
+    "arabic": "مُهَنْدِس",
+    "bangla": "প্রকৌশলী",
+    "level": 20
+  },
+  {
+    "arabic": "شُرْطِيّ",
+    "bangla": "পুলিশ",
+    "level": 20
+  },
+  {
+    "arabic": "طَبَّاخ",
+    "bangla": "বাবুর্চি",
+    "level": 20
+  },
+  {
+    "arabic": "خَيَّاط",
+    "bangla": "দর্জি",
+    "level": 20
+  },
+  {
+    "arabic": "نَجَّار",
+    "bangla": "কাঠমিস্ত্রি",
+    "level": 20
+  },
+  {
+    "arabic": "حَدَّاد",
+    "bangla": "কামার",
+    "level": 20
+  },
+  {
+    "arabic": "سَائِق",
+    "bangla": "চালক",
+    "level": 20
+  },
+  {
+    "arabic": "طَيَّار",
+    "bangla": "বৈমানিক",
+    "level": 20
+  },
+  {
+    "arabic": "جُنْدِيّ",
+    "bangla": "সৈনিক",
+    "level": 20
+  },
+  {
+    "arabic": "صَيَّاد",
+    "bangla": "জেলে / শিকারি",
+    "level": 20
+  },
+  {
+    "arabic": "السَّبْت",
+    "bangla": "শনিবার",
+    "level": 21
+  },
+  {
+    "arabic": "الْأَحَد",
+    "bangla": "রবিবার",
+    "level": 21
+  },
+  {
+    "arabic": "الْاِثْنَيْن",
+    "bangla": "সোমবার",
+    "level": 21
+  },
+  {
+    "arabic": "الثُّلَاثَاء",
+    "bangla": "মঙ্গলবার",
+    "level": 21
+  },
+  {
+    "arabic": "الْأَرْبِعَاء",
+    "bangla": "বুধবার",
+    "level": 21
+  },
+  {
+    "arabic": "الْخَمِيس",
+    "bangla": "বৃহস্পতিবার",
+    "level": 21
+  },
+  {
+    "arabic": "الْجُمُعَة",
+    "bangla": "শুক্রবার",
+    "level": 21
+  },
+  {
+    "arabic": "شِتَاء",
+    "bangla": "শীতকাল",
+    "level": 22
+  },
+  {
+    "arabic": "صَيْف",
+    "bangla": "গ্রীষ্মকাল",
+    "level": 22
+  },
+  {
+    "arabic": "رَبِيع",
+    "bangla": "বসন্তকাল",
+    "level": 22
+  },
+  {
+    "arabic": "خَرِيف",
+    "bangla": "শরৎকাল",
+    "level": 22
+  },
+  {
+    "arabic": "ثَلْج",
+    "bangla": "বরফ",
+    "level": 22
+  },
+  {
+    "arabic": "رَعْد",
+    "bangla": "বজ্রধ্বনি",
+    "level": 22
+  },
+  {
+    "arabic": "بَرْق",
+    "bangla": "বিদ্যুৎ চমক",
+    "level": 22
+  },
+  {
+    "arabic": "ضَبَاب",
+    "bangla": "কুয়াশা",
+    "level": 22
+  },
+  {
+    "arabic": "أَب",
+    "bangla": "পিতা",
+    "level": 23
+  },
+  {
+    "arabic": "أُمّ",
+    "bangla": "মাতা",
+    "level": 23
+  },
+  {
+    "arabic": "أَخ",
+    "bangla": "ভাই",
+    "level": 23
+  },
+  {
+    "arabic": "أُخْت",
+    "bangla": "বোন",
+    "level": 23
+  },
+  {
+    "arabic": "جَدّ",
+    "bangla": "দাদা / নানা",
+    "level": 23
+  },
+  {
+    "arabic": "جَدَّة",
+    "bangla": "দাদি / নানি",
+    "level": 23
+  },
+  {
+    "arabic": "عَمّ",
+    "bangla": "চাচা",
+    "level": 23
+  },
+  {
+    "arabic": "عَمَّة",
+    "bangla": "ফুফু",
+    "level": 23
+  },
+  {
+    "arabic": "خَال",
+    "bangla": "মামা",
+    "level": 23
+  },
+  {
+    "arabic": "خَالَة",
+    "bangla": "খালা",
+    "level": 23
+  },
+  {
+    "arabic": "قَلَم رَصَاص",
+    "bangla": "পেন্সিল",
+    "level": 24
+  },
+  {
+    "arabic": "مِسْطَرَة",
+    "bangla": "রুলার / স্কেল",
+    "level": 24
+  },
+  {
+    "arabic": "مِمْحَاة",
+    "bangla": "রাবার",
+    "level": 24
+  },
+  {
+    "arabic": "سَبُّورَة",
+    "bangla": "ব্ল্যাকবোর্ড",
+    "level": 24
+  },
+  {
+    "arabic": "طَبَاشِير",
+    "bangla": "চক",
+    "level": 24
+  },
+  {
+    "arabic": "مِقَصّ",
+    "bangla": "কাঁচি",
+    "level": 24
+  },
+  {
+    "arabic": "غِرَاء",
+    "bangla": "আঠা / গঁদ",
+    "level": 24
+  },
+  {
+    "arabic": "مِلَفّ",
+    "bangla": "ফাইল / ফোল্ডার",
+    "level": 24
+  },
+  {
+    "arabic": "حَافِلَة",
+    "bangla": "বাস",
+    "level": 24
+  },
+  {
+    "arabic": "مِبْرَاة",
+    "bangla": "পেন্সিল কাটার",
+    "level": 24
+  },
+  {
+    "arabic": "كُرَة",
+    "bangla": "বল",
+    "level": 25
+  },
+  {
+    "arabic": "كُرَة الْقَدَم",
+    "bangla": "ফুটবল",
+    "level": 25
+  },
+  {
+    "arabic": "كُرَة السَّلَّة",
+    "bangla": "বাস্কেটবল",
+    "level": 25
+  },
+  {
+    "arabic": "سِبَاحَة",
+    "bangla": "সাঁতার",
+    "level": 25
+  },
+  {
+    "arabic": "جَرْي",
+    "bangla": "দৌড়",
+    "level": 25
+  },
+  {
+    "arabic": "مُلَاكَمَة",
+    "bangla": "বক্সিং",
+    "level": 25
+  },
+  {
+    "arabic": "شَطْرَنْج",
+    "bangla": "দাবা",
+    "level": 25
+  },
+  {
+    "arabic": "مِضْرَب",
+    "bangla": "ব্যাট / র‍্যাকেট",
+    "level": 25
+  },
+  {
+    "arabic": "فَرِيق",
+    "bangla": "দল",
+    "level": 25
+  },
+  {
+    "arabic": "لَاعِب",
+    "bangla": "খেলোয়াড়",
+    "level": 25
+  },
+  {
+    "arabic": "قِطَار",
+    "bangla": "ট্রেন",
+    "level": 26
+  },
+  {
+    "arabic": "سَفِينَة",
+    "bangla": "জাহাজ",
+    "level": 26
+  },
+  {
+    "arabic": "قَارِب",
+    "bangla": "নৌকা",
+    "level": 26
+  },
+  {
+    "arabic": "دَرَّاجَة نَارِيَّة",
+    "bangla": "মোটরসাইকেল",
+    "level": 26
+  },
+  {
+    "arabic": "شَاحِنَة",
+    "bangla": "ট্রাক",
+    "level": 26
+  },
+  {
+    "arabic": "مِرْوَحِيَّة",
+    "bangla": "হেলিকপ্টার",
+    "level": 26
+  },
+  {
+    "arabic": "تَاكْسِي",
+    "bangla": "ট্যাক্সি",
+    "level": 26
+  },
+  {
+    "arabic": "مِتْرُو",
+    "bangla": "মেট্রো / পাতাল রেল",
+    "level": 26
+  },
+  {
+    "arabic": "سَافَرَ",
+    "bangla": "সে ভ্রমণ করেছে",
+    "level": 27
+  },
+  {
+    "arabic": "لَعِبَ",
+    "bangla": "সে খেলেছে",
+    "level": 27
+  },
+  {
+    "arabic": "غَسَلَ",
+    "bangla": "সে ধুয়েছে",
+    "level": 27
+  },
+  {
+    "arabic": "طَبَخَ",
+    "bangla": "সে রান্না করেছে",
+    "level": 27
+  },
+  {
+    "arabic": "دَرَسَ",
+    "bangla": "সে অধ্যয়ন করেছে",
+    "level": 27
+  },
+  {
+    "arabic": "سَمِعَ",
+    "bangla": "সে শুনেছে",
+    "level": 27
+  },
+  {
+    "arabic": "نَظَرَ",
+    "bangla": "সে তাকিয়েছে",
+    "level": 27
+  },
+  {
+    "arabic": "تَكَلَّمَ",
+    "bangla": "সে কথা বলেছে",
+    "level": 27
+  },
+  {
+    "arabic": "ضَحِكَ",
+    "bangla": "সে হেসেছে",
+    "level": 27
+  },
+  {
+    "arabic": "بَكَى",
+    "bangla": "সে কেঁদেছে",
+    "level": 27
+  },
+  {
+    "arabic": "أَكْبَر",
+    "bangla": "অধিক বড়",
+    "level": 28
+  },
+  {
+    "arabic": "أَصْغَر",
+    "bangla": "অধিক ছোট",
+    "level": 28
+  },
+  {
+    "arabic": "أَطْوَل",
+    "bangla": "অধিক লম্বা",
+    "level": 28
+  },
+  {
+    "arabic": "أَقْصَر",
+    "bangla": "অধিক খাটো",
+    "level": 28
+  },
+  {
+    "arabic": "أَجْمَل",
+    "bangla": "অধিক সুন্দর",
+    "level": 28
+  },
+  {
+    "arabic": "أَسْرَع",
+    "bangla": "অধিক দ্রুত",
+    "level": 28
+  },
+  {
+    "arabic": "أَقْوَى",
+    "bangla": "অধিক শক্তিশালী",
+    "level": 28
+  },
+  {
+    "arabic": "أَغْنَى",
+    "bangla": "অধিক ধনী",
+    "level": 28
+  },
+  {
+    "arabic": "أَفْضَل",
+    "bangla": "অধিক উত্তম",
+    "level": 28
+  },
+  {
+    "arabic": "أَحْسَن",
+    "bangla": "অধিক ভালো",
+    "level": 28
+  },
+  {
+    "arabic": "مَوْز",
+    "bangla": "কলা",
+    "level": 29
+  },
+  {
+    "arabic": "عِنَب",
+    "bangla": "আঙুর",
+    "level": 29
+  },
+  {
+    "arabic": "بُرْتُقَال",
+    "bangla": "কমলা",
+    "level": 29
+  },
+  {
+    "arabic": "مَانْجُو",
+    "bangla": "আম",
+    "level": 29
+  },
+  {
+    "arabic": "أَنَانَاس",
+    "bangla": "আনারস",
+    "level": 29
+  },
+  {
+    "arabic": "بِطِّيخ",
+    "bangla": "তরমুজ",
+    "level": 29
+  },
+  {
+    "arabic": "فَرَاوْلَة",
+    "bangla": "স্ট্রবেরি",
+    "level": 29
+  },
+  {
+    "arabic": "لَيْمُون",
+    "bangla": "লেবু",
+    "level": 29
+  },
+  {
+    "arabic": "رُمَّان",
+    "bangla": "ডালিম",
+    "level": 29
+  },
+  {
+    "arabic": "جَوْز الْهِنْد",
+    "bangla": "নারিকেল",
+    "level": 29
+  },
+  {
+    "arabic": "طَمَاطِم",
+    "bangla": "টমেটো",
+    "level": 30
+  },
+  {
+    "arabic": "بَطَاطَا",
+    "bangla": "আলু",
+    "level": 30
+  },
+  {
+    "arabic": "بَصَل",
+    "bangla": "পেঁয়াজ",
+    "level": 30
+  },
+  {
+    "arabic": "ثُوم",
+    "bangla": "রসুন",
+    "level": 30
+  },
+  {
+    "arabic": "جَزَر",
+    "bangla": "গাজর",
+    "level": 30
+  },
+  {
+    "arabic": "خِيَار",
+    "bangla": "শসা",
+    "level": 30
+  },
+  {
+    "arabic": "بَاذِنْجَان",
+    "bangla": "বেগুন",
+    "level": 30
+  },
+  {
+    "arabic": "فَلْفِل",
+    "bangla": "মরিচ",
+    "level": 30
+  },
+  {
+    "arabic": "كُرُنْب",
+    "bangla": "বাঁধাকপি",
+    "level": 30
+  },
+  {
+    "arabic": "ذُرَة",
+    "bangla": "ভুট্টা",
+    "level": 30
+  },
+  {
+    "arabic": "دَائِرَة",
+    "bangla": "বৃত্ত",
+    "level": 31
+  },
+  {
+    "arabic": "مُرَبَّع",
+    "bangla": "বর্গক্ষেত্র",
+    "level": 31
+  },
+  {
+    "arabic": "مُثَلَّث",
+    "bangla": "ত্রিভুজ",
+    "level": 31
+  },
+  {
+    "arabic": "مُسْتَطِيل",
+    "bangla": "আয়তক্ষেত্র",
+    "level": 31
+  },
+  {
+    "arabic": "خَطّ",
+    "bangla": "রেখা",
+    "level": 31
+  },
+  {
+    "arabic": "نُقْطَة",
+    "bangla": "বিন্দু",
+    "level": 31
+  },
+  {
+    "arabic": "نَجْمَة",
+    "bangla": "তারকা (আকৃতি)",
+    "level": 31
+  },
+  {
+    "arabic": "بَيْضَاوِيّ",
+    "bangla": "ডিম্বাকার",
+    "level": 31
+  },
+  {
+    "arabic": "مُعَيَّن",
+    "bangla": "রম্বস",
+    "level": 31
+  },
+  {
+    "arabic": "قِرَاءَة",
+    "bangla": "পড়া",
+    "level": 32
+  },
+  {
+    "arabic": "رَسْم",
+    "bangla": "আঁকা",
+    "level": 32
+  },
+  {
+    "arabic": "غِنَاء",
+    "bangla": "গান গাওয়া",
+    "level": 32
+  },
+  {
+    "arabic": "رَقْص",
+    "bangla": "নাচ",
+    "level": 32
+  },
+  {
+    "arabic": "تَصْوِير",
+    "bangla": "ছবি তোলা",
+    "level": 32
+  },
+  {
+    "arabic": "طَبْخ",
+    "bangla": "রান্না করা",
+    "level": 32
+  },
+  {
+    "arabic": "حِيَاكَة",
+    "bangla": "সেলাই",
+    "level": 32
+  },
+  {
+    "arabic": "بُسْتَنَة",
+    "bangla": "বাগান করা",
+    "level": 32
+  },
+  {
+    "arabic": "تَخْيِيم",
+    "bangla": "ক্যাম্পিং",
+    "level": 32
+  },
+  {
+    "arabic": "صَيْد السَّمَك",
+    "bangla": "মাছ ধরা",
+    "level": 32
+  },
+  {
+    "arabic": "حَاسُوب",
+    "bangla": "কম্পিউটার",
+    "level": 33
+  },
+  {
+    "arabic": "هَاتِف",
+    "bangla": "ফোন",
+    "level": 33
+  },
+  {
+    "arabic": "طَابِعَة",
+    "bangla": "প্রিন্টার",
+    "level": 33
+  },
+  {
+    "arabic": "اِجْتِمَاع",
+    "bangla": "মিটিং",
+    "level": 33
+  },
+  {
+    "arabic": "مُوَظَّف",
+    "bangla": "কর্মচারী",
+    "level": 33
+  },
+  {
+    "arabic": "مُدِير",
+    "bangla": "পরিচালক / ম্যানেজার",
+    "level": 33
+  },
+  {
+    "arabic": "رَاتِب",
+    "bangla": "বেতন",
+    "level": 33
+  },
+  {
+    "arabic": "عَقْد",
+    "bangla": "চুক্তি",
+    "level": 33
+  },
+  {
+    "arabic": "بَرِيد إِلِكْتْرُونِيّ",
+    "bangla": "ইমেইল",
+    "level": 33
+  },
+  {
+    "arabic": "اِسْتِرَاحَة",
+    "bangla": "বিরতি",
+    "level": 33
+  },
+  {
+    "arabic": "قِدْر",
+    "bangla": "হাঁড়ি",
+    "level": 34
+  },
+  {
+    "arabic": "مِقْلَاة",
+    "bangla": "ফ্রাইং প্যান",
+    "level": 34
+  },
+  {
+    "arabic": "سِكِّين",
+    "bangla": "ছুরি",
+    "level": 34
+  },
+  {
+    "arabic": "مِلْعَقَة",
+    "bangla": "চামচ",
+    "level": 34
+  },
+  {
+    "arabic": "شَوْكَة",
+    "bangla": "কাঁটাচামচ",
+    "level": 34
+  },
+  {
+    "arabic": "صَحْن",
+    "bangla": "প্লেট",
+    "level": 34
+  },
+  {
+    "arabic": "كُوب",
+    "bangla": "গ্লাস / কাপ",
+    "level": 34
+  },
+  {
+    "arabic": "ثَلَّاجَة",
+    "bangla": "ফ্রিজ",
+    "level": 34
+  },
+  {
+    "arabic": "فُرْن",
+    "bangla": "চুলা / ওভেন",
+    "level": 34
+  },
+  {
+    "arabic": "مِنْشَفَة",
+    "bangla": "তোয়ালে",
+    "level": 34
+  },
+  {
+    "arabic": "كَتِف",
+    "bangla": "কাঁধ",
+    "level": 35
+  },
+  {
+    "arabic": "ظَهْر",
+    "bangla": "পিঠ",
+    "level": 35
+  },
+  {
+    "arabic": "بَطْن",
+    "bangla": "পেট",
+    "level": 35
+  },
+  {
+    "arabic": "إِصْبَع",
+    "bangla": "আঙুল",
+    "level": 35
+  },
+  {
+    "arabic": "ظُفْر",
+    "bangla": "নখ",
+    "level": 35
+  },
+  {
+    "arabic": "رُكْبَة",
+    "bangla": "হাঁটু",
+    "level": 35
+  },
+  {
+    "arabic": "كَاحِل",
+    "bangla": "গোড়ালি",
+    "level": 35
+  },
+  {
+    "arabic": "رَقَبَة",
+    "bangla": "ঘাড়",
+    "level": 35
+  },
+  {
+    "arabic": "حَاجِب",
+    "bangla": "ভুরু",
+    "level": 35
+  },
+  {
+    "arabic": "شَفَة",
+    "bangla": "ঠোঁট",
+    "level": 35
+  },
+  {
+    "arabic": "شَمَال",
+    "bangla": "উত্তর",
+    "level": 36
+  },
+  {
+    "arabic": "جَنُوب",
+    "bangla": "দক্ষিণ",
+    "level": 36
+  },
+  {
+    "arabic": "شَرْق",
+    "bangla": "পূর্ব",
+    "level": 36
+  },
+  {
+    "arabic": "غَرْب",
+    "bangla": "পশ্চিম",
+    "level": 36
+  },
+  {
+    "arabic": "وَسَط",
+    "bangla": "মধ্যম / মাঝে",
+    "level": 36
+  },
+  {
+    "arabic": "جِهَة",
+    "bangla": "দিক",
+    "level": 36
+  },
+  {
+    "arabic": "مَرَض",
+    "bangla": "রোগ",
+    "level": 37
+  },
+  {
+    "arabic": "حُمَّى",
+    "bangla": "জ্বর",
+    "level": 37
+  },
+  {
+    "arabic": "صُدَاع",
+    "bangla": "মাথাব্যথা",
+    "level": 37
+  },
+  {
+    "arabic": "دَوَاء",
+    "bangla": "ওষুধ",
+    "level": 37
+  },
+  {
+    "arabic": "مُمَرِّضَة",
+    "bangla": "নার্স",
+    "level": 37
+  },
+  {
+    "arabic": "حَقْنَة",
+    "bangla": "ইনজেকশন",
+    "level": 37
+  },
+  {
+    "arabic": "صَيْدَلِيَّة",
+    "bangla": "ফার্মেসি",
+    "level": 37
+  },
+  {
+    "arabic": "سُعَال",
+    "bangla": "কাশি",
+    "level": 37
+  },
+  {
+    "arabic": "أَلَم",
+    "bangla": "ব্যথা",
+    "level": 37
+  },
+  {
+    "arabic": "صَلَاة",
+    "bangla": "নামাজ",
+    "level": 38
+  },
+  {
+    "arabic": "وُضُوء",
+    "bangla": "অজু",
+    "level": 38
+  },
+  {
+    "arabic": "أَذَان",
+    "bangla": "আজান",
+    "level": 38
+  },
+  {
+    "arabic": "إِمَام",
+    "bangla": "ইমাম",
+    "level": 38
+  },
+  {
+    "arabic": "مُصَلَّى",
+    "bangla": "নামাজের স্থান",
+    "level": 38
+  },
+  {
+    "arabic": "قِبْلَة",
+    "bangla": "কিবলা",
+    "level": 38
+  },
+  {
+    "arabic": "رُكُوع",
+    "bangla": "রুকু",
+    "level": 38
+  },
+  {
+    "arabic": "سُجُود",
+    "bangla": "সিজদা",
+    "level": 38
+  },
+  {
+    "arabic": "دُعَاء",
+    "bangla": "দোয়া",
+    "level": 38
+  },
+  {
+    "arabic": "صِيَام",
+    "bangla": "রোজা",
+    "level": 38
+  },
+  {
+    "arabic": "نَحْلَة",
+    "bangla": "মৌমাছি",
+    "level": 39
+  },
+  {
+    "arabic": "فَرَاشَة",
+    "bangla": "প্রজাপতি",
+    "level": 39
+  },
+  {
+    "arabic": "ذُبَابَة",
+    "bangla": "মাছি",
+    "level": 39
+  },
+  {
+    "arabic": "بَعُوضَة",
+    "bangla": "মশা",
+    "level": 39
+  },
+  {
+    "arabic": "نَمْلَة",
+    "bangla": "পিঁপড়া",
+    "level": 39
+  },
+  {
+    "arabic": "عَنْكَبُوت",
+    "bangla": "মাকড়সা",
+    "level": 39
+  },
+  {
+    "arabic": "صُرْصُور",
+    "bangla": "তেলাপোকা",
+    "level": 39
+  },
+  {
+    "arabic": "جَرَادَة",
+    "bangla": "পঙ্গপাল",
+    "level": 39
+  },
+  {
+    "arabic": "حُوت",
+    "bangla": "তিমি",
+    "level": 40
+  },
+  {
+    "arabic": "قِرْش",
+    "bangla": "হাঙর",
+    "level": 40
+  },
+  {
+    "arabic": "دُلْفِين",
+    "bangla": "ডলফিন",
+    "level": 40
+  },
+  {
+    "arabic": "سَرَطَان",
+    "bangla": "কাঁকড়া",
+    "level": 40
+  },
+  {
+    "arabic": "أَخْطَبُوط",
+    "bangla": "অক্টোপাস",
+    "level": 40
+  },
+  {
+    "arabic": "سَلَحْفَاة",
+    "bangla": "কচ্ছপ",
+    "level": 40
+  },
+  {
+    "arabic": "نَجْمُ الْبَحْرِ",
+    "bangla": "স্টারফিশ",
+    "level": 40
+  },
+  {
+    "arabic": "دِيك",
+    "bangla": "মোরগ",
+    "level": 41
+  },
+  {
+    "arabic": "بَطَّة",
+    "bangla": "হাঁস",
+    "level": 41
+  },
+  {
+    "arabic": "حَمَامَة",
+    "bangla": "পায়রা",
+    "level": 41
+  },
+  {
+    "arabic": "جَدْي",
+    "bangla": "পাঁঠা / ছাগলছানা",
+    "level": 41
+  },
+  {
+    "arabic": "عِجْل",
+    "bangla": "বাছুর",
+    "level": 41
+  },
+  {
+    "arabic": "مُهْر",
+    "bangla": "ঘোড়ার বাচ্চা",
+    "level": 41
+  },
+  {
+    "arabic": "ذِئْب",
+    "bangla": "নেকড়ে",
+    "level": 42
+  },
+  {
+    "arabic": "ثَعْلَب",
+    "bangla": "শিয়াল",
+    "level": 42
+  },
+  {
+    "arabic": "دُبّ",
+    "bangla": "ভালুক",
+    "level": 42
+  },
+  {
+    "arabic": "نَمِر",
+    "bangla": "চিতাবাঘ",
+    "level": 42
+  },
+  {
+    "arabic": "غَزَال",
+    "bangla": "হরিণ",
+    "level": 42
+  },
+  {
+    "arabic": "زَرَافَة",
+    "bangla": "জিরাফ",
+    "level": 42
+  },
+  {
+    "arabic": "فَهْد",
+    "bangla": "চিতা",
+    "level": 42
+  },
+  {
+    "arabic": "كَنْغَر",
+    "bangla": "ক্যাঙ্গারু",
+    "level": 42
+  },
+  {
+    "arabic": "آدَم",
+    "bangla": "আদম (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "نُوح",
+    "bangla": "নূহ (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "إِبْرَاهِيم",
+    "bangla": "ইবরাহীম (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "مُوسَى",
+    "bangla": "মূসা (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "عِيسَى",
+    "bangla": "ঈসা (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "مُحَمَّد",
+    "bangla": "মুহাম্মদ (সা.)",
+    "level": 43
+  },
+  {
+    "arabic": "يُوسُف",
+    "bangla": "ইউসুফ (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "يُونُس",
+    "bangla": "ইউনুস (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "دَاوُد",
+    "bangla": "দাউদ (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "سُلَيْمَان",
+    "bangla": "সুলাইমান (আ.)",
+    "level": 43
+  },
+  {
+    "arabic": "قُرْآن",
+    "bangla": "কুরআন",
+    "level": 44
+  },
+  {
+    "arabic": "حَدِيث",
+    "bangla": "হাদিস",
+    "level": 44
+  },
+  {
+    "arabic": "سُنَّة",
+    "bangla": "সুন্নাহ",
+    "level": 44
+  },
+  {
+    "arabic": "زَكَاة",
+    "bangla": "যাকাত",
+    "level": 44
+  },
+  {
+    "arabic": "حَجّ",
+    "bangla": "হজ",
+    "level": 44
+  },
+  {
+    "arabic": "جَنَّة",
+    "bangla": "জান্নাত",
+    "level": 44
+  },
+  {
+    "arabic": "جَهَنَّم",
+    "bangla": "জাহান্নাম",
+    "level": 44
+  },
+  {
+    "arabic": "مَلَاك",
+    "bangla": "ফেরেশতা",
+    "level": 44
+  },
+  {
+    "arabic": "شَيْطَان",
+    "bangla": "শয়তান",
+    "level": 44
+  },
+  {
+    "arabic": "صِدْق",
+    "bangla": "সততা",
+    "level": 45
+  },
+  {
+    "arabic": "أَمَانَة",
+    "bangla": "বিশ্বস্ততা",
+    "level": 45
+  },
+  {
+    "arabic": "صَبْر",
+    "bangla": "ধৈর্য",
+    "level": 45
+  },
+  {
+    "arabic": "شُكْر",
+    "bangla": "কৃতজ্ঞতা",
+    "level": 45
+  },
+  {
+    "arabic": "تَوَاضُع",
+    "bangla": "বিনয়",
+    "level": 45
+  },
+  {
+    "arabic": "كَرَم",
+    "bangla": "উদারতা",
+    "level": 45
+  },
+  {
+    "arabic": "رَحْمَة",
+    "bangla": "দয়া",
+    "level": 45
+  },
+  {
+    "arabic": "عَدْل",
+    "bangla": "ন্যায়বিচার",
+    "level": 45
+  },
+  {
+    "arabic": "حِلْم",
+    "bangla": "সহনশীলতা",
+    "level": 45
+  },
+  {
+    "arabic": "إِخْلَاص",
+    "bangla": "একনিষ্ঠতা",
+    "level": 45
+  },
+  {
+    "arabic": "كَوْكَب",
+    "bangla": "গ্রহ",
+    "level": 46
+  },
+  {
+    "arabic": "مَجَرَّة",
+    "bangla": "গ্যালাক্সি",
+    "level": 46
+  },
+  {
+    "arabic": "شُهُب",
+    "bangla": "উল্কা",
+    "level": 46
+  },
+  {
+    "arabic": "فَضَاء",
+    "bangla": "মহাকাশ",
+    "level": 46
+  },
+  {
+    "arabic": "أُفُق",
+    "bangla": "দিগন্ত",
+    "level": 46
+  },
+  {
+    "arabic": "غُرُوب",
+    "bangla": "সূর্যাস্ত",
+    "level": 46
+  },
+  {
+    "arabic": "شُرُوق",
+    "bangla": "সূর্যোদয়",
+    "level": 46
+  },
+  {
+    "arabic": "حُلْو",
+    "bangla": "মিষ্টি",
+    "level": 47
+  },
+  {
+    "arabic": "حَامِض",
+    "bangla": "টক",
+    "level": 47
+  },
+  {
+    "arabic": "مَالِح",
+    "bangla": "নোনতা",
+    "level": 47
+  },
+  {
+    "arabic": "مُرّ",
+    "bangla": "তেতো",
+    "level": 47
+  },
+  {
+    "arabic": "طَرِيّ",
+    "bangla": "নরম",
+    "level": 47
+  },
+  {
+    "arabic": "صُلْب",
+    "bangla": "শক্ত / কঠিন",
+    "level": 47
+  },
+  {
+    "arabic": "نَاعِم",
+    "bangla": "মসৃণ",
+    "level": 47
+  },
+  {
+    "arabic": "خَشِن",
+    "bangla": "রুক্ষ",
+    "level": 47
+  },
+  {
+    "arabic": "تِلْفَاز",
+    "bangla": "টিভি",
+    "level": 48
+  },
+  {
+    "arabic": "رَادْيُو",
+    "bangla": "রেডিও",
+    "level": 48
+  },
+  {
+    "arabic": "كَامِيرَا",
+    "bangla": "ক্যামেরা",
+    "level": 48
+  },
+  {
+    "arabic": "سَاعَة ذَكِيَّة",
+    "bangla": "স্মার্টওয়াচ",
+    "level": 48
+  },
+  {
+    "arabic": "شَاحِن",
+    "bangla": "চার্জার",
+    "level": 48
+  },
+  {
+    "arabic": "سَمَّاعَة",
+    "bangla": "হেডফোন / ইয়ারফোন",
+    "level": 48
+  },
+  {
+    "arabic": "نَخْلَة",
+    "bangla": "খেজুর গাছ",
+    "level": 49
+  },
+  {
+    "arabic": "جِذْر",
+    "bangla": "মূল",
+    "level": 49
+  },
+  {
+    "arabic": "وَرَقَة",
+    "bangla": "পাতা",
+    "level": 49
+  },
+  {
+    "arabic": "غُصْن",
+    "bangla": "ডাল",
+    "level": 49
+  },
+  {
+    "arabic": "بُذُور",
+    "bangla": "বীজ",
+    "level": 49
+  },
+  {
+    "arabic": "زَرْع",
+    "bangla": "চাষ / ফসল",
+    "level": 49
+  },
+  {
+    "arabic": "مِطْرَقَة",
+    "bangla": "হাতুড়ি",
+    "level": 50
+  },
+  {
+    "arabic": "مِسْمَار",
+    "bangla": "পেরেক",
+    "level": 50
+  },
+  {
+    "arabic": "مِفَكّ",
+    "bangla": "স্ক্রুড্রাইভার",
+    "level": 50
+  },
+  {
+    "arabic": "مِنْشَار",
+    "bangla": "করাত",
+    "level": 50
+  },
+  {
+    "arabic": "سُلَّم",
+    "bangla": "মই",
+    "level": 50
+  },
+  {
+    "arabic": "دَائِمًا",
+    "bangla": "সবসময়",
+    "level": 51
+  },
+  {
+    "arabic": "أَحْيَانًا",
+    "bangla": "কখনো কখনো",
+    "level": 51
+  },
+  {
+    "arabic": "أَبَدًا",
+    "bangla": "কখনোই না",
+    "level": 51
+  },
+  {
+    "arabic": "غَالِبًا",
+    "bangla": "প্রায়ই",
+    "level": 51
+  },
+  {
+    "arabic": "نَادِرًا",
+    "bangla": "কদাচিৎ",
+    "level": 51
+  },
+  {
+    "arabic": "فَوْرًا",
+    "bangla": "তৎক্ষণাৎ",
+    "level": 51
+  },
+  {
+    "arabic": "رِيَاضِيَّات",
+    "bangla": "গণিত",
+    "level": 52
+  },
+  {
+    "arabic": "عُلُوم",
+    "bangla": "বিজ্ঞান",
+    "level": 52
+  },
+  {
+    "arabic": "تَارِيخ",
+    "bangla": "ইতিহাস",
+    "level": 52
+  },
+  {
+    "arabic": "جُغْرَافِيَا",
+    "bangla": "ভূগোল",
+    "level": 52
+  },
+  {
+    "arabic": "لُغَة عَرَبِيَّة",
+    "bangla": "আরবি ভাষা",
+    "level": 52
+  },
+  {
+    "arabic": "لُغَة إِنْجِلِيزِيَّة",
+    "bangla": "ইংরেজি ভাষা",
+    "level": 52
+  },
+  {
+    "arabic": "تَرْبِيَة إِسْلَامِيَّة",
+    "bangla": "ইসলামি শিক্ষা",
+    "level": 52
+  },
+  {
+    "arabic": "فَنّ",
+    "bangla": "চারুকলা",
+    "level": 52
+  },
+  {
+    "arabic": "نُقُود",
+    "bangla": "টাকা / অর্থ",
+    "level": 53
+  },
+  {
+    "arabic": "عُمْلَة",
+    "bangla": "মুদ্রা",
+    "level": 53
+  },
+  {
+    "arabic": "ثَمَن",
+    "bangla": "মূল্য",
+    "level": 53
+  },
+  {
+    "arabic": "رَخِيص",
+    "bangla": "সস্তা",
+    "level": 53
+  },
+  {
+    "arabic": "غَالٍ",
+    "bangla": "দামি",
+    "level": 53
+  },
+  {
+    "arabic": "فَاتُورَة",
+    "bangla": "বিল / রশিদ",
+    "level": 53
+  },
+  {
+    "arabic": "خَصْم",
+    "bangla": "ছাড় / ডিসকাউন্ট",
+    "level": 53
+  },
+  {
+    "arabic": "مَحَلّ",
+    "bangla": "দোকান",
+    "level": 53
+  },
+  {
+    "arabic": "خَشَب",
+    "bangla": "কাঠ",
+    "level": 54
+  },
+  {
+    "arabic": "حَدِيد",
+    "bangla": "লোহা",
+    "level": 54
+  },
+  {
+    "arabic": "بِلَاسْتِيك",
+    "bangla": "প্লাস্টিক",
+    "level": 54
+  },
+  {
+    "arabic": "زُجَاج",
+    "bangla": "কাচ",
+    "level": 54
+  },
+  {
+    "arabic": "قُطْن",
+    "bangla": "তুলা / কটন",
+    "level": 54
+  },
+  {
+    "arabic": "حَرِير",
+    "bangla": "রেশম",
+    "level": 54
+  },
+  {
+    "arabic": "جِلْد",
+    "bangla": "চামড়া",
+    "level": 54
+  },
+  {
+    "arabic": "ذَهَب",
+    "bangla": "সোনা",
+    "level": 54
+  },
+  {
+    "arabic": "فِضَّة",
+    "bangla": "রূপা",
+    "level": 54
+  },
+  {
+    "arabic": "وَرَق",
+    "bangla": "কাগজ",
+    "level": 54
+  },
+  {
+    "arabic": "أَحَدَ عَشَر",
+    "bangla": "এগারো",
+    "level": 55
+  },
+  {
+    "arabic": "اِثْنَا عَشَر",
+    "bangla": "বারো",
+    "level": 55
+  },
+  {
+    "arabic": "ثَلَاثَةَ عَشَر",
+    "bangla": "তেরো",
+    "level": 55
+  },
+  {
+    "arabic": "أَرْبَعَةَ عَشَر",
+    "bangla": "চৌদ্দ",
+    "level": 55
+  },
+  {
+    "arabic": "خَمْسَةَ عَشَر",
+    "bangla": "পনেরো",
+    "level": 55
+  },
+  {
+    "arabic": "سِتَّةَ عَشَر",
+    "bangla": "ষোলো",
+    "level": 55
+  },
+  {
+    "arabic": "سَبْعَةَ عَشَر",
+    "bangla": "সতেরো",
+    "level": 55
+  },
+  {
+    "arabic": "ثَمَانِيَةَ عَشَر",
+    "bangla": "আঠারো",
+    "level": 55
+  },
+  {
+    "arabic": "تِسْعَةَ عَشَر",
+    "bangla": "উনিশ",
+    "level": 55
+  },
+  {
+    "arabic": "عِشْرُون",
+    "bangla": "বিশ",
+    "level": 55
+  },
+  {
+    "arabic": "أَوَّل",
+    "bangla": "প্রথম",
+    "level": 56
+  },
+  {
+    "arabic": "ثَانِي",
+    "bangla": "দ্বিতীয়",
+    "level": 56
+  },
+  {
+    "arabic": "ثَالِث",
+    "bangla": "তৃতীয়",
+    "level": 56
+  },
+  {
+    "arabic": "رَابِع",
+    "bangla": "চতুর্থ",
+    "level": 56
+  },
+  {
+    "arabic": "خَامِس",
+    "bangla": "পঞ্চম",
+    "level": 56
+  },
+  {
+    "arabic": "سَادِس",
+    "bangla": "ষষ্ঠ",
+    "level": 56
+  },
+  {
+    "arabic": "سَابِع",
+    "bangla": "সপ্তম",
+    "level": 56
+  },
+  {
+    "arabic": "ثَامِن",
+    "bangla": "অষ্টম",
+    "level": 56
+  },
+  {
+    "arabic": "تَاسِع",
+    "bangla": "নবম",
+    "level": 56
+  },
+  {
+    "arabic": "عَاشِر",
+    "bangla": "দশম",
+    "level": 56
+  },
+  {
+    "arabic": "إِسْعَاف",
+    "bangla": "অ্যাম্বুলেন্স",
+    "level": 57
+  },
+  {
+    "arabic": "شُرْطَة",
+    "bangla": "পুলিশ (বাহিনী)",
+    "level": 57
+  },
+  {
+    "arabic": "خَطَر",
+    "bangla": "বিপদ",
+    "level": 57
+  },
+  {
+    "arabic": "مُسَاعَدَة",
+    "bangla": "সাহায্য",
+    "level": 57
+  },
+  {
+    "arabic": "حَرِيق",
+    "bangla": "অগ্নিকাণ্ড",
+    "level": 57
+  },
+  {
+    "arabic": "إِنْذَار",
+    "bangla": "সতর্কীকরণ",
+    "level": 57
+  },
+  {
+    "arabic": "طَوَارِئ",
+    "bangla": "জরুরি অবস্থা",
+    "level": 57
+  },
+  {
+    "arabic": "نَجَاة",
+    "bangla": "উদ্ধার / রক্ষা",
+    "level": 57
+  },
+  {
+    "arabic": "بَلَد",
+    "bangla": "দেশ",
+    "level": 58
+  },
+  {
+    "arabic": "عَاصِمَة",
+    "bangla": "রাজধানী",
+    "level": 58
+  },
+  {
+    "arabic": "قَارَّة",
+    "bangla": "মহাদেশ",
+    "level": 58
+  },
+  {
+    "arabic": "عَالَم",
+    "bangla": "বিশ্ব",
+    "level": 58
+  },
+  {
+    "arabic": "حُدُود",
+    "bangla": "সীমানা",
+    "level": 58
+  },
+  {
+    "arabic": "جِنْسِيَّة",
+    "bangla": "জাতীয়তা",
+    "level": 58
+  },
+  {
+    "arabic": "شَعْب",
+    "bangla": "জনগণ",
+    "level": 58
+  },
+  {
+    "arabic": "وَ",
+    "bangla": "এবং",
+    "level": 59
+  },
+  {
+    "arabic": "أَوْ",
+    "bangla": "অথবা",
+    "level": 59
+  },
+  {
+    "arabic": "لٰكِنْ",
+    "bangla": "কিন্তু",
+    "level": 59
+  },
+  {
+    "arabic": "لِأَنَّ",
+    "bangla": "কারণ",
+    "level": 59
+  },
+  {
+    "arabic": "إِذَا",
+    "bangla": "যদি",
+    "level": 59
+  },
+  {
+    "arabic": "حَتَّى",
+    "bangla": "এমনকি / পর্যন্ত",
+    "level": 59
+  },
+  {
+    "arabic": "ثُمَّ",
+    "bangla": "তারপর",
+    "level": 59
+  },
+  {
+    "arabic": "لِكَيْ",
+    "bangla": "যাতে",
+    "level": 59
+  },
+  {
+    "arabic": "يَفْهَمُ",
+    "bangla": "সে বোঝে",
+    "level": 60
+  },
+  {
+    "arabic": "يُحِبُّ",
+    "bangla": "সে ভালোবাসে",
+    "level": 60
+  },
+  {
+    "arabic": "يَعْرِفُ",
+    "bangla": "সে জানে",
+    "level": 60
+  },
+  {
+    "arabic": "يُرِيدُ",
+    "bangla": "সে চায়",
+    "level": 60
+  },
+  {
+    "arabic": "يَجِدُ",
+    "bangla": "সে পায়",
+    "level": 60
+  },
+  {
+    "arabic": "يَنْظُرُ",
+    "bangla": "সে দেখে",
+    "level": 60
+  },
+  {
+    "arabic": "يَسْمَعُ",
+    "bangla": "সে শোনে",
+    "level": 60
+  },
+  {
+    "arabic": "يَتَذَكَّرُ",
+    "bangla": "সে স্মরণ করে",
+    "level": 60
+  },
+  {
+    "arabic": "يَنْسَى",
+    "bangla": "সে ভুলে যায়",
+    "level": 60
+  },
+  {
+    "arabic": "يُسَاعِدُ",
+    "bangla": "সে সাহায্য করে",
+    "level": 60
+  },
+  {
+    "arabic": "مَطْعَم",
+    "bangla": "রেস্টুরেন্ট",
+    "level": 61
+  },
+  {
+    "arabic": "قَائِمَة الطَّعَام",
+    "bangla": "মেনু",
+    "level": 61
+  },
+  {
+    "arabic": "نَادِل",
+    "bangla": "ওয়েটার",
+    "level": 61
+  },
+  {
+    "arabic": "طَلَب",
+    "bangla": "অর্ডার",
+    "level": 61
+  },
+  {
+    "arabic": "حِسَاب",
+    "bangla": "বিল",
+    "level": 61
+  },
+  {
+    "arabic": "مَائِدَة",
+    "bangla": "খাবার টেবিল",
+    "level": 61
+  },
+  {
+    "arabic": "وَجْبَة",
+    "bangla": "খাবার / বেলা",
+    "level": 61
+  },
+  {
+    "arabic": "إِفْطَار",
+    "bangla": "সকালের নাস্তা",
+    "level": 61
+  },
+  {
+    "arabic": "غَدَاء",
+    "bangla": "দুপুরের খাবার",
+    "level": 61
+  },
+  {
+    "arabic": "عَشَاء",
+    "bangla": "রাতের খাবার",
+    "level": 61
+  },
+  {
+    "arabic": "جَوَاز سَفَر",
+    "bangla": "পাসপোর্ট",
+    "level": 62
+  },
+  {
+    "arabic": "تَذْكِرَة",
+    "bangla": "টিকিট",
+    "level": 62
+  },
+  {
+    "arabic": "أَمْتِعَة",
+    "bangla": "লাগেজ",
+    "level": 62
+  },
+  {
+    "arabic": "رِحْلَة",
+    "bangla": "ফ্লাইট / ভ্রমণ",
+    "level": 62
+  },
+  {
+    "arabic": "تَأْشِيرَة",
+    "bangla": "ভিসা",
+    "level": 62
+  },
+  {
+    "arabic": "جَمَارِك",
+    "bangla": "শুল্ক বিভাগ",
+    "level": 62
+  },
+  {
+    "arabic": "مُسَافِر",
+    "bangla": "যাত্রী",
+    "level": 62
+  },
+  {
+    "arabic": "وُجْهَة",
+    "bangla": "গন্তব্য",
+    "level": 62
+  },
+  {
+    "arabic": "بَنْك",
+    "bangla": "ব্যাংক",
+    "level": 63
+  },
+  {
+    "arabic": "حِسَاب بَنْكِيّ",
+    "bangla": "ব্যাংক হিসাব",
+    "level": 63
+  },
+  {
+    "arabic": "شِيك",
+    "bangla": "চেক",
+    "level": 63
+  },
+  {
+    "arabic": "طَابَع بَرِيد",
+    "bangla": "ডাকটিকিট",
+    "level": 63
+  },
+  {
+    "arabic": "رِسَالَة",
+    "bangla": "চিঠি",
+    "level": 63
+  },
+  {
+    "arabic": "طَرْد",
+    "bangla": "পার্সেল",
+    "level": 63
+  },
+  {
+    "arabic": "صُنْدُوق بَرِيد",
+    "bangla": "পোস্ট বক্স",
+    "level": 63
+  },
+  {
+    "arabic": "أَرِيكَة",
+    "bangla": "সোফা",
+    "level": 64
+  },
+  {
+    "arabic": "خِزَانَة",
+    "bangla": "আলমারি",
+    "level": 64
+  },
+  {
+    "arabic": "رَفّ",
+    "bangla": "তাক",
+    "level": 64
+  },
+  {
+    "arabic": "مِرْآة",
+    "bangla": "আয়না",
+    "level": 64
+  },
+  {
+    "arabic": "طَاوِلَة",
+    "bangla": "টেবিল",
+    "level": 64
+  },
+  {
+    "arabic": "وِسَادَة",
+    "bangla": "বালিশ",
+    "level": 64
+  },
+  {
+    "arabic": "بَطَّانِيَة",
+    "bangla": "কম্বল",
+    "level": 64
+  },
+  {
+    "arabic": "سَمِين",
+    "bangla": "মোটা",
+    "level": 65
+  },
+  {
+    "arabic": "نَحِيف",
+    "bangla": "চিকন / রোগা",
+    "level": 65
+  },
+  {
+    "arabic": "شَابّ",
+    "bangla": "তরুণ / যুবক",
+    "level": 65
+  },
+  {
+    "arabic": "عَجُوز",
+    "bangla": "বৃদ্ধ",
+    "level": 65
+  },
+  {
+    "arabic": "أَصْلَع",
+    "bangla": "টাক",
+    "level": 65
+  },
+  {
+    "arabic": "وَسِيم",
+    "bangla": "সুদর্শন",
+    "level": 65
+  },
+  {
+    "arabic": "صَابُون",
+    "bangla": "সাবান",
+    "level": 66
+  },
+  {
+    "arabic": "فُرْشَاة أَسْنَان",
+    "bangla": "টুথব্রাশ",
+    "level": 66
+  },
+  {
+    "arabic": "مَعْجُون أَسْنَان",
+    "bangla": "টুথপেস্ট",
+    "level": 66
+  },
+  {
+    "arabic": "شَامْبُو",
+    "bangla": "শ্যাম্পু",
+    "level": 66
+  },
+  {
+    "arabic": "مُشْط",
+    "bangla": "চিরুনি",
+    "level": 66
+  },
+  {
+    "arabic": "مِرْحَاض",
+    "bangla": "টয়লেট",
+    "level": 66
+  },
+  {
+    "arabic": "دُمْيَة",
+    "bangla": "পুতুল",
+    "level": 67
+  },
+  {
+    "arabic": "طَائِرَة وَرَقِيَّة",
+    "bangla": "ঘুড়ি",
+    "level": 67
+  },
+  {
+    "arabic": "أُحْجِيَّة",
+    "bangla": "ধাঁধা / পাজল",
+    "level": 67
+  },
+  {
+    "arabic": "عَرَبَة لُعْبَة",
+    "bangla": "খেলনা গাড়ি",
+    "level": 67
+  },
+  {
+    "arabic": "حَبْل",
+    "bangla": "দড়ি",
+    "level": 67
+  },
+  {
+    "arabic": "زَوْج",
+    "bangla": "স্বামী",
+    "level": 68
+  },
+  {
+    "arabic": "زَوْجَة",
+    "bangla": "স্ত্রী",
+    "level": 68
+  },
+  {
+    "arabic": "اِبْن",
+    "bangla": "ছেলে (সন্তান)",
+    "level": 68
+  },
+  {
+    "arabic": "اِبْنَة",
+    "bangla": "মেয়ে (সন্তান)",
+    "level": 68
+  },
+  {
+    "arabic": "حَفِيد",
+    "bangla": "নাতি",
+    "level": 68
+  },
+  {
+    "arabic": "تَوْأَم",
+    "bangla": "যমজ",
+    "level": 68
+  },
+  {
+    "arabic": "كِيلُوغْرَام",
+    "bangla": "কিলোগ্রাম",
+    "level": 69
+  },
+  {
+    "arabic": "مِتْر",
+    "bangla": "মিটার",
+    "level": 69
+  },
+  {
+    "arabic": "لِتْر",
+    "bangla": "লিটার",
+    "level": 69
+  },
+  {
+    "arabic": "غْرَام",
+    "bangla": "গ্রাম",
+    "level": 69
+  },
+  {
+    "arabic": "نِصْف",
+    "bangla": "অর্ধেক",
+    "level": 69
+  },
+  {
+    "arabic": "رُبْع",
+    "bangla": "এক চতুর্থাংশ",
+    "level": 69
+  },
+  {
+    "arabic": "مُحَرَّم",
+    "bangla": "মুহাররম",
+    "level": 70
+  },
+  {
+    "arabic": "صَفَر",
+    "bangla": "সফর",
+    "level": 70
+  },
+  {
+    "arabic": "رَبِيع الْأَوَّل",
+    "bangla": "রবিউল আউয়াল",
+    "level": 70
+  },
+  {
+    "arabic": "رَبِيع الثَّانِي",
+    "bangla": "রবিউস সানি",
+    "level": 70
+  },
+  {
+    "arabic": "جُمَادَى الْأُولَى",
+    "bangla": "জমাদিউল আউয়াল",
+    "level": 70
+  },
+  {
+    "arabic": "جُمَادَى الثَّانِيَة",
+    "bangla": "জমাদিউস সানি",
+    "level": 70
+  },
+  {
+    "arabic": "رَجَب",
+    "bangla": "রজব",
+    "level": 70
+  },
+  {
+    "arabic": "شَعْبَان",
+    "bangla": "শাবান",
+    "level": 70
+  },
+  {
+    "arabic": "رَمَضَان",
+    "bangla": "রমজান",
+    "level": 70
+  },
+  {
+    "arabic": "شَوَّال",
+    "bangla": "শাওয়াল",
+    "level": 70
+  },
+  {
+    "arabic": "ذُو الْقَعْدَة",
+    "bangla": "জিলকদ",
+    "level": 70
+  },
+  {
+    "arabic": "ذُو الْحِجَّة",
+    "bangla": "জিলহজ",
+    "level": 70
+  },
+  {
+    "arabic": "إِيمَان",
+    "bangla": "ঈমান",
+    "level": 71
+  },
+  {
+    "arabic": "تَقْوَى",
+    "bangla": "তাকওয়া",
+    "level": 71
+  },
+  {
+    "arabic": "تَوْحِيد",
+    "bangla": "তাওহীদ",
+    "level": 71
+  },
+  {
+    "arabic": "شِرْك",
+    "bangla": "শিরক",
+    "level": 71
+  },
+  {
+    "arabic": "حَلَال",
+    "bangla": "হালাল",
+    "level": 71
+  },
+  {
+    "arabic": "حَرَام",
+    "bangla": "হারাম",
+    "level": 71
+  },
+  {
+    "arabic": "فِطْرَة",
+    "bangla": "ফিতরাত",
+    "level": 71
+  },
+  {
+    "arabic": "آخِرَة",
+    "bangla": "আখিরাত",
+    "level": 71
+  },
+  {
+    "arabic": "جَائِع",
+    "bangla": "ক্ষুধার্ত",
+    "level": 72
+  },
+  {
+    "arabic": "عَطْشَان",
+    "bangla": "তৃষ্ণার্ত",
+    "level": 72
+  },
+  {
+    "arabic": "شَبْعَان",
+    "bangla": "পেট ভরা",
+    "level": 72
+  },
+  {
+    "arabic": "فَارِغ",
+    "bangla": "খালি",
+    "level": 72
+  },
+  {
+    "arabic": "مُمْتَلِئ",
+    "bangla": "পূর্ণ",
+    "level": 72
+  },
+  {
+    "arabic": "مُبْتَلّ",
+    "bangla": "ভেজা",
+    "level": 72
+  },
+  {
+    "arabic": "جَافّ",
+    "bangla": "শুকনো",
+    "level": 72
+  },
+  {
+    "arabic": "يَسْتَيْقِظُ",
+    "bangla": "সে ঘুম থেকে ওঠে",
+    "level": 73
+  },
+  {
+    "arabic": "يَغْسِلُ وَجْهَهُ",
+    "bangla": "সে মুখ ধোয়",
+    "level": 73
+  },
+  {
+    "arabic": "يُنَظِّفُ أَسْنَانَهُ",
+    "bangla": "সে দাঁত মাজে",
+    "level": 73
+  },
+  {
+    "arabic": "يَرْتَدِي مَلَابِسَهُ",
+    "bangla": "সে পোশাক পরে",
+    "level": 73
+  },
+  {
+    "arabic": "يَذْهَبُ إِلَى النَّوْمِ",
+    "bangla": "সে ঘুমাতে যায়",
+    "level": 73
+  },
+  {
+    "arabic": "بَيْنَ",
+    "bangla": "মাঝে / মধ্যে",
+    "level": 74
+  },
+  {
+    "arabic": "مَعَ",
+    "bangla": "সাথে",
+    "level": 74
+  },
+  {
+    "arabic": "بِدُونِ",
+    "bangla": "ছাড়া",
+    "level": 74
+  },
+  {
+    "arabic": "ضِدَّ",
+    "bangla": "বিরুদ্ধে",
+    "level": 74
+  },
+  {
+    "arabic": "خِلَالَ",
+    "bangla": "সময়ের মধ্যে",
+    "level": 74
+  },
+  {
+    "arabic": "عَبْرَ",
+    "bangla": "মধ্য দিয়ে",
+    "level": 74
+  },
+  {
+    "arabic": "نَحْوَ",
+    "bangla": "দিকে",
+    "level": 74
+  },
+  {
+    "arabic": "حَوْلَ",
+    "bangla": "চারপাশে",
+    "level": 74
+  },
+  {
+    "arabic": "قَلِق",
+    "bangla": "চিন্তিত",
+    "level": 75
+  },
+  {
+    "arabic": "مُتَحَمِّس",
+    "bangla": "উৎসাহী",
+    "level": 75
+  },
+  {
+    "arabic": "فَخُور",
+    "bangla": "গর্বিত",
+    "level": 75
+  },
+  {
+    "arabic": "خَجُول",
+    "bangla": "লাজুক",
+    "level": 75
+  },
+  {
+    "arabic": "مُتَفَاجِئ",
+    "bangla": "বিস্মিত",
+    "level": 75
+  },
+  {
+    "arabic": "غَاضِب",
+    "bangla": "রাগান্বিত",
+    "level": 75
+  },
+  {
+    "arabic": "خَائِف",
+    "bangla": "ভীত",
+    "level": 75
+  },
+  {
+    "arabic": "مُرْتَاح",
+    "bangla": "স্বস্তিবোধ করছে এমন",
+    "level": 75
+  },
+  {
+    "arabic": "مَشْغُول",
+    "bangla": "ব্যস্ত",
+    "level": 76
+  },
+  {
+    "arabic": "مَشْهُور",
+    "bangla": "বিখ্যাত",
+    "level": 76
+  },
+  {
+    "arabic": "غَرِيب",
+    "bangla": "অদ্ভুত / অপরিচিত",
+    "level": 76
+  },
+  {
+    "arabic": "مُهِمّ",
+    "bangla": "গুরুত্বপূর্ণ",
+    "level": 76
+  },
+  {
+    "arabic": "وَاضِح",
+    "bangla": "স্পষ্ট",
+    "level": 76
+  },
+  {
+    "arabic": "مُظْلِم",
+    "bangla": "অন্ধকারাচ্ছন্ন",
+    "level": 76
+  },
+  {
+    "arabic": "هَادِئ",
+    "bangla": "শান্ত",
+    "level": 76
+  },
+  {
+    "arabic": "صَاخِب",
+    "bangla": "হৈচৈপূর্ণ",
+    "level": 76
+  },
+  {
+    "arabic": "يَقْطَعُ",
+    "bangla": "সে কাটে",
+    "level": 77
+  },
+  {
+    "arabic": "يَخْلِطُ",
+    "bangla": "সে মেশায়",
+    "level": 77
+  },
+  {
+    "arabic": "يَغْلِي",
+    "bangla": "এটা ফোটে",
+    "level": 77
+  },
+  {
+    "arabic": "يَقْلِي",
+    "bangla": "সে ভাজে",
+    "level": 77
+  },
+  {
+    "arabic": "يَخْبِزُ",
+    "bangla": "সে বেক করে",
+    "level": 77
+  },
+  {
+    "arabic": "يُقَشِّرُ",
+    "bangla": "সে খোসা ছাড়ায়",
+    "level": 77
+  },
+  {
+    "arabic": "شَلَّال",
+    "bangla": "জলপ্রপাত",
+    "level": 78
+  },
+  {
+    "arabic": "كَهْف",
+    "bangla": "গুহা",
+    "level": 78
+  },
+  {
+    "arabic": "بُرْكَان",
+    "bangla": "আগ্নেয়গিরি",
+    "level": 78
+  },
+  {
+    "arabic": "جَزِيرَة",
+    "bangla": "দ্বীপ",
+    "level": 78
+  },
+  {
+    "arabic": "صَحْرَاء",
+    "bangla": "মরুভূমি",
+    "level": 78
+  },
+  {
+    "arabic": "وَادِي",
+    "bangla": "উপত্যকা",
+    "level": 78
+  },
+  {
+    "arabic": "بُحَيْرَة",
+    "bangla": "হ্রদ",
+    "level": 78
+  },
+  {
+    "arabic": "شَاطِئ",
+    "bangla": "সমুদ্র সৈকত",
+    "level": 78
+  },
+  {
+    "arabic": "يَتَّصِلُ",
+    "bangla": "সে ফোন করে",
+    "level": 79
+  },
+  {
+    "arabic": "يُرْسِلُ",
+    "bangla": "সে পাঠায়",
+    "level": 79
+  },
+  {
+    "arabic": "يُخْبِرُ",
+    "bangla": "সে জানায়",
+    "level": 79
+  },
+  {
+    "arabic": "يَسْأَلُ",
+    "bangla": "সে জিজ্ঞাসা করে",
+    "level": 79
+  },
+  {
+    "arabic": "يُجِيبُ",
+    "bangla": "সে উত্তর দেয়",
+    "level": 79
+  },
+  {
+    "arabic": "يُنَادِي",
+    "bangla": "সে ডাকে",
+    "level": 79
+  },
+  {
+    "arabic": "اِمْتِحَان",
+    "bangla": "পরীক্ষা",
+    "level": 80
+  },
+  {
+    "arabic": "وَاجِب",
+    "bangla": "বাড়ির কাজ",
+    "level": 80
+  },
+  {
+    "arabic": "سُؤَال",
+    "bangla": "প্রশ্ন",
+    "level": 80
+  },
+  {
+    "arabic": "جَوَاب",
+    "bangla": "উত্তর",
+    "level": 80
+  },
+  {
+    "arabic": "عَلَامَة",
+    "bangla": "নম্বর",
+    "level": 80
+  },
+  {
+    "arabic": "نَتِيجَة",
+    "bangla": "ফলাফল",
+    "level": 80
+  },
+  {
+    "arabic": "شَهَادَة",
+    "bangla": "সার্টিফিকেট",
+    "level": 80
+  },
+  {
+    "arabic": "نَجَاح",
+    "bangla": "সাফল্য",
+    "level": 80
+  },
+  {
+    "arabic": "مُشْمِس",
+    "bangla": "রৌদ্রোজ্জ্বল",
+    "level": 81
+  },
+  {
+    "arabic": "غَائِم",
+    "bangla": "মেঘলা",
+    "level": 81
+  },
+  {
+    "arabic": "عَاصِف",
+    "bangla": "ঝড়ো",
+    "level": 81
+  },
+  {
+    "arabic": "رَطْب",
+    "bangla": "আর্দ্র",
+    "level": 81
+  },
+  {
+    "arabic": "مُعْتَدِل",
+    "bangla": "মৃদু / নাতিশীতোষ্ণ",
+    "level": 81
+  },
+  {
+    "arabic": "جَلِيدِيّ",
+    "bangla": "বরফাচ্ছন্ন",
+    "level": 81
+  },
+  {
+    "arabic": "صَحَفِيّ",
+    "bangla": "সাংবাদিক",
+    "level": 82
+  },
+  {
+    "arabic": "مُحَامٍ",
+    "bangla": "আইনজীবী",
+    "level": 82
+  },
+  {
+    "arabic": "قَاضٍ",
+    "bangla": "বিচারক",
+    "level": 82
+  },
+  {
+    "arabic": "مُصَوِّر",
+    "bangla": "ফটোগ্রাফার",
+    "level": 82
+  },
+  {
+    "arabic": "كَاتِب",
+    "bangla": "লেখক",
+    "level": 82
+  },
+  {
+    "arabic": "رَسَّام",
+    "bangla": "চিত্রশিল্পী",
+    "level": 82
+  },
+  {
+    "arabic": "عَالِم",
+    "bangla": "বিজ্ঞানী / আলেম",
+    "level": 82
+  },
+  {
+    "arabic": "بَاحِث",
+    "bangla": "গবেষক",
+    "level": 82
+  },
+  {
+    "arabic": "يَمْشِي",
+    "bangla": "সে হাঁটে",
+    "level": 83
+  },
+  {
+    "arabic": "يَجْرِي",
+    "bangla": "সে দৌড়ায়",
+    "level": 83
+  },
+  {
+    "arabic": "يَقْفِزُ",
+    "bangla": "সে লাফায়",
+    "level": 83
+  },
+  {
+    "arabic": "يَسْقُطُ",
+    "bangla": "সে পড়ে যায়",
+    "level": 83
+  },
+  {
+    "arabic": "يَقِفُ",
+    "bangla": "সে দাঁড়ায়",
+    "level": 83
+  },
+  {
+    "arabic": "يَسْبَحُ",
+    "bangla": "সে সাঁতার কাটে",
+    "level": 83
+  },
+  {
+    "arabic": "جَمْع",
+    "bangla": "যোগ",
+    "level": 84
+  },
+  {
+    "arabic": "طَرْح",
+    "bangla": "বিয়োগ",
+    "level": 84
+  },
+  {
+    "arabic": "ضَرْب",
+    "bangla": "গুণ",
+    "level": 84
+  },
+  {
+    "arabic": "قِسْمَة",
+    "bangla": "ভাগ",
+    "level": 84
+  },
+  {
+    "arabic": "مَجْمُوع",
+    "bangla": "সমষ্টি",
+    "level": 84
+  },
+  {
+    "arabic": "مُعَادَلَة",
+    "bangla": "সমীকরণ",
+    "level": 84
+  },
+  {
+    "arabic": "ضَخْم",
+    "bangla": "বিশাল",
+    "level": 85
+  },
+  {
+    "arabic": "دَقِيق",
+    "bangla": "সূক্ষ্ম / নিখুঁত",
+    "level": 85
+  },
+  {
+    "arabic": "عَمِيق",
+    "bangla": "গভীর",
+    "level": 85
+  },
+  {
+    "arabic": "ضَحْل",
+    "bangla": "অগভীর",
+    "level": 85
+  },
+  {
+    "arabic": "وَاسِع",
+    "bangla": "প্রশস্ত",
+    "level": 85
+  },
+  {
+    "arabic": "ضَيِّق",
+    "bangla": "সংকীর্ণ",
+    "level": 85
+  },
+  {
+    "arabic": "إِنْتَرْنِت",
+    "bangla": "ইন্টারনেট",
+    "level": 86
+  },
+  {
+    "arabic": "تَطْبِيق",
+    "bangla": "অ্যাপ",
+    "level": 86
+  },
+  {
+    "arabic": "مَوْقِع إِلِكْتْرُونِيّ",
+    "bangla": "ওয়েবসাইট",
+    "level": 86
+  },
+  {
+    "arabic": "كَلِمَة سِرّ",
+    "bangla": "পাসওয়ার্ড",
+    "level": 86
+  },
+  {
+    "arabic": "رَابِط",
+    "bangla": "লিংক",
+    "level": 86
+  },
+  {
+    "arabic": "بَرْنَامَج",
+    "bangla": "সফটওয়্যার / প্রোগ্রাম",
+    "level": 86
+  },
+  {
+    "arabic": "كُلّ",
+    "bangla": "প্রত্যেক / সব",
+    "level": 87
+  },
+  {
+    "arabic": "بَعْض",
+    "bangla": "কিছু",
+    "level": 87
+  },
+  {
+    "arabic": "جَمِيع",
+    "bangla": "সকল",
+    "level": 87
+  },
+  {
+    "arabic": "مُعْظَم",
+    "bangla": "অধিকাংশ",
+    "level": 87
+  },
+  {
+    "arabic": "كِلَا",
+    "bangla": "উভয়",
+    "level": 87
+  },
+  {
+    "arabic": "تَسَلُّق",
+    "bangla": "পর্বতারোহণ",
+    "level": 88
+  },
+  {
+    "arabic": "رُكُوب الْخَيْل",
+    "bangla": "ঘোড়ায় চড়া",
+    "level": 88
+  },
+  {
+    "arabic": "جَمْع الطَّوَابِع",
+    "bangla": "ডাকটিকিট সংগ্রহ",
+    "level": 88
+  },
+  {
+    "arabic": "لَعِب الشَّطْرَنْج",
+    "bangla": "দাবা খেলা",
+    "level": 88
+  },
+  {
+    "arabic": "مِحْرَاث",
+    "bangla": "লাঙল",
+    "level": 89
+  },
+  {
+    "arabic": "سَمَاد",
+    "bangla": "সার",
+    "level": 89
+  },
+  {
+    "arabic": "حَصَاد",
+    "bangla": "ফসল কাটা",
+    "level": 89
+  },
+  {
+    "arabic": "مَزْرَعَة",
+    "bangla": "খামার / ক্ষেত",
+    "level": 89
+  },
+  {
+    "arabic": "رَيّ",
+    "bangla": "সেচ",
+    "level": 89
+  },
+  {
+    "arabic": "مَحْصُول",
+    "bangla": "ফসল",
+    "level": 89
+  },
+  {
+    "arabic": "مَتْحَف",
+    "bangla": "জাদুঘর",
+    "level": 90
+  },
+  {
+    "arabic": "مَسْرَح",
+    "bangla": "মঞ্চ / থিয়েটার",
+    "level": 90
+  },
+  {
+    "arabic": "مَعْرِض",
+    "bangla": "প্রদর্শনী",
+    "level": 90
+  },
+  {
+    "arabic": "تُرَاث",
+    "bangla": "ঐতিহ্য",
+    "level": 90
+  },
+  {
+    "arabic": "حَضَارَة",
+    "bangla": "সভ্যতা",
+    "level": 90
+  },
+  {
+    "arabic": "فُنُون",
+    "bangla": "শিল্পকলা",
+    "level": 90
+  },
+  {
+    "arabic": "حُكُومَة",
+    "bangla": "সরকার",
+    "level": 91
+  },
+  {
+    "arabic": "رَئِيس",
+    "bangla": "রাষ্ট্রপ্রধান",
+    "level": 91
+  },
+  {
+    "arabic": "وَزِير",
+    "bangla": "মন্ত্রী",
+    "level": 91
+  },
+  {
+    "arabic": "قَانُون",
+    "bangla": "আইন",
+    "level": 91
+  },
+  {
+    "arabic": "مَحْكَمَة",
+    "bangla": "আদালত",
+    "level": 91
+  },
+  {
+    "arabic": "مُوَاطِن",
+    "bangla": "নাগরিক",
+    "level": 91
+  },
+  {
+    "arabic": "عَمَلِيَّة",
+    "bangla": "অপারেশন",
+    "level": 92
+  },
+  {
+    "arabic": "جِرَاحَة",
+    "bangla": "শল্যচিকিৎসা",
+    "level": 92
+  },
+  {
+    "arabic": "ضَغْط الدَّم",
+    "bangla": "রক্তচাপ",
+    "level": 92
+  },
+  {
+    "arabic": "لِقَاح",
+    "bangla": "টিকা",
+    "level": 92
+  },
+  {
+    "arabic": "عِلَاج",
+    "bangla": "চিকিৎসা",
+    "level": 92
+  },
+  {
+    "arabic": "ضَوْء",
+    "bangla": "আলো",
+    "level": 93
+  },
+  {
+    "arabic": "ظِلّ",
+    "bangla": "ছায়া",
+    "level": 93
+  },
+  {
+    "arabic": "حَرَارَة",
+    "bangla": "তাপমাত্রা / উষ্ণতা",
+    "level": 93
+  },
+  {
+    "arabic": "بُرُودَة",
+    "bangla": "শীতলতা",
+    "level": 93
+  },
+  {
+    "arabic": "رُطُوبَة",
+    "bangla": "আর্দ্রতা",
+    "level": 93
+  },
+  {
+    "arabic": "خَرِيطَة",
+    "bangla": "মানচিত্র",
+    "level": 94
+  },
+  {
+    "arabic": "بُوصْلَة",
+    "bangla": "কম্পাস",
+    "level": 94
+  },
+  {
+    "arabic": "مُرْشِد سِيَاحِيّ",
+    "bangla": "ট্যুর গাইড",
+    "level": 94
+  },
+  {
+    "arabic": "حَجْز",
+    "bangla": "বুকিং / সংরক্ষণ",
+    "level": 94
+  },
+  {
+    "arabic": "جَامِعَة",
+    "bangla": "বিশ্ববিদ্যালয়",
+    "level": 95
+  },
+  {
+    "arabic": "كُلِّيَّة",
+    "bangla": "কলেজ / অনুষদ",
+    "level": 95
+  },
+  {
+    "arabic": "قِسْم",
+    "bangla": "বিভাগ",
+    "level": 95
+  },
+  {
+    "arabic": "مُحَاضَرَة",
+    "bangla": "বক্তৃতা / লেকচার",
+    "level": 95
+  },
+  {
+    "arabic": "بُومَة",
+    "bangla": "পেঁচা",
+    "level": 96
+  },
+  {
+    "arabic": "نَسْر",
+    "bangla": "ঈগল",
+    "level": 96
+  },
+  {
+    "arabic": "بَبَّغَاء",
+    "bangla": "টিয়াপাখি",
+    "level": 96
+  },
+  {
+    "arabic": "طَاوُوس",
+    "bangla": "ময়ূর",
+    "level": 96
+  },
+  {
+    "arabic": "نَعَامَة",
+    "bangla": "উটপাখি",
+    "level": 96
+  },
+  {
+    "arabic": "كَمُّون",
+    "bangla": "জিরা",
+    "level": 97
+  },
+  {
+    "arabic": "قِرْفَة",
+    "bangla": "দারুচিনি",
+    "level": 97
+  },
+  {
+    "arabic": "زَنْجَبِيل",
+    "bangla": "আদা",
+    "level": 97
+  },
+  {
+    "arabic": "كُرْكُم",
+    "bangla": "হলুদ (মসলা)",
+    "level": 97
+  },
+  {
+    "arabic": "هَيْل",
+    "bangla": "এলাচ",
+    "level": 97
+  },
+  {
+    "arabic": "تَنْظِيف",
+    "bangla": "পরিষ্কার করা",
+    "level": 98
+  },
+  {
+    "arabic": "غَسْل الْمَلَابِسِ",
+    "bangla": "কাপড় ধোয়া",
+    "level": 98
+  },
+  {
+    "arabic": "كَنْس",
+    "bangla": "ঝাড়ু দেওয়া",
+    "level": 98
+  },
+  {
+    "arabic": "تَرْتِيب",
+    "bangla": "গোছানো",
+    "level": 98
+  },
+  {
+    "arabic": "عَرَبِيّ",
+    "bangla": "আরবীয়",
+    "level": 99
+  },
+  {
+    "arabic": "إِسْلَامِيّ",
+    "bangla": "ইসলামী",
+    "level": 99
+  },
+  {
+    "arabic": "بَنْغَالِيّ",
+    "bangla": "বাঙালি",
+    "level": 99
+  },
+  {
+    "arabic": "عَالَمِيّ",
+    "bangla": "বৈশ্বিক",
+    "level": 99
+  },
+  {
+    "arabic": "يَنْتَظِرُ",
+    "bangla": "সে অপেক্ষা করে",
+    "level": 100
+  },
+  {
+    "arabic": "يُغَادِرُ",
+    "bangla": "সে চলে যায়",
+    "level": 100
+  },
+  {
+    "arabic": "يَصِلُ",
+    "bangla": "সে পৌঁছায়",
+    "level": 100
+  },
+  {
+    "arabic": "يَبْدَأُ",
+    "bangla": "সে শুরু করে",
+    "level": 100
+  },
+  {
+    "arabic": "يَنْتَهِي",
+    "bangla": "সে শেষ করে",
+    "level": 100
+  },
+  {
+    "arabic": "مُرْتَبِك",
+    "bangla": "বিভ্রান্ত",
+    "level": 101
+  },
+  {
+    "arabic": "وَاثِق",
+    "bangla": "আত্মবিশ্বাসী",
+    "level": 101
+  },
+  {
+    "arabic": "مَلَل",
+    "bangla": "বিরক্তি / একঘেয়েমি",
+    "level": 101
+  },
+  {
+    "arabic": "رَاضٍ",
+    "bangla": "সন্তুষ্ট",
+    "level": 101
+  },
+  {
+    "arabic": "مُتَفَائِل",
+    "bangla": "আশাবাদী",
+    "level": 101
+  },
+  {
+    "arabic": "مُتَشَائِم",
+    "bangla": "হতাশাবাদী",
+    "level": 101
+  },
+  {
+    "arabic": "مِئَة",
+    "bangla": "একশত",
+    "level": 102
+  },
+  {
+    "arabic": "أَلْف",
+    "bangla": "হাজার",
+    "level": 102
+  },
+  {
+    "arabic": "مِلْيُون",
+    "bangla": "মিলিয়ন",
+    "level": 102
+  },
+  {
+    "arabic": "دَرَجَة",
+    "bangla": "ডিগ্রি",
+    "level": 102
+  },
+  {
+    "arabic": "مِعْيَار",
+    "bangla": "মানদণ্ড",
+    "level": 102
+  },
+  {
+    "arabic": "جَرِيدَة",
+    "bangla": "সংবাদপত্র",
+    "level": 103
+  },
+  {
+    "arabic": "مَجَلَّة",
+    "bangla": "পত্রিকা",
+    "level": 103
+  },
+  {
+    "arabic": "خَبَر",
+    "bangla": "সংবাদ",
+    "level": 103
+  },
+  {
+    "arabic": "مُقَابَلَة",
+    "bangla": "সাক্ষাৎকার",
+    "level": 103
+  },
+  {
+    "arabic": "إِعْلَان",
+    "bangla": "বিজ্ঞাপন",
+    "level": 103
+  },
+  {
+    "arabic": "مُحِيط",
+    "bangla": "পরিধি",
+    "level": 104
+  },
+  {
+    "arabic": "مِسَاحَة",
+    "bangla": "ক্ষেত্রফল",
+    "level": 104
+  },
+  {
+    "arabic": "طُول",
+    "bangla": "দৈর্ঘ্য",
+    "level": 104
+  },
+  {
+    "arabic": "عَرْض",
+    "bangla": "প্রস্থ",
+    "level": 104
+  },
+  {
+    "arabic": "اِرْتِفَاع",
+    "bangla": "উচ্চতা",
+    "level": 104
+  },
+  {
+    "arabic": "مِذْنَب",
+    "bangla": "ধূমকেতু",
+    "level": 105
+  },
+  {
+    "arabic": "كُسُوف",
+    "bangla": "সূর্যগ্রহণ",
+    "level": 105
+  },
+  {
+    "arabic": "خُسُوف",
+    "bangla": "চন্দ্রগ্রহণ",
+    "level": 105
+  },
+  {
+    "arabic": "مَدَار",
+    "bangla": "কক্ষপথ",
+    "level": 105
+  },
+  {
+    "arabic": "مُبَارَاة",
+    "bangla": "খেলা / ম্যাচ",
+    "level": 106
+  },
+  {
+    "arabic": "فَوْز",
+    "bangla": "জয়",
+    "level": 106
+  },
+  {
+    "arabic": "خَسَارَة",
+    "bangla": "পরাজয়",
+    "level": 106
+  },
+  {
+    "arabic": "تَعَادُل",
+    "bangla": "ড্র / সমতা",
+    "level": 106
+  },
+  {
+    "arabic": "حَكَم",
+    "bangla": "রেফারি",
+    "level": 106
+  },
+  {
+    "arabic": "مُنْتَصَف اللَّيْل",
+    "bangla": "মধ্যরাত",
+    "level": 107
+  },
+  {
+    "arabic": "مُنْتَصَف النَّهَار",
+    "bangla": "দ্বিপ্রহর",
+    "level": 107
+  },
+  {
+    "arabic": "عُطْلَة",
+    "bangla": "ছুটি",
+    "level": 107
+  },
+  {
+    "arabic": "مَوْعِد",
+    "bangla": "নির্ধারিত সময় / অ্যাপয়েন্টমেন্ট",
+    "level": 107
+  },
+  {
+    "arabic": "وَرْدَة",
+    "bangla": "গোলাপ",
+    "level": 108
+  },
+  {
+    "arabic": "زَنْبَق",
+    "bangla": "লিলি ফুল",
+    "level": 108
+  },
+  {
+    "arabic": "نَبَات",
+    "bangla": "উদ্ভিদ",
+    "level": 108
+  },
+  {
+    "arabic": "عُشْبَة",
+    "bangla": "গুল্ম",
+    "level": 108
+  },
+  {
+    "arabic": "شَقَّة",
+    "bangla": "ফ্ল্যাট / অ্যাপার্টমেন্ট",
+    "level": 109
+  },
+  {
+    "arabic": "فِيلَّا",
+    "bangla": "ভিলা",
+    "level": 109
+  },
+  {
+    "arabic": "كُوخ",
+    "bangla": "কুঁড়েঘর",
+    "level": 109
+  },
+  {
+    "arabic": "خَيْمَة",
+    "bangla": "তাঁবু",
+    "level": 109
+  },
+  {
+    "arabic": "تَهْنِئَة",
+    "bangla": "অভিনন্দন",
+    "level": 110
+  },
+  {
+    "arabic": "اِعْتِذَار",
+    "bangla": "ক্ষমাপ্রার্থনা",
+    "level": 110
+  },
+  {
+    "arabic": "دَعْوَة",
+    "bangla": "আমন্ত্রণ",
+    "level": 110
+  },
+  {
+    "arabic": "مُفَاجَأَة",
+    "bangla": "চমক / বিস্ময়কর ঘটনা",
+    "level": 110
+  },
+  {
+    "arabic": "سَلَام",
+    "bangla": "সালাম",
+    "level": 111
+  },
+  {
+    "arabic": "أَدَب",
+    "bangla": "শিষ্টাচার",
+    "level": 111
+  },
+  {
+    "arabic": "اِحْتِرَام",
+    "bangla": "সম্মান",
+    "level": 111
+  },
+  {
+    "arabic": "تَعَاوُن",
+    "bangla": "সহযোগিতা",
+    "level": 111
+  },
+  {
+    "arabic": "صَخْرَة",
+    "bangla": "পাথরখণ্ড / শিলা",
+    "level": 112
+  },
+  {
+    "arabic": "رَمْل",
+    "bangla": "বালি",
+    "level": 112
+  },
+  {
+    "arabic": "طِين",
+    "bangla": "কাদামাটি",
+    "level": 112
+  },
+  {
+    "arabic": "مَعْدِن",
+    "bangla": "খনিজ ধাতু",
+    "level": 112
+  },
+  {
+    "arabic": "رَبَّة الْبَيْت",
+    "bangla": "গৃহিণী",
+    "level": 113
+  },
+  {
+    "arabic": "خَادِم",
+    "bangla": "পরিচারক",
+    "level": 113
+  },
+  {
+    "arabic": "جَار",
+    "bangla": "প্রতিবেশী",
+    "level": 113
+  },
+  {
+    "arabic": "ضَيْف",
+    "bangla": "অতিথি",
+    "level": 113
+  },
+  {
+    "arabic": "مُضِيف",
+    "bangla": "আয়োজক / হোস্ট",
+    "level": 113
+  },
+  {
+    "arabic": "زَائِر",
+    "bangla": "দর্শনার্থী",
+    "level": 113
+  },
+  {
+    "arabic": "سَاكِن",
+    "bangla": "বাসিন্দা",
+    "level": 113
+  },
+  {
+    "arabic": "يَشْوِي",
+    "bangla": "সে গ্রিল করে",
+    "level": 114
+  },
+  {
+    "arabic": "يُحَمِّصُ",
+    "bangla": "সে টোস্ট / রোস্ট করে",
+    "level": 114
+  },
+  {
+    "arabic": "يُبَرِّدُ",
+    "bangla": "সে ঠান্ডা করে",
+    "level": 114
+  },
+  {
+    "arabic": "يُسَخِّنُ",
+    "bangla": "সে গরম করে",
+    "level": 114
+  },
+  {
+    "arabic": "شَرِكَة",
+    "bangla": "কোম্পানি",
+    "level": 115
+  },
+  {
+    "arabic": "مَشْرُوع",
+    "bangla": "প্রকল্প",
+    "level": 115
+  },
+  {
+    "arabic": "مُنْتَج",
+    "bangla": "পণ্য",
+    "level": 115
+  },
+  {
+    "arabic": "عَمِيل",
+    "bangla": "গ্রাহক",
+    "level": 115
+  },
+  {
+    "arabic": "اِسْتِثْمَار",
+    "bangla": "বিনিয়োগ",
+    "level": 115
+  },
+  {
+    "arabic": "فَاتِح",
+    "bangla": "হালকা রঙের",
+    "level": 116
+  },
+  {
+    "arabic": "غَامِق",
+    "bangla": "গাঢ় রঙের",
+    "level": 116
+  },
+  {
+    "arabic": "لَامِع",
+    "bangla": "চকচকে",
+    "level": 116
+  },
+  {
+    "arabic": "بَاهِت",
+    "bangla": "ফ্যাকাশে",
+    "level": 116
+  },
+  {
+    "arabic": "زَلْزَال",
+    "bangla": "ভূমিকম্প",
+    "level": 117
+  },
+  {
+    "arabic": "فَيَضَان",
+    "bangla": "বন্যা",
+    "level": 117
+  },
+  {
+    "arabic": "إِعْصَار",
+    "bangla": "ঘূর্ণিঝড়",
+    "level": 117
+  },
+  {
+    "arabic": "جَفَاف",
+    "bangla": "খরা",
+    "level": 117
+  },
+  {
+    "arabic": "مُتَوَتِّر",
+    "bangla": "উদ্বিগ্ন / টেনশনে",
+    "level": 118
+  },
+  {
+    "arabic": "مُهْتَمّ",
+    "bangla": "আগ্রহী",
+    "level": 118
+  },
+  {
+    "arabic": "عَجَلَة",
+    "bangla": "চাকা",
+    "level": 119
+  },
+  {
+    "arabic": "مِقْوَد",
+    "bangla": "স্টিয়ারিং হুইল",
+    "level": 119
+  },
+  {
+    "arabic": "مُحَرِّك",
+    "bangla": "ইঞ্জিন",
+    "level": 119
+  },
+  {
+    "arabic": "غِلَاف",
+    "bangla": "প্রচ্ছদ",
+    "level": 120
+  },
+  {
+    "arabic": "فَصْل",
+    "bangla": "অধ্যায়",
+    "level": 120
+  },
+  {
+    "arabic": "صَفْحَة",
+    "bangla": "পৃষ্ঠা",
+    "level": 120
+  },
+  {
+    "arabic": "فِهْرِس",
+    "bangla": "সূচিপত্র",
+    "level": 120
+  },
+  {
+    "arabic": "مُؤَلِّف",
+    "bangla": "লেখক / রচয়িতা",
+    "level": 120
+  },
+  {
+    "arabic": "لَوْز",
+    "bangla": "আমন্ড / কাঠবাদাম",
+    "level": 121
+  },
+  {
+    "arabic": "جَوْز",
+    "bangla": "আখরোট",
+    "level": 121
+  },
+  {
+    "arabic": "فُسْتُق",
+    "bangla": "পেস্তা বাদাম",
+    "level": 121
+  },
+  {
+    "arabic": "كَاجُو",
+    "bangla": "কাজু বাদাম",
+    "level": 121
+  },
+  {
+    "arabic": "رِئَة",
+    "bangla": "ফুসফুস",
+    "level": 122
+  },
+  {
+    "arabic": "كَبِد",
+    "bangla": "যকৃত",
+    "level": 122
+  },
+  {
+    "arabic": "مَعِدَة",
+    "bangla": "পাকস্থলী",
+    "level": 122
+  },
+  {
+    "arabic": "دِمَاغ",
+    "bangla": "মস্তিষ্ক",
+    "level": 122
+  },
+  {
+    "arabic": "يُشْرِقُ",
+    "bangla": "এটি (সূর্য) ওঠে",
+    "level": 118
+  },
+  {
+    "arabic": "يَغْرُبُ",
+    "bangla": "এটি (সূর্য) অস্ত যায়",
+    "level": 118
+  },
+  {
+    "arabic": "اِقْتِصَاد",
+    "bangla": "অর্থনীতি",
+    "level": 119
+  },
+  {
+    "arabic": "تِجَارَة",
+    "bangla": "বাণিজ্য",
+    "level": 119
+  },
+  {
+    "arabic": "صِنَاعَة",
+    "bangla": "শিল্প / ইন্ডাস্ট্রি",
+    "level": 119
+  },
+  {
+    "arabic": "مُسْتَحَبّ",
+    "bangla": "মুস্তাহাব",
+    "level": 118
+  },
+  {
+    "arabic": "مَكْرُوه",
+    "bangla": "মাকরূহ",
+    "level": 118
+  },
+  {
+    "arabic": "يَكْنُسُ",
+    "bangla": "সে ঝাড়ু দেয়",
+    "level": 119
+  },
+  {
+    "arabic": "يَغْسِلُ",
+    "bangla": "সে ধোয়",
+    "level": 119
+  },
+  {
+    "arabic": "دُودَة",
+    "bangla": "কেঁচো / কৃমি",
+    "level": 123
+  },
+  {
+    "arabic": "قُنْفُذ",
+    "bangla": "শজারু",
+    "level": 123
+  },
+  {
+    "arabic": "ضِفْدَع",
+    "bangla": "ব্যাঙ",
+    "level": 123
+  },
+  {
+    "arabic": "عُشّ",
+    "bangla": "পাখির বাসা",
+    "level": 123
+  },
+  {
+    "arabic": "بَيْضَة",
+    "bangla": "একটি ডিম",
+    "level": 123
+  },
+  {
+    "arabic": "عِلْم",
+    "bangla": "জ্ঞান / বিদ্যা",
+    "level": 123
   }
 ]
