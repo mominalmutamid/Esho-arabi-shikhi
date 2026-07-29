@@ -158,5 +158,1005 @@
     "opposite": "خَفِيف",
     "opposite_meaning": "হালকা (Light)",
     "opposite_pronunciation": "khafif"
+  },
+  {
+    "word": "مُبَكِّر",
+    "meaning": "তাড়াতাড়ি (Early)",
+    "pronunciation": "mubakkir",
+    "opposite": "مُتَأَخِّر",
+    "opposite_meaning": "বিলম্বিত (Late)",
+    "opposite_pronunciation": "muta'akhkhir"
+  },
+  {
+    "word": "عَالٍ",
+    "meaning": "উঁচু (High)",
+    "pronunciation": "aalin",
+    "opposite": "مُنْخَفِض",
+    "opposite_meaning": "নিচু (Low)",
+    "opposite_pronunciation": "munkhafid"
+  },
+  {
+    "word": "وَاسِع",
+    "meaning": "প্রশস্ত (Wide)",
+    "pronunciation": "wasi'",
+    "opposite": "ضَيِّق",
+    "opposite_meaning": "সংকীর্ণ (Narrow)",
+    "opposite_pronunciation": "dayyiq"
+  },
+  {
+    "word": "عَمِيق",
+    "meaning": "গভীর (Deep)",
+    "pronunciation": "amiq",
+    "opposite": "ضَحْل",
+    "opposite_meaning": "অগভীর (Shallow)",
+    "opposite_pronunciation": "dahl"
+  },
+  {
+    "word": "جَاف",
+    "meaning": "শুষ্ক (Dry)",
+    "pronunciation": "jaf",
+    "opposite": "رَطْب",
+    "opposite_meaning": "ভেজা (Wet)",
+    "opposite_pronunciation": "ratb"
+  },
+  {
+    "word": "لَيِّن",
+    "meaning": "নরম (Soft)",
+    "pronunciation": "layyin",
+    "opposite": "صَلْب",
+    "opposite_meaning": "শক্ত (Hard)",
+    "opposite_pronunciation": "sulb"
+  },
+  {
+    "word": "حُلْو",
+    "meaning": "মিষ্টি (Sweet)",
+    "pronunciation": "hulw",
+    "opposite": "مُرّ",
+    "opposite_meaning": "তেতো (Bitter)",
+    "opposite_pronunciation": "murr"
+  },
+  {
+    "word": "مُمْتَلِئ",
+    "meaning": "পূর্ণ (Full)",
+    "pronunciation": "mumtali'",
+    "opposite": "فَارِغ",
+    "opposite_meaning": "খালি (Empty)",
+    "opposite_pronunciation": "farigh"
+  },
+  {
+    "word": "سَمِين",
+    "meaning": "মোটা (Fat)",
+    "pronunciation": "samin",
+    "opposite": "نَحِيف",
+    "opposite_meaning": "চিকন (Thin)",
+    "opposite_pronunciation": "nahif"
+  },
+  {
+    "word": "شُجَاع",
+    "meaning": "সাহসী (Brave)",
+    "pronunciation": "shuja'",
+    "opposite": "جَبَان",
+    "opposite_meaning": "ভীতু (Coward)",
+    "opposite_pronunciation": "jaban"
+  },
+  {
+    "word": "كَرِيم",
+    "meaning": "উদার (Generous)",
+    "pronunciation": "karim",
+    "opposite": "بَخِيل",
+    "opposite_meaning": "কৃপণ (Miserly)",
+    "opposite_pronunciation": "bakhil"
+  },
+  {
+    "word": "صَادِق",
+    "meaning": "সত্যবাদী (Truthful)",
+    "pronunciation": "sadiq",
+    "opposite": "كَاذِب",
+    "opposite_meaning": "মিথ্যাবাদী (Liar)",
+    "opposite_pronunciation": "kadhib"
+  },
+  {
+    "word": "مُهَذَّب",
+    "meaning": "ভদ্র (Polite)",
+    "pronunciation": "muhadhdhab",
+    "opposite": "وَقِح",
+    "opposite_meaning": "অভদ্র (Rude)",
+    "opposite_pronunciation": "waqih"
+  },
+  {
+    "word": "ذَكِيّ",
+    "meaning": "বুদ্ধিমান (Intelligent)",
+    "pronunciation": "dhakiy",
+    "opposite": "غَبِيّ",
+    "opposite_meaning": "নির্বোধ (Stupid)",
+    "opposite_pronunciation": "ghabiy"
+  },
+  {
+    "word": "مُرَتَّب",
+    "meaning": "গোছানো (Organized)",
+    "pronunciation": "murattab",
+    "opposite": "فَوْضَوِيّ",
+    "opposite_meaning": "অগোছালো (Messy)",
+    "opposite_pronunciation": "fawdawiy"
+  },
+  {
+    "word": "مُشْرِق",
+    "meaning": "উজ্জ্বল (Bright)",
+    "pronunciation": "mushriq",
+    "opposite": "مُظْلِم",
+    "opposite_meaning": "অন্ধকার (Dark)",
+    "opposite_pronunciation": "muzlim"
+  },
+  {
+    "word": "حَيّ",
+    "meaning": "জীবিত (Alive)",
+    "pronunciation": "hayy",
+    "opposite": "مَيِّت",
+    "opposite_meaning": "মৃত (Dead)",
+    "opposite_pronunciation": "mayyit"
+  },
+  {
+    "word": "حُرّ",
+    "meaning": "মুক্ত (Free)",
+    "pronunciation": "hurr",
+    "opposite": "مُقَيَّد",
+    "opposite_meaning": "বন্দী / সীমাবদ্ধ (Restricted)",
+    "opposite_pronunciation": "muqayyad"
+  },
+  {
+    "word": "سَلِيم",
+    "meaning": "সুস্থ (Healthy)",
+    "pronunciation": "salim",
+    "opposite": "مَرِيض",
+    "opposite_meaning": "অসুস্থ (Sick)",
+    "opposite_pronunciation": "marid"
+  },
+  {
+    "word": "مُمْكِن",
+    "meaning": "সম্ভব (Possible)",
+    "pronunciation": "mumkin",
+    "opposite": "مُسْتَحِيل",
+    "opposite_meaning": "অসম্ভব (Impossible)",
+    "opposite_pronunciation": "mustahil"
+  },
+  {
+    "word": "حَقِيقِيّ",
+    "meaning": "আসল / সত্য (Real)",
+    "pronunciation": "haqiqiy",
+    "opposite": "مُزَيَّف",
+    "opposite_meaning": "নকল (Fake)",
+    "opposite_pronunciation": "muzayyaf"
+  },
+  {
+    "word": "مُفِيد",
+    "meaning": "উপকারী (Useful)",
+    "pronunciation": "mufid",
+    "opposite": "ضَارّ",
+    "opposite_meaning": "ক্ষতিকর (Harmful)",
+    "opposite_pronunciation": "darr"
+  },
+  {
+    "word": "آمِن",
+    "meaning": "নিরাপদ (Safe)",
+    "pronunciation": "amin",
+    "opposite": "خَطِير",
+    "opposite_meaning": "বিপজ্জনক (Dangerous)",
+    "opposite_pronunciation": "khatir"
+  },
+  {
+    "word": "حَاضِر",
+    "meaning": "উপস্থিত (Present)",
+    "pronunciation": "hadir",
+    "opposite": "غَائِب",
+    "opposite_meaning": "অনুপস্থিত (Absent)",
+    "opposite_pronunciation": "gha'ib"
+  },
+  {
+    "word": "أَوَّل",
+    "meaning": "প্রথম (First)",
+    "pronunciation": "awwal",
+    "opposite": "أَخِير",
+    "opposite_meaning": "শেষ (Last)",
+    "opposite_pronunciation": "akhir"
+  },
+  {
+    "word": "دَاخِل",
+    "meaning": "ভেতরে (Inside)",
+    "pronunciation": "dakhil",
+    "opposite": "خَارِج",
+    "opposite_meaning": "বাইরে (Outside)",
+    "opposite_pronunciation": "kharij"
+  },
+  {
+    "word": "مُتَّصِل",
+    "meaning": "সংযুক্ত (Connected)",
+    "pronunciation": "muttasil",
+    "opposite": "مُنْفَصِل",
+    "opposite_meaning": "বিচ্ছিন্ন (Disconnected)",
+    "opposite_pronunciation": "munfasil"
+  },
+  {
+    "word": "مَشْغُول",
+    "meaning": "ব্যস্ত (Busy)",
+    "pronunciation": "mashghul",
+    "opposite": "مُتَفَرِّغ",
+    "opposite_meaning": "অবসর / ফ্রি (Available)",
+    "opposite_pronunciation": "mutafarrigh"
+  },
+  {
+    "word": "سَابِق",
+    "meaning": "পূর্ববর্তী (Former)",
+    "pronunciation": "sabiq",
+    "opposite": "لَاحِق",
+    "opposite_meaning": "পরবর্তী (Later)",
+    "opposite_pronunciation": "lahiq"
+  },
+  {
+    "word": "عَادِل",
+    "meaning": "ন্যায়পরায়ণ (Just)",
+    "pronunciation": "adil",
+    "opposite": "ظَالِم",
+    "opposite_meaning": "অত্যাচারী (Unjust)",
+    "opposite_pronunciation": "zalim"
+  },
+  {
+    "word": "مُتَفَائِل",
+    "meaning": "আশাবাদী (Optimistic)",
+    "pronunciation": "mutafa'il",
+    "opposite": "مُتَشَائِم",
+    "opposite_meaning": "হতাশাবাদী (Pessimistic)",
+    "opposite_pronunciation": "mutasha'im"
+  },
+  {
+    "word": "نَشِيط",
+    "meaning": "কর্মঠ (Active)",
+    "pronunciation": "nashit",
+    "opposite": "كَسْلَان",
+    "opposite_meaning": "অলস (Lazy)",
+    "opposite_pronunciation": "kaslan"
+  },
+  {
+    "word": "طَازَج",
+    "meaning": "তাজা (Fresh)",
+    "pronunciation": "tazaj",
+    "opposite": "فَاسِد",
+    "opposite_meaning": "পচা (Rotten)",
+    "opposite_pronunciation": "fasid"
+  },
+  {
+    "word": "مُبْتَسِم",
+    "meaning": "হাস্যোজ্জ্বল (Smiling)",
+    "pronunciation": "mubtasim",
+    "opposite": "عَابِس",
+    "opposite_meaning": "গোমড়ামুখো (Frowning)",
+    "opposite_pronunciation": "abis"
+  },
+  {
+    "word": "عَصَبِيّ",
+    "meaning": "উদ্বিগ্ন (Nervous)",
+    "pronunciation": "asabiy",
+    "opposite": "هَادِئ",
+    "opposite_meaning": "শান্ত (Calm)",
+    "opposite_pronunciation": "hadi'"
+  },
+  {
+    "word": "مُنَظَّم",
+    "meaning": "সুশৃঙ্খল (Organized)",
+    "pronunciation": "munazzam",
+    "opposite": "عَشْوَائِيّ",
+    "opposite_meaning": "এলোমেলো (Random)",
+    "opposite_pronunciation": "ashwa'iy"
+  },
+  {
+    "word": "وَاضِح",
+    "meaning": "স্পষ্ট (Clear)",
+    "pronunciation": "wadih",
+    "opposite": "غَامِض",
+    "opposite_meaning": "অস্পষ্ট (Vague)",
+    "opposite_pronunciation": "ghamid"
+  },
+  {
+    "word": "مُتَحَرِّك",
+    "meaning": "চলমান (Moving)",
+    "pronunciation": "mutaharrik",
+    "opposite": "سَاكِن",
+    "opposite_meaning": "স্থির (Still)",
+    "opposite_pronunciation": "sakin"
+  },
+  {
+    "word": "مُمْتَاز",
+    "meaning": "চমৎকার (Excellent)",
+    "pronunciation": "mumtaz",
+    "opposite": "رَدِيء",
+    "opposite_meaning": "নিম্নমানের (Poor Quality)",
+    "opposite_pronunciation": "radi'"
+  },
+  {
+    "word": "شَبْعَان",
+    "meaning": "পেট ভরা (Full)",
+    "pronunciation": "shab'an",
+    "opposite": "جَائِع",
+    "opposite_meaning": "ক্ষুধার্ত (Hungry)",
+    "opposite_pronunciation": "ja'i'"
+  },
+  {
+    "word": "صَاخِب",
+    "meaning": "কোলাহলপূর্ণ (Noisy)",
+    "pronunciation": "sakhib",
+    "opposite": "سَاكِت",
+    "opposite_meaning": "নীরব (Silent)",
+    "opposite_pronunciation": "sakit"
+  },
+  {
+    "word": "كَامِل",
+    "meaning": "সম্পূর্ণ (Complete)",
+    "pronunciation": "kamil",
+    "opposite": "نَاقِص",
+    "opposite_meaning": "অসম্পূর্ণ (Incomplete)",
+    "opposite_pronunciation": "naqis"
+  },
+  {
+    "word": "مُتَأَكِّد",
+    "meaning": "নিশ্চিত (Certain)",
+    "pronunciation": "muta'akkid",
+    "opposite": "مُتَرَدِّد",
+    "opposite_meaning": "দ্বিধাগ্রস্ত (Hesitant)",
+    "opposite_pronunciation": "mutaraddid"
+  },
+  {
+    "word": "رَخِيص",
+    "meaning": "সস্তা (Cheap)",
+    "pronunciation": "rakhis",
+    "opposite": "غَالٍ",
+    "opposite_meaning": "দামি (Expensive)",
+    "opposite_pronunciation": "ghalin"
+  },
+  {
+    "word": "مُشْمِس",
+    "meaning": "রৌদ্রোজ্জ্বল (Sunny)",
+    "pronunciation": "mushmis",
+    "opposite": "غَائِم",
+    "opposite_meaning": "মেঘলা (Cloudy)",
+    "opposite_pronunciation": "gha'im"
+  },
+  {
+    "word": "سَمِيك",
+    "meaning": "পুরু (Thick)",
+    "pronunciation": "samik",
+    "opposite": "رَقِيق",
+    "opposite_meaning": "পাতলা (Thin, material)",
+    "opposite_pronunciation": "raqiq"
+  },
+  {
+    "word": "لَذِيذ",
+    "meaning": "সুস্বাদু (Delicious)",
+    "pronunciation": "ladhidh",
+    "opposite": "بَشِع",
+    "opposite_meaning": "জঘন্য স্বাদের (Awful Taste)",
+    "opposite_pronunciation": "bashi'"
+  },
+  {
+    "word": "مُرِيح",
+    "meaning": "আরামদায়ক (Comfortable)",
+    "pronunciation": "murih",
+    "opposite": "مُزْعِج",
+    "opposite_meaning": "বিরক্তিকর (Annoying)",
+    "opposite_pronunciation": "muz'ij"
+  },
+  {
+    "word": "أَصْلِيّ",
+    "meaning": "আসল / মৌলিক (Original)",
+    "pronunciation": "asliy",
+    "opposite": "مُقَلَّد",
+    "opposite_meaning": "নকল করা (Imitated)",
+    "opposite_pronunciation": "muqallad"
+  },
+  {
+    "word": "حَقّ",
+    "meaning": "সত্য (Truth)",
+    "pronunciation": "haqq",
+    "opposite": "بَاطِل",
+    "opposite_meaning": "মিথ্যা / বাতিল (Falsehood)",
+    "opposite_pronunciation": "batil"
+  },
+  {
+    "word": "عَزِيز",
+    "meaning": "প্রিয় (Dear)",
+    "pronunciation": "aziz",
+    "opposite": "حَقِير",
+    "opposite_meaning": "তুচ্ছ (Despised)",
+    "opposite_pronunciation": "haqir"
+  },
+  {
+    "word": "مَشْهُور",
+    "meaning": "বিখ্যাত (Famous)",
+    "pronunciation": "mashhur",
+    "opposite": "مَجْهُول",
+    "opposite_meaning": "অপরিচিত (Unknown)",
+    "opposite_pronunciation": "majhul"
+  },
+  {
+    "word": "غَضْبَان",
+    "meaning": "রাগান্বিত (Angry)",
+    "pronunciation": "ghadban",
+    "opposite": "رَاضٍ",
+    "opposite_meaning": "সন্তুষ্ট (Content)",
+    "opposite_pronunciation": "radin"
+  },
+  {
+    "word": "مُتَعَلِّم",
+    "meaning": "শিক্ষিত (Educated)",
+    "pronunciation": "muta'allim",
+    "opposite": "أُمِّيّ",
+    "opposite_meaning": "নিরক্ষর (Illiterate)",
+    "opposite_pronunciation": "ummiy"
+  },
+  {
+    "word": "حَيَوِيّ",
+    "meaning": "প্রাণবন্ত (Vital/Lively)",
+    "pronunciation": "hayawiy",
+    "opposite": "خَامِل",
+    "opposite_meaning": "নিষ্ক্রিয় (Inactive)",
+    "opposite_pronunciation": "khamil"
+  },
+  {
+    "word": "مُعْتَدِل",
+    "meaning": "মধ্যপন্থী (Moderate)",
+    "pronunciation": "mu'tadil",
+    "opposite": "مُتَطَرِّف",
+    "opposite_meaning": "চরমপন্থী (Extreme)",
+    "opposite_pronunciation": "mutatarrif"
+  },
+  {
+    "word": "مُتَوَاضِع",
+    "meaning": "বিনয়ী (Humble)",
+    "pronunciation": "mutawadi'",
+    "opposite": "مُتَكَبِّر",
+    "opposite_meaning": "অহংকারী (Arrogant)",
+    "opposite_pronunciation": "mutakabbir"
+  },
+  {
+    "word": "طَاهِر",
+    "meaning": "পবিত্র (Pure)",
+    "pronunciation": "tahir",
+    "opposite": "نَجِس",
+    "opposite_meaning": "অপবিত্র (Impure)",
+    "opposite_pronunciation": "najis"
+  },
+  {
+    "word": "بَسِيط",
+    "meaning": "সহজ / সরল (Simple)",
+    "pronunciation": "basit",
+    "opposite": "مُعَقَّد",
+    "opposite_meaning": "জটিল (Complex)",
+    "opposite_pronunciation": "mu'aqqad"
+  },
+  {
+    "word": "مُبَاشِر",
+    "meaning": "সরাসরি (Live/Direct)",
+    "pronunciation": "mubashir",
+    "opposite": "مُسَجَّل",
+    "opposite_meaning": "রেকর্ডকৃত (Recorded)",
+    "opposite_pronunciation": "musajjal"
+  },
+  {
+    "word": "دَائِم",
+    "meaning": "স্থায়ী (Permanent)",
+    "pronunciation": "da'im",
+    "opposite": "مُؤَقَّت",
+    "opposite_meaning": "অস্থায়ী (Temporary)",
+    "opposite_pronunciation": "mu'aqqat"
+  },
+  {
+    "word": "مُتَشَابِه",
+    "meaning": "সদৃশ (Similar)",
+    "pronunciation": "mutashabih",
+    "opposite": "مُخْتَلِف",
+    "opposite_meaning": "ভিন্ন (Different)",
+    "opposite_pronunciation": "mukhtalif"
+  },
+  {
+    "word": "مُتَنَاسِق",
+    "meaning": "সামঞ্জস্যপূর্ণ (Harmonious)",
+    "pronunciation": "mutanasiq",
+    "opposite": "مُتَنَافِر",
+    "opposite_meaning": "অসামঞ্জস্যপূর্ণ (Clashing)",
+    "opposite_pronunciation": "mutanafir"
+  },
+  {
+    "word": "رَسْمِيّ",
+    "meaning": "আনুষ্ঠানিক (Formal)",
+    "pronunciation": "rasmiy",
+    "opposite": "عَفْوِيّ",
+    "opposite_meaning": "স্বতঃস্ফূর্ত (Spontaneous)",
+    "opposite_pronunciation": "afwiy"
+  },
+  {
+    "word": "مَحْظُوظ",
+    "meaning": "ভাগ্যবান (Lucky)",
+    "pronunciation": "mahzuz",
+    "opposite": "مَنْحُوس",
+    "opposite_meaning": "দুর্ভাগা (Unlucky)",
+    "opposite_pronunciation": "manhus"
+  },
+  {
+    "word": "شَفَّاف",
+    "meaning": "স্বচ্ছ (Transparent)",
+    "pronunciation": "shaffaf",
+    "opposite": "مُعَتِم",
+    "opposite_meaning": "অস্বচ্ছ (Opaque)",
+    "opposite_pronunciation": "mu'tim"
+  },
+  {
+    "word": "حَادّ",
+    "meaning": "ধারালো (Sharp)",
+    "pronunciation": "hadd",
+    "opposite": "كَلِيل",
+    "opposite_meaning": "ভোঁতা (Blunt)",
+    "opposite_pronunciation": "kalil"
+  },
+  {
+    "word": "سَمْح",
+    "meaning": "উদারপন্থী (Lenient)",
+    "pronunciation": "samh",
+    "opposite": "مُتَشَدِّد",
+    "opposite_meaning": "কঠোরপন্থী (Strict)",
+    "opposite_pronunciation": "mutashaddid"
+  },
+  {
+    "word": "مُغَامِر",
+    "meaning": "সাহসিক (Adventurous)",
+    "pronunciation": "mughamir",
+    "opposite": "حَذِر",
+    "opposite_meaning": "সতর্ক (Cautious)",
+    "opposite_pronunciation": "hadhir"
+  },
+  {
+    "word": "فَعَّال",
+    "meaning": "কার্যকর (Effective)",
+    "pronunciation": "fa'aal",
+    "opposite": "عَقِيم",
+    "opposite_meaning": "নিষ্ফল (Ineffective)",
+    "opposite_pronunciation": "aqim"
+  },
+  {
+    "word": "مُثِير",
+    "meaning": "উত্তেজনাপূর্ণ (Exciting)",
+    "pronunciation": "muthir",
+    "opposite": "مُمِلّ",
+    "opposite_meaning": "একঘেয়ে (Boring)",
+    "opposite_pronunciation": "mumill"
+  },
+  {
+    "word": "نَقِيّ",
+    "meaning": "বিশুদ্ধ (Pure, water/air)",
+    "pronunciation": "naqiy",
+    "opposite": "مُلَوَّث",
+    "opposite_meaning": "দূষিত (Polluted)",
+    "opposite_pronunciation": "mulawwath"
+  },
+  {
+    "word": "مُزْدَهِر",
+    "meaning": "সমৃদ্ধশালী (Prosperous)",
+    "pronunciation": "muzdahir",
+    "opposite": "مُتَدَهْوِر",
+    "opposite_meaning": "অবনতিশীল (Declining)",
+    "opposite_pronunciation": "mutadahwir"
+  },
+  {
+    "word": "أَنِيق",
+    "meaning": "ফ্যাশনদুরস্ত (Elegant)",
+    "pronunciation": "aniq",
+    "opposite": "رَثّ",
+    "opposite_meaning": "জীর্ণশীর্ণ (Shabby)",
+    "opposite_pronunciation": "rathth"
+  },
+  {
+    "word": "صَبُور",
+    "meaning": "ধৈর্যশীল (Patient)",
+    "pronunciation": "sabur",
+    "opposite": "نَزِق",
+    "opposite_meaning": "অধৈর্য (Impatient)",
+    "opposite_pronunciation": "naziq"
+  },
+  {
+    "word": "مُتَوَازِن",
+    "meaning": "সুষম (Balanced)",
+    "pronunciation": "mutawazin",
+    "opposite": "مُخْتَلّ",
+    "opposite_meaning": "ভারসাম্যহীন (Unbalanced)",
+    "opposite_pronunciation": "mukhtall"
+  },
+  {
+    "word": "مُتَفَهِّم",
+    "meaning": "বোধগম্য মনোভাবাপন্ন (Understanding)",
+    "pronunciation": "mutafahhim",
+    "opposite": "عَنِيد",
+    "opposite_meaning": "জেদি (Stubborn)",
+    "opposite_pronunciation": "anid"
+  },
+  {
+    "word": "مُنْتِج",
+    "meaning": "উৎপাদনশীল (Productive)",
+    "pronunciation": "muntij",
+    "opposite": "عَاطِل",
+    "opposite_meaning": "কর্মহীন (Idle)",
+    "opposite_pronunciation": "atil"
+  },
+  {
+    "word": "سَلِس",
+    "meaning": "মসৃণ / সাবলীল (Smooth/Fluent)",
+    "pronunciation": "salis",
+    "opposite": "مُتَقَطِّع",
+    "opposite_meaning": "খণ্ডিত (Choppy)",
+    "opposite_pronunciation": "mutaqatti'"
+  },
+  {
+    "word": "مُنْصِف",
+    "meaning": "নিরপেক্ষ (Fair)",
+    "pronunciation": "munsif",
+    "opposite": "مُتَحَيِّز",
+    "opposite_meaning": "পক্ষপাতদুষ্ট (Biased)",
+    "opposite_pronunciation": "mutahayyiz"
+  },
+  {
+    "word": "مُخْلِص",
+    "meaning": "বিশ্বস্ত / আন্তরিক (Sincere)",
+    "pronunciation": "mukhlis",
+    "opposite": "مُتَمَلِّق",
+    "opposite_meaning": "তোষামোদকারী (Flatterer/Insincere)",
+    "opposite_pronunciation": "mutamalliq"
+  },
+  {
+    "word": "سَخِيّ",
+    "meaning": "দানশীল (Generous)",
+    "pronunciation": "sakhiy",
+    "opposite": "شَحِيح",
+    "opposite_meaning": "কৃপণ (Stingy)",
+    "opposite_pronunciation": "shahih"
+  },
+  {
+    "word": "مُتَحَمِّس",
+    "meaning": "উৎসাহী (Enthusiastic)",
+    "pronunciation": "mutahammis",
+    "opposite": "لَامُبَالٍ",
+    "opposite_meaning": "উদাসীন (Indifferent)",
+    "opposite_pronunciation": "lamubalin"
+  },
+  {
+    "word": "مُنَاسِب",
+    "meaning": "উপযুক্ত (Suitable)",
+    "pronunciation": "munasib",
+    "opposite": "غَيْر لَائِق",
+    "opposite_meaning": "অনুপযুক্ত (Unsuitable)",
+    "opposite_pronunciation": "ghayr la'iq"
+  },
+  {
+    "word": "دَقِيق الْمَوَاعِيد",
+    "meaning": "সময়নিষ্ঠ (Punctual)",
+    "pronunciation": "daqiq al-mawa'id",
+    "opposite": "مُتَقَاعِس",
+    "opposite_meaning": "গড়িমসিকারী (Procrastinating)",
+    "opposite_pronunciation": "mutaqa'is"
+  },
+  {
+    "word": "وَفِيّ",
+    "meaning": "বিশ্বস্ত (Loyal)",
+    "pronunciation": "wafiy",
+    "opposite": "خَائِن",
+    "opposite_meaning": "বিশ্বাসঘাতক (Traitor)",
+    "opposite_pronunciation": "kha'in"
+  },
+  {
+    "word": "مُتَيَقِّظ",
+    "meaning": "সতর্ক / সজাগ (Alert)",
+    "pronunciation": "mutayaqqiz",
+    "opposite": "غَافِل",
+    "opposite_meaning": "অমনোযোগী (Heedless)",
+    "opposite_pronunciation": "ghafil"
+  },
+  {
+    "word": "شَيِّق",
+    "meaning": "আকর্ষণীয় (Engaging)",
+    "pronunciation": "shayyiq",
+    "opposite": "تَافِه",
+    "opposite_meaning": "তুচ্ছ / ফালতু (Trivial)",
+    "opposite_pronunciation": "tafih"
+  },
+  {
+    "word": "مُفَصَّل",
+    "meaning": "বিস্তারিত (Detailed)",
+    "pronunciation": "mufassal",
+    "opposite": "مُوجَز",
+    "opposite_meaning": "সংক্ষিপ্ত (Brief)",
+    "opposite_pronunciation": "mujaz"
+  },
+  {
+    "word": "مُشْرِق الْمُسْتَقْبَل",
+    "meaning": "উজ্জ্বল ভবিষ্যৎ (Bright Future — descriptive)",
+    "pronunciation": "mushriq al-mustaqbal",
+    "opposite": "مُظْلِم الْمُسْتَقْبَل",
+    "opposite_meaning": "অন্ধকার ভবিষ্যৎ (Dark Future)",
+    "opposite_pronunciation": "muzlim al-mustaqbal"
+  },
+  {
+    "word": "مُتَمَاسِك",
+    "meaning": "সুসংগঠিত (Cohesive)",
+    "pronunciation": "mutamasik",
+    "opposite": "مُفَكَّك",
+    "opposite_meaning": "বিশৃঙ্খল (Disjointed)",
+    "opposite_pronunciation": "mufakkak"
+  },
+  {
+    "word": "مُزْدَوِج",
+    "meaning": "দ্বৈত (Dual/Double)",
+    "pronunciation": "muzdawij",
+    "opposite": "مُفْرَد",
+    "opposite_meaning": "একক (Single)",
+    "opposite_pronunciation": "mufrad"
+  },
+  {
+    "word": "مُتَجَدِّد",
+    "meaning": "নবায়নযোগ্য (Renewable)",
+    "pronunciation": "mutajaddid",
+    "opposite": "نَاضِب",
+    "opposite_meaning": "নিঃশেষযোগ্য (Depletable)",
+    "opposite_pronunciation": "nadib"
+  },
+  {
+    "word": "وَافِد",
+    "meaning": "আগত / নতুন আগমনকারী (Arriving/Newcomer)",
+    "pronunciation": "wafid",
+    "opposite": "مُقِيم",
+    "opposite_meaning": "স্থায়ী বাসিন্দা (Resident)",
+    "opposite_pronunciation": "muqim"
+  },
+  {
+    "word": "مُتَحَضِّر",
+    "meaning": "সভ্য (Civilized)",
+    "pronunciation": "mutahaddir",
+    "opposite": "هَمَجِيّ",
+    "opposite_meaning": "বর্বর (Barbaric)",
+    "opposite_pronunciation": "hamajiy"
+  },
+  {
+    "word": "مَرْغُوب",
+    "meaning": "কাঙ্ক্ষিত (Desired)",
+    "pronunciation": "marghub",
+    "opposite": "مَنْبُوذ",
+    "opposite_meaning": "পরিত্যক্ত / ঘৃণিত (Shunned)",
+    "opposite_pronunciation": "manbudh"
+  },
+  {
+    "word": "مُتَقَدِّم",
+    "meaning": "উন্নত (Advanced)",
+    "pronunciation": "mutaqaddim",
+    "opposite": "مُتَخَلِّف",
+    "opposite_meaning": "অনুন্নত / পশ্চাদপদ (Backward)",
+    "opposite_pronunciation": "mutakhallif"
+  },
+  {
+    "word": "سَلِيم النِّيَّة",
+    "meaning": "সৎ উদ্দেশ্যসম্পন্ন (Well-Intentioned)",
+    "pronunciation": "salim an-niyya",
+    "opposite": "سَيِّئ النِّيَّة",
+    "opposite_meaning": "দুরুদ্দেশ্যসম্পন্ন (Ill-Intentioned)",
+    "opposite_pronunciation": "sayyi' an-niyya"
+  },
+  {
+    "word": "مُنْتَظِم",
+    "meaning": "নিয়মিত (Regular)",
+    "pronunciation": "muntazim",
+    "opposite": "مُتَقَطِّع الْحُضُور",
+    "opposite_meaning": "অনিয়মিত (Irregular)",
+    "opposite_pronunciation": "mutaqatti' al-hudur"
+  },
+  {
+    "word": "مُتَفَوِّق",
+    "meaning": "শ্রেষ্ঠ / কৃতিত্বপূর্ণ (Outstanding)",
+    "pronunciation": "mutafawwiq",
+    "opposite": "مُتَعَثِّر",
+    "opposite_meaning": "ব্যর্থ / হোঁচট খাওয়া (Struggling)",
+    "opposite_pronunciation": "muta'aththir"
+  },
+  {
+    "word": "مُتَحَرِّر",
+    "meaning": "স্বাধীনচেতা (Liberated)",
+    "pronunciation": "mutaharrir",
+    "opposite": "مُنْقَاد",
+    "opposite_meaning": "বশীভূত (Submissive/Compliant)",
+    "opposite_pronunciation": "munqad"
+  },
+  {
+    "word": "جَذَّاب",
+    "meaning": "আকর্ষণীয় (Attractive)",
+    "pronunciation": "jadhdhab",
+    "opposite": "مُنَفِّر",
+    "opposite_meaning": "বিরক্তিকর/বিতৃষ্ণাজনক (Repulsive)",
+    "opposite_pronunciation": "munaffir"
+  },
+  {
+    "word": "مُتَنَوِّع",
+    "meaning": "বৈচিত্র্যময় (Varied)",
+    "pronunciation": "mutanawwi'",
+    "opposite": "رَتِيب",
+    "opposite_meaning": "একঘেয়ে (Monotonous)",
+    "opposite_pronunciation": "ratib"
+  },
+  {
+    "word": "وَاقِعِيّ",
+    "meaning": "বাস্তববাদী (Realistic)",
+    "pronunciation": "waqi'iy",
+    "opposite": "خَيَالِيّ",
+    "opposite_meaning": "কাল্পনিক (Fictional/Fantastical)",
+    "opposite_pronunciation": "khayaliy"
+  },
+  {
+    "word": "مُبْدِع",
+    "meaning": "সৃজনশীল (Creative)",
+    "pronunciation": "mubdi'",
+    "opposite": "مُقَلِّد",
+    "opposite_meaning": "অনুকরণকারী (Imitative)",
+    "opposite_pronunciation": "muqallid"
+  },
+  {
+    "word": "مَسْؤُول",
+    "meaning": "দায়িত্বশীল (Responsible)",
+    "pronunciation": "mas'ul",
+    "opposite": "غَيْر مُبَالٍ",
+    "opposite_meaning": "দায়িত্বজ্ঞানহীন (Irresponsible)",
+    "opposite_pronunciation": "ghayr mubalin"
+  },
+  {
+    "word": "سَرِيع الْبَدِيهَة",
+    "meaning": "দ্রুত বুদ্ধিমান (Quick-Witted)",
+    "pronunciation": "sari' al-badiha",
+    "opposite": "بَطِيء الْفَهْم",
+    "opposite_meaning": "বোধশক্তিতে ধীর (Slow to Understand)",
+    "opposite_pronunciation": "bati' al-fahm"
+  },
+  {
+    "word": "مُتَمَرِّس",
+    "meaning": "অভিজ্ঞ / দক্ষ (Experienced)",
+    "pronunciation": "mutamarris",
+    "opposite": "مُبْتَدِئ",
+    "opposite_meaning": "নবীন / শিক্ষানবিশ (Beginner)",
+    "opposite_pronunciation": "mubtadi'"
+  },
+  {
+    "word": "مُشَجِّع",
+    "meaning": "উৎসাহদায়ক (Encouraging)",
+    "pronunciation": "mushajji'",
+    "opposite": "مُثَبِّط",
+    "opposite_meaning": "নিরুৎসাহকারী (Discouraging)",
+    "opposite_pronunciation": "muthabbit"
+  },
+  {
+    "word": "عَمِيق التَّفْكِير",
+    "meaning": "গভীর চিন্তাশীল (Deep-Thinking)",
+    "pronunciation": "amiq at-tafkir",
+    "opposite": "سَطْحِيّ",
+    "opposite_meaning": "অগভীর / ভাসাভাসা (Superficial)",
+    "opposite_pronunciation": "sathiy"
+  },
+  {
+    "word": "صَرِيح",
+    "meaning": "স্পষ্টবাদী (Frank/Direct)",
+    "pronunciation": "sarih",
+    "opposite": "مُرَاوِغ",
+    "opposite_meaning": "এড়িয়ে যাওয়া স্বভাবের (Evasive)",
+    "opposite_pronunciation": "murawigh"
+  },
+  {
+    "word": "مُتَمَكِّن",
+    "meaning": "দক্ষ / পারদর্শী (Proficient)",
+    "pronunciation": "mutamakkin",
+    "opposite": "عَاجِز",
+    "opposite_meaning": "অক্ষম (Incapable)",
+    "opposite_pronunciation": "ajiz"
+  },
+  {
+    "word": "وَاسِع الصَّدْر",
+    "meaning": "সহনশীল / উদারমনা (Broad-Minded)",
+    "pronunciation": "wasi' as-sadr",
+    "opposite": "ضَيِّق الصَّدْر",
+    "opposite_meaning": "সংকীর্ণমনা (Narrow-Minded)",
+    "opposite_pronunciation": "dayyiq as-sadr"
+  },
+  {
+    "word": "مُتَرَابِط",
+    "meaning": "সম্পর্কযুক্ত / ঐক্যবদ্ধ (Interconnected/United)",
+    "pronunciation": "mutarabit",
+    "opposite": "مُتَنَاثِر",
+    "opposite_meaning": "বিক্ষিপ্ত (Scattered)",
+    "opposite_pronunciation": "mutanathir"
+  },
+  {
+    "word": "حَيَوِيّ النَّشَاط",
+    "meaning": "চনমনে (Energetic)",
+    "pronunciation": "hayawiy an-nashat",
+    "opposite": "بَلِيد",
+    "opposite_meaning": "নিস্তেজ / অলস (Sluggish)",
+    "opposite_pronunciation": "balid"
+  },
+  {
+    "word": "مُتَعَاوِن",
+    "meaning": "সহযোগিতাপূর্ণ (Cooperative)",
+    "pronunciation": "muta'awin",
+    "opposite": "أَنَانِيّ",
+    "opposite_meaning": "স্বার্থপর (Selfish)",
+    "opposite_pronunciation": "ananiy"
+  },
+  {
+    "word": "مُتَسَامِح",
+    "meaning": "ক্ষমাশীল (Forgiving)",
+    "pronunciation": "mutasamih",
+    "opposite": "حَقُود",
+    "opposite_meaning": "প্রতিহিংসাপরায়ণ (Vengeful)",
+    "opposite_pronunciation": "haqud"
+  },
+  {
+    "word": "مُحْتَرَم",
+    "meaning": "সম্মানিত (Respected)",
+    "pronunciation": "muhtaram",
+    "opposite": "مُهَان",
+    "opposite_meaning": "অপমানিত (Humiliated)",
+    "opposite_pronunciation": "muhan"
+  },
+  {
+    "word": "وَاثِق مِنْ نَفْسِهِ",
+    "meaning": "আত্মবিশ্বাসী (Self-Confident)",
+    "pronunciation": "wathiq min nafsihi",
+    "opposite": "مُتَرَدِّد النَّفْسِ",
+    "opposite_meaning": "আত্মসংশয়ী (Self-Doubting)",
+    "opposite_pronunciation": "mutaraddid an-nafs"
+  },
+  {
+    "word": "مُنْضَبِط",
+    "meaning": "শৃঙ্খলাপরায়ণ (Disciplined)",
+    "pronunciation": "munzabit",
+    "opposite": "مُتَهَاوِن",
+    "opposite_meaning": "শিথিল / গাফেল (Lax)",
+    "opposite_pronunciation": "mutahawin"
+  },
+  {
+    "word": "مُتَفَاعِل",
+    "meaning": "সক্রিয়ভাবে অংশগ্রহণকারী (Interactive/Engaged)",
+    "pronunciation": "mutafa'il",
+    "opposite": "مُنْعَزِل",
+    "opposite_meaning": "বিচ্ছিন্ন / নির্লিপ্ত (Withdrawn)",
+    "opposite_pronunciation": "mun'azil"
+  },
+  {
+    "word": "مُتَمَيِّز",
+    "meaning": "অনন্য / স্বতন্ত্র (Distinguished)",
+    "pronunciation": "mutamayyiz",
+    "opposite": "عَادِيّ",
+    "opposite_meaning": "সাধারণ (Ordinary)",
+    "opposite_pronunciation": "adiy"
+  },
+  {
+    "word": "سَهْل الِانْقِيَاد",
+    "meaning": "সহজে বশীভূত (Easily Led)",
+    "pronunciation": "sahl al-inqiyad",
+    "opposite": "صَعْب الْمِرَاس",
+    "opposite_meaning": "দুর্বিনীত (Difficult to Handle)",
+    "opposite_pronunciation": "sa'b al-miras"
+  },
+  {
+    "word": "مُتَبَصِّر",
+    "meaning": "দূরদর্শী (Insightful/Farsighted)",
+    "pronunciation": "mutabassir",
+    "opposite": "أَعْمَى الْبَصِيرَة",
+    "opposite_meaning": "অন্তর্দৃষ্টিহীন (Lacking Insight)",
+    "opposite_pronunciation": "a'ma al-basira"
+  },
+  {
+    "word": "مُنْتَبِه",
+    "meaning": "মনোযোগী (Attentive)",
+    "pronunciation": "muntabih",
+    "opposite": "شَارِد الذِّهْن",
+    "opposite_meaning": "অন্যমনস্ক (Absent-Minded)",
+    "opposite_pronunciation": "sharid adh-dhihn"
   }
 ]
